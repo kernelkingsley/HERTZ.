@@ -1,0 +1,28 @@
+---
+description: C# and Unity lifecycle standards
+globs: "**/*.cs"
+alwaysApply: false
+---
+
+# C# and Unity Lifecycle
+
+- `[SerializeField] private` for Inspector fields.
+- `readonly` for references that must not change. `const` for compile-time constants.
+- Follow existing naming and namespaces.
+- Keep classes small, cohesive, and single-purpose. Prefer composition.
+- Cache frequently used references. No unnecessary singletons or extra abstraction.
+- Use an interface only when it solves a real boundary.
+- Keep gameplay logic separate from input handling where practical.
+- Validate Inspector dependencies on init or in editor validation.
+- Do not swallow errors with empty catch blocks.
+- Do not overengineer simple features.
+
+## Lifecycle
+
+- `Awake`: local references.
+- `OnEnable` / `OnDisable`: subscribe and unsubscribe.
+- `Start`: init that needs other objects ready.
+- `Update`: frame gameplay. `FixedUpdate`: physics. `LateUpdate` only when order requires it.
+- `OnDestroy`: final cleanup when needed.
+
+Avoid `Update` when an event, callback, or input action is enough. Never assume a subscription happens once; prevent duplicates.

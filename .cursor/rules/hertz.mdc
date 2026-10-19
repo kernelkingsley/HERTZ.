@@ -1,0 +1,25 @@
+---
+description: Locked game concept for this Unity VR project
+alwaysApply: true
+---
+
+# HERTZ
+
+Title locked by Kingsley on 19 Oct 2026. Concept confirmed the same day from the November Numerique chat. Working name Echo Ronin + Frequency is retired.
+
+## Fantasy
+
+A boy sees and hears spirits on a private frequency. He liberates the town by clearing the spirit tide so people can live there again. First person.
+
+## Play
+
+- Normal view: the town, spirits not yet a target.
+- Frequency flip: spirits become something you can shoot.
+- Weapon: dual pistols, only after the flip. Not a blade. Not a score-attack pistol-whip rhythm shooter.
+- Feel: exciting, low skill ceiling, spectacle over difficulty. No shame fail states.
+
+## Target
+
+Quest 3S. Unity, OpenXR, XR Interaction Toolkit, action-based input, URP. WebXR is not the product. Keep vendor-specific Quest features behind an adapter.
+
+Personal ship target from that chat: 15 Nov 2026. Do not invent chapters, enemies, or systems that were not locked. Talk design changes through before writing new design docs.

@@ -1,0 +1,20 @@
+---
+description: OpenXR input, comfort, and interaction physics
+alwaysApply: true
+---
+
+# XR Interaction, Comfort, and Physics
+
+Use the installed XRI with action-based input. Reuse existing input action assets. Do not duplicate bindings. Support left- and right-handed use where applicable. Handle tracking loss, disconnect, and recentering safely.
+
+Respect tracking origin. Do not mix world, local, and tracking space without an explicit conversion. Do not override headset tracking or move the camera arbitrarily. Do not manipulate tracked controller transforms unless required.
+
+Prefer XR interaction events over per-frame polling. Prevent duplicate interaction events. Keep grabbed objects consistent with XRI settings. Avoid transform and Rigidbody conflicts.
+
+## Comfort
+
+Comfort outranks visual spectacle. Keep world scale consistent. No unexpected artificial acceleration or forced rotation. Support snap and smooth turn where locomotion exists, with comfort options. Keep interaction distance and UI placement comfortable. Avoid excessive flashing and effects. Keep frame rate stable.
+
+## Physics
+
+Use layers deliberately. Do not run expensive physics checks every frame unless required. Match collision detection to fast motion. Keep physics work in the simulation step. Distinguish physical projectiles from hitscan. Pool repeated projectiles and effects. Use the simplest reliable solution.

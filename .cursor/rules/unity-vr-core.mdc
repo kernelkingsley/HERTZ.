@@ -1,0 +1,51 @@
+---
+description: Unity VR architecture, workflow, headset scope, and engineering priorities
+alwaysApply: true
+---
+
+# Unity VR Core
+
+Engine: Unity. Language: C#. XR: OpenXR. Interaction: XR Interaction Toolkit (XRI), action-based Unity Input System. Rendering: URP. Target: standalone and PC VR, per project configuration.
+
+## Versions
+
+Never assume the Unity editor, XRI, OpenXR package, or headset. Inspect `Packages/manifest.json`, `packages-lock.json`, `ProjectSettings/ProjectVersion.txt`, and relevant project settings first. Use APIs compatible with the installed versions. Do not introduce deprecated APIs or legacy systems without explicit approval. Do not use legacy Oculus Integration APIs unless explicitly requested.
+
+## Workflow
+
+1. Understand the outcome and the existing implementation.
+2. Inspect only the files and dependencies the task needs.
+3. Choose the smallest safe implementation.
+4. Implement production-quality, version-compatible code.
+5. Verify in proportion to the change.
+6. Report: what changed, files modified, verification result, remaining issues.
+
+Give a brief plan before high-risk changes. Do not write planning documents for straightforward tasks.
+
+## Multi-headset
+
+Keep gameplay headset-independent and on OpenXR where the configured runtime supports it.
+
+- Do not hardcode a headset manufacturer.
+- Do not use Meta-only APIs for standard interactions.
+- Isolate vendor-specific behavior behind adapters.
+- Check runtime capabilities before enabling optional features.
+- Fall back gracefully when a feature is unavailable.
+- Do not assume identical controller inputs across headsets.
+- Do not claim compatibility without testing on that runtime or device.
+
+## Priorities
+
+1. Correctness and safety
+2. Compatibility with this project
+3. VR comfort and stable frame rate
+4. Maintainability
+5. Minimal complexity
+6. Minimal unnecessary token use
+7. Extensibility only where it is actually needed
+
+Preserve existing functionality. Build the simplest robust solution.
+
+## Anti-hallucination
+
+Never invent Unity APIs, namespaces, package capabilities, missing components, serialized field names, or hardware compatibility. Never claim a build, compilation, or test succeeded unless it ran. Never present pseudocode as production code. Never silently substitute an incompatible SDK. If uncertain, inspect the project. If uncertainty remains, state the limitation briefly.

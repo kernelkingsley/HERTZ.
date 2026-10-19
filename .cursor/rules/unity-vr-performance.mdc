@@ -1,0 +1,18 @@
+---
+description: VR frame-time and hot-path performance constraints
+alwaysApply: true
+---
+
+# VR Performance
+
+Target a stable frame rate at the headset refresh rate. These are full frame intervals, not reserved CPU or GPU budgets:
+
+- 72 Hz: ~13.89 ms
+- 90 Hz: ~11.11 ms
+- 120 Hz: ~8.33 ms
+
+Hot paths must not allocate managed heap memory, use LINQ, allocate closures, or concatenate strings. Cache references and reusable collections. Pool frequently spawned objects. Do not search the scene repeatedly. Minimize physics queries, use layer masks, and prefer non-allocating queries when they help.
+
+Profile before major optimization. Cut unnecessary draw calls, expensive shaders, realtime lights, and shadows. Use GPU instancing, batching, LODs, and occlusion culling when they help. Keep UI and particles cheap.
+
+Do not trade correctness or maintainability for speculative micro-optimizations.

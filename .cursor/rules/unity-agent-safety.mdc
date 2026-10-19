@@ -1,0 +1,33 @@
+---
+description: Agent efficiency, code safety, verification, asset safety, and security for this Unity project
+alwaysApply: true
+---
+
+# Agent Safety and Efficiency
+
+## Efficiency
+
+Read only files relevant to the task. Search for specific symbols before opening large files. Do not scan the whole project repeatedly. Do not rewrite working code. Prefer small surgical edits. Do not add docs, examples, tests, or helpers unless asked. Batch related checks. Reuse existing implementations. Stop when the task is done and verified.
+
+Default report, under 150 words unless the task needs more:
+
+1. What changed.
+2. Files modified.
+3. Verification result.
+4. Remaining issues, if any.
+
+## Before editing
+
+Inspect the implementation and its dependencies. Identify effects on other systems. Preserve public interfaces unless a change is required. Never silently delete working features. Never invent APIs. Verify uncertain APIs against installed package source or matching docs. Avoid new dependencies. Do not modify unrelated scripts. Do not overwrite user assets or settings without permission. Prefer minimal, reversible changes. If the wrong assumption could break behavior, ask one concise question.
+
+## Verification
+
+After code changes, check syntax, namespaces, installed-package compatibility, and references to renamed or removed symbols. Run relevant tests or compilation when available. Use Unity batchmode for appropriate checks. Inspect compiler logs on failure. Fix errors caused by the change. Do not claim compilation or testing that did not run. Skip full builds after small edits. Run broader checks when assemblies, packages, scenes, XR config, or build settings change.
+
+## Assets
+
+Preserve `.meta` files and GUIDs. Do not relocate assets without need. Do not edit `Library`. Do not change package dependencies without justification. Preserve serialized references and existing build targets and XR settings unless instructed. Do not rename serialized fields without migration; use `[FormerlySerializedAs]` when appropriate. Do not silently modify prefabs or scenes.
+
+## Security
+
+Never hardcode credentials, private keys, or secrets. Validate external data. Avoid untrusted code execution. Keep sensitive operations off untrusted clients. Handle network failure. Do not block the main thread with synchronous network calls. Use cancellation and timeouts for async work. Do not add telemetry or data collection without a reason.
