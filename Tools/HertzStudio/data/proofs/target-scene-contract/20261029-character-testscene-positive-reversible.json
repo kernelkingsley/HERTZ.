@@ -1,0 +1,31 @@
+﻿{
+    "schemaVersion":  1,
+    "capturedAt":  "2026-10-29T00:49:09.7998315Z",
+    "operation":  "character_shared_target_positive_reversible_proof",
+    "targetScene":  {
+                        "path":  "Assets/Scenes/HertzCharacterTest.unity",
+                        "guid":  "fcbb0fae54779fd47b7d8dfd76c66484",
+                        "expectedRevision":  1
+                    },
+    "sync":  {
+                 "status":  "applied",
+                 "assetGuid":  "63fde4094b54ea0448d23781f26c4038",
+                 "assetPath":  "Assets/HertzStudio/Characters/Models/Codex_TargetScene_Character_Proof.asset"
+             },
+    "deploy":  {
+                   "status":  "applied",
+                   "unityRevision":  2,
+                   "managedObjectIds":  [
+                                            "GlobalObjectId_V1-2-fcbb0fae54779fd47b7d8dfd76c66484-473864826-0"
+                                        ]
+               },
+    "cleanup":  {
+                    "sceneReopenStatus":  "applied",
+                    "definitionDeleteStatus":  "applied",
+                    "sceneSha256Before":  "48725A136121D4316E74F0201CCB8568FA2FB6CC98BB325CEECE9EE3B36D132C",
+                    "sceneSha256After":  "48725A136121D4316E74F0201CCB8568FA2FB6CC98BB325CEECE9EE3B36D132C",
+                    "sceneRestored":  true,
+                    "temporaryDefinitionRemoved":  true,
+                    "failure":  null
+                }
+}

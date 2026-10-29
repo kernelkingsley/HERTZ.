@@ -1,0 +1,44 @@
+---
+description: Read WORK_PLAN.md and follow the shared handoff before each task
+alwaysApply: true
+---
+
+# Work plan
+
+Before acting on a task, and again before completing it, open and read every `.mdc` file in `.cursor/rules/`. The code rules govern how the task is implemented: `hertz.mdc`, `unity-vr-core.mdc`, `unity-csharp.mdc`, `unity-xr-interaction.mdc`, `unity-vr-performance.mdc`, `unity-agent-safety.mdc`, `unity-screenshot-proof.mdc`, and `look-it-up.mdc`. Read them even when no script is open. Session text is not a substitute.
+
+Re-read `WORK_PLAN.md` in the project root before starting each task. It can change between tasks. Follow it together with those rules. The plan does not replace them.
+
+## When implementing
+
+Follow the **Checkpoint and takeover protocol** in `WORK_PLAN.md` for every implementation session. Before each small step, save its intent/affected files/next action; after saving files or completing a check, update the current checkpoint with actual changes, exact commands/results, partial work, and the next action. Keep startup/process details and branch/HEAD current. Do not wait until usage is exhausted. Never include secrets. This lets Codex resume if Cursor/Grok stops, and Grok resume if Codex stops.
+
+On an explicit takeover request, ensure the previous agent has stopped editing, reconcile the checkpoint with actual saved files/diffs and running operations, update the implementation owner, and continue the unfinished active task. Do not reset/stash/discard work, repeat an unverified Unity mutation, or assume the other agent's terminal/MCP session is available. Ownership transfer does not expand task scope or pass review.
+
+Implement only the active task, and only when its outcome, scope, and acceptance criteria are filled in. If they are not defined, stop and say so. Do not invent the next task.
+
+1. Inspect the existing implementation and installed package APIs named in the task.
+2. Make the smallest change that meets the acceptance criteria.
+3. Do not expand scope or change the locked game concept.
+4. Preserve unrelated work, Unity asset GUIDs, serialized references, scenes, and settings.
+5. Ask Kingsley about design decisions the existing project does not resolve.
+
+## When finished
+
+Update the implementation handoff in `WORK_PLAN.md` before ending:
+
+- Changes and files
+- Checks actually run and their results
+- Manual Unity or headset checks still needed
+- Questions or limitations
+
+Set the active task status to Ready for Codex review. Do not mark the Codex review as passed. Do not close the task.
+
+## W0 milestone status in Hertz Studio
+
+Whenever work changes a W01-W14 milestone, keep every Hertz Studio surface that displays milestone progress in sync, including the Dashboard, milestone/work-plan pages, navigation badges, summary counts, and progress percentages. Use one shared status source rather than hardcoded page-specific labels.
+
+Show a milestone as `Completed` only after all of its required tasks, acceptance criteria, verification, independent Codex review, and any required Kingsley testing or approval are complete. Passing automated checks, finishing implementation, `Ready for Codex review`, or `Ready for Kingsley testing` is not completion. Preserve the accurate intermediate state: `Not started`, `In progress`, `Blocked`, `Ready for Codex review`, or `Ready for Kingsley testing`.
+
+When the final completion gate is satisfied, update `WORK_PLAN.md` and the shared Studio status source in the same task, verify that all affected pages show `Completed`, and verify that totals and percentages update without double counting. Do not mark later or partially implemented milestones complete.
+For W01, Kingsley also requires local user testing before W02-W14. After corrections and independent review, start the local Studio, verify and share its browser URL, leave the server running with process/log/restart details, and set `Ready for Kingsley testing`. Follow the checklist in `WORK_PLAN.md`. Wait for Kingsley's explicit approval before advancing; do not treat a passing build or successful startup as user acceptance. Hosting/DNS remain deferred.

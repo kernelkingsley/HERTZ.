@@ -1,0 +1,48 @@
+{
+  "finishedAt": "2026-10-20T19:09:30.000Z",
+  "runtime": {
+    "apiPid": 10280,
+    "apiPort": 8787,
+    "connectorPid": 19608,
+    "bridgePort": 8791,
+    "unityPid": 28384,
+    "storeGoodTemps": 0
+  },
+  "glb": {
+    "assetId": "982c66d1-0a77-4a40-b140-b7e3c4b944c3",
+    "state": "unity_imported",
+    "importedPath": "Assets/HertzStudio/Imported/982c66d1-0a77-4a40-b140-b7e3c4b944c3/e2e-triangle.glb",
+    "prefabPath": "Assets/HertzStudio/Imported/982c66d1-0a77-4a40-b140-b7e3c4b944c3/e2e-triangle.prefab"
+  },
+  "nestedGltf": {
+    "assetId": "3aa1b520-0381-4bac-a43f-16efee282af4",
+    "state": "unity_imported",
+    "importedPath": "Assets/HertzStudio/Imported/3aa1b520-0381-4bac-a43f-16efee282af4/scene.gltf",
+    "prefabPath": null,
+    "dependencyCount": 2,
+    "dependencies": [
+      "buffers/mesh.bin",
+      "textures/albedo.png"
+    ],
+    "onDisk": [
+      "scene.gltf",
+      "buffers/mesh.bin",
+      "textures/albedo.png"
+    ]
+  },
+  "sketchfabUid": {
+    "uid": "8e1ba8a437c4460eaaa643953eaf79d0",
+    "assetId": "9f6146d8-2bf0-412d-938f-f842bdf39466",
+    "downloadStatus": 201,
+    "state": "unity_imported",
+    "format": "gltf",
+    "dependencyCount": 39,
+    "importedPath": "Assets/HertzStudio/Imported/9f6146d8-2bf0-412d-938f-f842bdf39466/scene.gltf",
+    "validationNote": "Full-document glTF JSON validation accepted padded Sketchfab export (no Content is not a glTF JSON document)."
+  },
+  "projectRoot": "C:\\Users\\Kingsley\\HERTZ",
+  "sampleSceneUntouched": true,
+  "sourceNotPreplaced": true,
+  "path": "API upload/download -> queue -> connector -> bridge 8791 -> Assets/HertzStudio/Imported/<UUID>/ (+ _incoming/<UUID>/ staging)",
+  "sketchfabLivePending": false
+}

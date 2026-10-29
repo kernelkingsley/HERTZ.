@@ -1,0 +1,191 @@
+{
+  "startedAt": "2026-10-21T00:52:27.642Z",
+  "checks": [
+    {
+      "name": "finding1_preserves_newer_draft_objects",
+      "pass": true,
+      "status": "draft_saved",
+      "version": 2,
+      "baseUnityRevision": 1
+    },
+    {
+      "name": "finding1_reconciles_base_revision",
+      "pass": true
+    },
+    {
+      "name": "finding1_not_marked_applied_over_newer",
+      "pass": true
+    },
+    {
+      "name": "finding4_import_persists_export",
+      "pass": true
+    },
+    {
+      "name": "finding4_import_creates_draft",
+      "pass": true
+    },
+    {
+      "name": "finding4_draft_has_objects",
+      "pass": true
+    },
+    {
+      "name": "finding4_open_from_scene",
+      "pass": true
+    },
+    {
+      "name": "finding9_conflict_leaves_draft_conflict",
+      "pass": true,
+      "status": "conflict"
+    },
+    {
+      "name": "finding10_stale_is_disconnected",
+      "pass": true,
+      "unityConnected": false,
+      "connectorStatus": "disconnected",
+      "connectorFresh": false,
+      "unityReachable": true,
+      "connectorLastSeenAt": "2000-01-01T00:00:00.000Z",
+      "lastSceneSyncAt": "2026-10-21T00:52:27.879Z",
+      "unityRevision": 0,
+      "scenePath": "Assets/Scenes/HertzStudioTest.unity",
+      "staleAfterMs": 15000
+    },
+    {
+      "name": "finding10_status_label",
+      "pass": true
+    },
+    {
+      "name": "r5_fresh_but_unreachable_is_offline",
+      "pass": true,
+      "unityConnected": false,
+      "connectorStatus": "paired_offline",
+      "connectorFresh": true,
+      "unityReachable": false,
+      "connectorLastSeenAt": "2026-10-21T00:52:28.067Z",
+      "lastSceneSyncAt": "2026-10-21T00:52:27.879Z",
+      "unityRevision": 0,
+      "scenePath": "Assets/Scenes/HertzStudioTest.unity",
+      "staleAfterMs": 15000
+    },
+    {
+      "name": "r5_status_paired_offline",
+      "pass": true,
+      "unityConnected": false,
+      "connectorStatus": "paired_offline",
+      "connectorFresh": true,
+      "unityReachable": false,
+      "connectorLastSeenAt": "2026-10-21T00:52:28.067Z",
+      "lastSceneSyncAt": "2026-10-21T00:52:27.879Z",
+      "unityRevision": 0,
+      "scenePath": "Assets/Scenes/HertzStudioTest.unity",
+      "staleAfterMs": 15000
+    },
+    {
+      "name": "r5_reports_reachability_flags",
+      "pass": true
+    },
+    {
+      "name": "r5_fresh_and_reachable_connected",
+      "pass": true,
+      "unityConnected": true,
+      "connectorStatus": "connected",
+      "connectorFresh": true,
+      "unityReachable": true,
+      "connectorLastSeenAt": "2026-10-21T00:52:28.097Z",
+      "lastSceneSyncAt": "2026-10-21T00:52:27.879Z",
+      "unityRevision": 0,
+      "scenePath": "Assets/Scenes/HertzStudioTest.unity",
+      "staleAfterMs": 15000
+    },
+    {
+      "name": "r8_version_mismatch_409",
+      "pass": true,
+      "error": "Draft version mismatch: expected 100, current 1",
+      "status": 409,
+      "draft": {
+        "id": "aed1a5c4-ca31-4f37-8b88-469f28c3737c",
+        "title": "r8",
+        "scenePath": "Assets/Scenes/HertzStudioTest.unity",
+        "version": 1,
+        "baseUnityRevision": 0,
+        "status": "draft_saved",
+        "statusLabel": "Draft saved",
+        "objects": [
+          {
+            "objectId": "c",
+            "position": {
+              "x": 1,
+              "y": 2,
+              "z": 3
+            }
+          }
+        ],
+        "updatedAt": "2026-10-21T00:52:28.131Z"
+      }
+    },
+    {
+      "name": "r8_version_match_enqueues",
+      "pass": true,
+      "status": 202,
+      "draftVersion": 1
+    },
+    {
+      "name": "r8_omitted_expected_still_enqueues_for_compat",
+      "pass": true
+    },
+    {
+      "name": "r2_api_rejects_string_axis",
+      "pass": true
+    },
+    {
+      "name": "r2_api_rejects_missing_axis",
+      "pass": true
+    },
+    {
+      "name": "r2_api_accepts_finite_axes",
+      "pass": true
+    },
+    {
+      "name": "r2_create_draft_rejects_null_axis",
+      "pass": true
+    },
+    {
+      "name": "durable_enqueued_pending",
+      "pass": true
+    },
+    {
+      "name": "durable_good_generation_exists",
+      "pass": true
+    },
+    {
+      "name": "durable_restored_draft",
+      "pass": true,
+      "draftIds": [
+        "d27ccbb1-b2a6-4199-8615-7a3097dedd2e",
+        "f28ad94a-801d-41a3-806c-e2ed7e275ba6",
+        "aed1a5c4-ca31-4f37-8b88-469f28c3737c",
+        "b7297f91-2e62-4b73-894c-5a8b726f8142"
+      ]
+    },
+    {
+      "name": "durable_restored_pending_command",
+      "pass": true
+    },
+    {
+      "name": "durable_surfaces_recovery",
+      "pass": true,
+      "recoveredAt": "2026-10-21T00:52:28.329Z",
+      "reason": "primary_store_corrupt",
+      "corruptBackup": "store.json.corrupt.1792543948329.bak",
+      "restoredFrom": "store.json.good",
+      "emptyReset": false
+    },
+    {
+      "name": "durable_not_empty_reset",
+      "pass": true
+    }
+  ],
+  "ok": true,
+  "finishedAt": "2026-10-21T00:52:28.343Z",
+  "scratch": "C:\\Users\\Kingsley\\HERTZ\\Tools\\HertzStudio\\data\\secrets\\regress-76c37f51"
+}

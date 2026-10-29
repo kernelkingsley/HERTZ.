@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "milestone": "W09",
+  "generatedAt": "2026-10-26T07:04:28.680Z",
+  "branch": "main",
+  "head": "7374e57c3f8cfef316a18d6606d5e1385b39170e",
+  "implementationStatus": "vertical_paths_implemented_unity_live_pending",
+  "scope": [
+    "Mixamo honesty",
+    "animation slot assignment",
+    "XR protection"
+  ],
+  "acceptanceCriteria": [
+    {
+      "criterion": "Open Mixamo workflow honesty",
+      "status": "passed",
+      "evidence": [
+        "api/src/animation.test.mjs"
+      ],
+      "notes": ""
+    },
+    {
+      "criterion": "Rig mismatch preserves prior assignment",
+      "status": "passed",
+      "evidence": [
+        "api/src/animation.test.mjs"
+      ],
+      "notes": ""
+    },
+    {
+      "criterion": "Refuse tracked XR override",
+      "status": "passed",
+      "evidence": [
+        "api/src/animation.test.mjs"
+      ],
+      "notes": ""
+    },
+    {
+      "criterion": "Real Mixamo Adobe download",
+      "status": "pending",
+      "evidence": [],
+      "notes": "Requires Kingsley Adobe session"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "Tools/HertzStudio/api/src/animation.mjs",
+      "purpose": "Animation assignments",
+      "risk": "medium"
+    },
+    {
+      "path": "Tools/HertzStudio/web/src/pages/Animation.jsx",
+      "purpose": "W09 UI",
+      "risk": "low"
+    }
+  ],
+  "apiContracts": [
+    "GET /api/animation/slots",
+    "POST /api/animation/imports",
+    "POST /api/animation/assign"
+  ],
+  "persistedSchemas": [
+    "store.animation"
+  ],
+  "migrations": [],
+  "unityAssetsCreatedOrChanged": [],
+  "scenesTouched": [],
+  "sampleSceneHashBefore": "9FB1EFEAC51BD4AEE87A5DD23CD3613DB054EA41BC82977F0ADAF27CA5E5F4D9",
+  "sampleSceneHashAfter": "9FB1EFEAC51BD4AEE87A5DD23CD3613DB054EA41BC82977F0ADAF27CA5E5F4D9",
+  "tests": [
+    {
+      "command": "node --test api/src/animation.test.mjs",
+      "workingDirectory": "Tools/HertzStudio",
+      "startedAt": "2026-10-26T03:16:59.977Z",
+      "completedAt": "2026-10-26T03:16:59.977Z",
+      "exitCode": 0,
+      "counts": "pass 3",
+      "result": "passed",
+      "limitations": ""
+    }
+  ],
+  "proofArtifacts": [
+    {
+      "path": "Tools/HertzStudio/data/w09-api-proof.json",
+      "schemaVersion": 1,
+      "generatedAt": "2026-10-26T03:16:59.977Z",
+      "sourceIdentity": "local-api-tests",
+      "sceneRevision": "n/a-api",
+      "fresh": true
+    }
+  ],
+  "manualChecksCompleted": [],
+  "manualChecksPending": [],
+  "externalChecksPending": [
+    "Real Mixamo FBX",
+    "Unity Play Mode transitions"
+  ],
+  "knownLimitations": [
+    "Live Unity apply pending Editor domain reload for new bridge routes"
+  ],
+  "securityNotes": [],
+  "backwardCompatibility": [
+    "Preserves W01-W07 Studio APIs and XR protections"
+  ],
+  "rollbackOrRecovery": [
+    "Revert milestone module + routes; restore milestone-gates.json gates for this id"
+  ],
+  "reviewHotspots": [],
+  "claimsNotProven": [
+    "Browser preview of Unity Humanoid",
+    "Live Unity vertical apply after domain reload"
+  ],
+  "status": "In progress"
+}

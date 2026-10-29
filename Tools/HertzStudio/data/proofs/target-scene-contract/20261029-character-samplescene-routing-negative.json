@@ -1,0 +1,24 @@
+﻿{
+    "schemaVersion":  1,
+    "capturedAt":  "2026-10-29T00:42:59.1408723Z",
+    "operation":  "character_shared_target_negative_route_proof",
+    "targetScene":  {
+                        "path":  "Assets/Scenes/SampleScene.unity",
+                        "guid":  "55daccc09a3b69647bbab145b54a3ab3",
+                        "expectedRevision":  46
+                    },
+    "response":  {
+                     "httpStatus":  400,
+                     "body":  {
+                                  "status":  "failed",
+                                  "requestId":  "codex-character-route-negative-20261029",
+                                  "error":  "Synced HertzCharacterDefinition not found or characterId mismatch."
+                              }
+                 },
+    "safety":  {
+                   "sceneSha256Before":  "9FB1EFEAC51BD4AEE87A5DD23CD3613DB054EA41BC82977F0ADAF27CA5E5F4D9",
+                   "sceneSha256After":  "9FB1EFEAC51BD4AEE87A5DD23CD3613DB054EA41BC82977F0ADAF27CA5E5F4D9",
+                   "unchanged":  true,
+                   "expectedFailureBeforeSceneMutation":  true
+               }
+}

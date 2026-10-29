@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b76f52a3dc1d8dc44a31cf942e7b6365, type: 3}
+  m_Name: W05_Test_Rush_Visual
+  m_EditorClassIdentifier: 
+  characterId: W05_Test_Rush_visual
+  displayName: W05_Test_Rush Visual
+  kind: 1
+  enabled: 1
+  modelPrefab: {fileID: 0}
+  scale: 1
+  replaceTrackedXrRig: 0
+  idleClip: {fileID: 7400000, guid: 57eae99008cc6414a9936af754999532, type: 2}
+  attackClip: {fileID: 7400000, guid: 9d70f570f7dc7d04f94f1fa24d8686e4, type: 2}
+  locomotionClip: {fileID: 7400000, guid: 3955b30f130fa4c46a167814d324d0a9, type: 2}
+  idleController: {fileID: 0}
+  attackController: {fileID: 0}
+  locomotionController: {fileID: 0}
+  studioVersion: 1
+  studioPayloadHash: test

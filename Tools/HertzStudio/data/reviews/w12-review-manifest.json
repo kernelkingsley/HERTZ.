@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "milestone": "W12",
+  "generatedAt": "2026-10-26T07:04:28.680Z",
+  "branch": "main",
+  "head": "7374e57c3f8cfef316a18d6606d5e1385b39170e",
+  "implementationStatus": "vertical_paths_implemented_unity_live_pending",
+  "scope": [
+    "Encounter definitions",
+    "validation",
+    "reset token"
+  ],
+  "acceptanceCriteria": [
+    {
+      "criterion": "Reject SampleScene/invalid timing/missing refs/XR",
+      "status": "passed",
+      "evidence": [
+        "api/src/encounters.test.mjs"
+      ],
+      "notes": ""
+    },
+    {
+      "criterion": "Version conflicts + reset token",
+      "status": "passed",
+      "evidence": [
+        "api/src/encounters.test.mjs"
+      ],
+      "notes": ""
+    },
+    {
+      "criterion": "Unity Play Mode spawn observation",
+      "status": "pending",
+      "evidence": [],
+      "notes": ""
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "Tools/HertzStudio/api/src/encounters.mjs",
+      "purpose": "Encounters",
+      "risk": "medium"
+    },
+    {
+      "path": "Tools/HertzStudio/web/src/pages/Encounters.jsx",
+      "purpose": "W12 UI",
+      "risk": "low"
+    }
+  ],
+  "apiContracts": [
+    "GET/POST /api/encounters",
+    "POST /api/encounters/:id/reset"
+  ],
+  "persistedSchemas": [
+    "store.encounters"
+  ],
+  "migrations": [],
+  "unityAssetsCreatedOrChanged": [],
+  "scenesTouched": [],
+  "sampleSceneHashBefore": "9FB1EFEAC51BD4AEE87A5DD23CD3613DB054EA41BC82977F0ADAF27CA5E5F4D9",
+  "sampleSceneHashAfter": "9FB1EFEAC51BD4AEE87A5DD23CD3613DB054EA41BC82977F0ADAF27CA5E5F4D9",
+  "tests": [
+    {
+      "command": "node --test api/src/encounters.test.mjs",
+      "workingDirectory": "Tools/HertzStudio",
+      "startedAt": "2026-10-26T03:16:59.977Z",
+      "completedAt": "2026-10-26T03:16:59.977Z",
+      "exitCode": 0,
+      "counts": "pass 3",
+      "result": "passed",
+      "limitations": ""
+    }
+  ],
+  "proofArtifacts": [
+    {
+      "path": "Tools/HertzStudio/data/w12-api-proof.json",
+      "schemaVersion": 1,
+      "generatedAt": "2026-10-26T03:16:59.977Z",
+      "sourceIdentity": "local-api-tests",
+      "sceneRevision": "n/a-api",
+      "fresh": true
+    }
+  ],
+  "manualChecksCompleted": [],
+  "manualChecksPending": [],
+  "externalChecksPending": [],
+  "knownLimitations": [
+    "Live Unity apply pending Editor domain reload for new bridge routes"
+  ],
+  "securityNotes": [],
+  "backwardCompatibility": [
+    "Preserves W01-W07 Studio APIs and XR protections"
+  ],
+  "rollbackOrRecovery": [
+    "Revert milestone module + routes; restore milestone-gates.json gates for this id"
+  ],
+  "reviewHotspots": [],
+  "claimsNotProven": [
+    "Runtime spawn visuals",
+    "Live Unity vertical apply after domain reload"
+  ],
+  "status": "In progress"
+}

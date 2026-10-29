@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "milestone": "W08",
+  "generatedAt": "2026-10-26T07:04:28.680Z",
+  "branch": "main",
+  "head": "7374e57c3f8cfef316a18d6606d5e1385b39170e",
+  "implementationStatus": "vertical_paths_implemented_unity_live_pending",
+  "scope": [
+    "Poly Haven metadata client",
+    "Materials/Lighting page",
+    "surface/HDRI/Terrain validation APIs"
+  ],
+  "acceptanceCriteria": [
+    {
+      "criterion": "Poly Haven download intent + dedupe",
+      "status": "passed",
+      "evidence": [
+        "api/src/polyhaven.test.mjs",
+        "data/w08-api-proof.json"
+      ],
+      "notes": ""
+    },
+    {
+      "criterion": "Floor/wall independent assign + undo + shared protect + stale revision",
+      "status": "passed",
+      "evidence": [
+        "api/src/materials.test.mjs"
+      ],
+      "notes": ""
+    },
+    {
+      "criterion": "Reject fake Terrain and SampleScene",
+      "status": "passed",
+      "evidence": [
+        "api/src/materials.test.mjs"
+      ],
+      "notes": ""
+    },
+    {
+      "criterion": "Unity TerrainLayer + HDRI apply on dedicated scene",
+      "status": "pending",
+      "evidence": [],
+      "notes": "Bridge Unity mutation pending"
+    },
+    {
+      "criterion": "SampleScene hash unchanged",
+      "status": "passed",
+      "evidence": [
+        "sampleSceneHashAfter"
+      ],
+      "notes": "9FB1EFEAC51BD4AEE87A5DD23CD3613DB054EA41BC82977F0ADAF27CA5E5F4D9"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "Tools/HertzStudio/api/src/polyhaven.mjs",
+      "purpose": "Poly Haven client",
+      "risk": "medium"
+    },
+    {
+      "path": "Tools/HertzStudio/api/src/materials.mjs",
+      "purpose": "Surface/HDRI assignments",
+      "risk": "medium"
+    },
+    {
+      "path": "Tools/HertzStudio/web/src/pages/Materials.jsx",
+      "purpose": "W08 UI",
+      "risk": "low"
+    }
+  ],
+  "apiContracts": [
+    "GET /api/polyhaven/assets",
+    "POST /api/polyhaven/download-intent",
+    "POST /api/materials/assign",
+    "POST /api/materials/undo",
+    "POST /api/materials/hdri"
+  ],
+  "persistedSchemas": [
+    "store.materials",
+    "store.polyHaven"
+  ],
+  "migrations": [],
+  "unityAssetsCreatedOrChanged": [],
+  "scenesTouched": [],
+  "sampleSceneHashBefore": "9FB1EFEAC51BD4AEE87A5DD23CD3613DB054EA41BC82977F0ADAF27CA5E5F4D9",
+  "sampleSceneHashAfter": "9FB1EFEAC51BD4AEE87A5DD23CD3613DB054EA41BC82977F0ADAF27CA5E5F4D9",
+  "tests": [
+    {
+      "command": "node --test api/src/materials.test.mjs api/src/polyhaven.test.mjs",
+      "workingDirectory": "Tools/HertzStudio",
+      "startedAt": "2026-10-26T03:16:59.977Z",
+      "completedAt": "2026-10-26T03:16:59.977Z",
+      "exitCode": 0,
+      "counts": "pass 8",
+      "result": "passed",
+      "limitations": "no live Poly Haven network assert in unit tests"
+    }
+  ],
+  "proofArtifacts": [
+    {
+      "path": "Tools/HertzStudio/data/w08-api-proof.json",
+      "schemaVersion": 1,
+      "generatedAt": "2026-10-26T03:16:59.977Z",
+      "sourceIdentity": "local-api-tests",
+      "sceneRevision": "n/a-api",
+      "fresh": true
+    }
+  ],
+  "manualChecksCompleted": [],
+  "manualChecksPending": [
+    "Browser Materials page against live API"
+  ],
+  "externalChecksPending": [
+    "Unity TerrainLayer proof",
+    "live Poly Haven download into Asset Library"
+  ],
+  "knownLimitations": [
+    "Unity apply path not fully exercised in this run",
+    "Live Unity apply pending Editor domain reload for new bridge routes"
+  ],
+  "securityNotes": [],
+  "backwardCompatibility": [
+    "Preserves W01-W07 Studio APIs and XR protections"
+  ],
+  "rollbackOrRecovery": [
+    "Revert milestone module + routes; restore milestone-gates.json gates for this id"
+  ],
+  "reviewHotspots": [
+    {
+      "file": "materials.mjs",
+      "reason": "shared material + terrain gates",
+      "invariants": "SampleScene never targeted; terrain requires isActualTerrain"
+    }
+  ],
+  "claimsNotProven": [
+    "Unity HDRI environment visual change",
+    "Live Unity vertical apply after domain reload"
+  ],
+  "status": "In progress"
+}

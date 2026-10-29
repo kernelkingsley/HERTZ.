@@ -1,0 +1,98 @@
+{
+    "ghost":  [
+
+              ],
+    "w06proof":  [
+                     {
+                         "captureId":  "w06proof_19cbcb5a213946849a38c8bff08c1997",
+                         "file":  "captures/w06proof_19cbcb5a213946849a38c8bff08c1997.json",
+                         "status":  "pending",
+                         "createdAt":  "2026-10-26T16:04:31.4438400Z",
+                         "payloadSha256":  "ab1dc9ee4d51270d623f39e7950fc19019b7b11c2cb1c6a48d5e7d39eccade69",
+                         "sequence":  5,
+                         "bytes":  19,
+                         "lastError":  ""
+                     },
+                     {
+                         "captureId":  "w06proof_78a2ba2bb691430ea9b0a670e4afe12d",
+                         "file":  "captures/w06proof_78a2ba2bb691430ea9b0a670e4afe12d.json",
+                         "status":  "pending",
+                         "createdAt":  "2026-10-26T16:04:31.4705736Z",
+                         "payloadSha256":  "969ec6fb40878e1832359363656de2f793884305870fea5d5147900357653591",
+                         "sequence":  6,
+                         "bytes":  19,
+                         "lastError":  ""
+                     },
+                     {
+                         "captureId":  "ghost_16665e37fda4443a8cb2d1bfc5b3ff9e",
+                         "file":  "captures/ghost_16665e37fda4443a8cb2d1bfc5b3ff9e.json",
+                         "status":  "corrupt",
+                         "createdAt":  "2026-10-26T16:04:31.4931279Z",
+                         "payloadSha256":  "00",
+                         "sequence":  7,
+                         "bytes":  0,
+                         "lastError":  "missing_payload"
+                     },
+                     {
+                         "captureId":  "w06proof_268ffd4e953b4606b998871f75803c62",
+                         "file":  "captures/w06proof_268ffd4e953b4606b998871f75803c62.json",
+                         "status":  "pending",
+                         "createdAt":  "2026-10-26T16:06:02.4890251Z",
+                         "payloadSha256":  "ab1dc9ee4d51270d623f39e7950fc19019b7b11c2cb1c6a48d5e7d39eccade69",
+                         "sequence":  13,
+                         "bytes":  19,
+                         "lastError":  ""
+                     },
+                     {
+                         "captureId":  "w06proof_2a2769dc10d24b61a2151ece29e3a3e6",
+                         "file":  "captures/w06proof_2a2769dc10d24b61a2151ece29e3a3e6.json",
+                         "status":  "pending",
+                         "createdAt":  "2026-10-26T16:06:02.5167683Z",
+                         "payloadSha256":  "969ec6fb40878e1832359363656de2f793884305870fea5d5147900357653591",
+                         "sequence":  14,
+                         "bytes":  19,
+                         "lastError":  ""
+                     },
+                     {
+                         "captureId":  "ghost_36265c05ea2042cdb7d10a9615990c2b",
+                         "file":  "captures/ghost_36265c05ea2042cdb7d10a9615990c2b.json",
+                         "status":  "corrupt",
+                         "createdAt":  "2026-10-26T16:06:02.5403958Z",
+                         "payloadSha256":  "00",
+                         "sequence":  15,
+                         "bytes":  0,
+                         "lastError":  "missing_payload"
+                     },
+                     {
+                         "captureId":  "w06proof_331bfe9dbd2f4969a5014a7a36d4c29b",
+                         "file":  "captures/w06proof_331bfe9dbd2f4969a5014a7a36d4c29b.json",
+                         "status":  "pending",
+                         "createdAt":  "2026-10-26T16:09:32.0242728Z",
+                         "payloadSha256":  "ab1dc9ee4d51270d623f39e7950fc19019b7b11c2cb1c6a48d5e7d39eccade69",
+                         "sequence":  22,
+                         "bytes":  19,
+                         "lastError":  ""
+                     },
+                     {
+                         "captureId":  "w06proof_24bda794153e4cfd9bb85ced2cf48e4e",
+                         "file":  "captures/w06proof_24bda794153e4cfd9bb85ced2cf48e4e.json",
+                         "status":  "pending",
+                         "createdAt":  "2026-10-26T16:09:32.0500940Z",
+                         "payloadSha256":  "969ec6fb40878e1832359363656de2f793884305870fea5d5147900357653591",
+                         "sequence":  23,
+                         "bytes":  19,
+                         "lastError":  ""
+                     },
+                     {
+                         "captureId":  "ghost_0419220ad50b4981a0feadc09c62d5ba",
+                         "file":  "captures/ghost_0419220ad50b4981a0feadc09c62d5ba.json",
+                         "status":  "corrupt",
+                         "createdAt":  "2026-10-26T16:09:32.0703089Z",
+                         "payloadSha256":  "00",
+                         "sequence":  24,
+                         "bytes":  0,
+                         "lastError":  "missing_payload"
+                     }
+                 ],
+    "note":  "Provable proof pollution only; do not delete ambiguous random IDs"
+}

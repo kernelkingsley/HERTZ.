@@ -1,0 +1,19 @@
+{
+  "name": "@hertz-studio/api",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.mjs",
+    "start": "node src/server.mjs",
+    "build": "node -e \"console.log('api: no transpile step')"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "multer": "^2.4.0",
+    "uuid": "^11.1.1",
+    "yauzl": "^3.4.0"
+  }
+}

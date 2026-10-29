@@ -1,0 +1,24 @@
+{
+  "name": "HertzStudio.Editor",
+  "rootNamespace": "HertzStudio.Editor",
+  "references": [
+    "HertzStudio.Runtime",
+    "Hertz.Weapons",
+    "Hertz.Characters",
+    "Hertz.Analytics",
+    "Hertz.Sound",
+    "Unity.InputSystem",
+    "UnityEngine.UI"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

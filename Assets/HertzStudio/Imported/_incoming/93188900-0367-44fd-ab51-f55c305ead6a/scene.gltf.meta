@@ -1,0 +1,52 @@
+fileFormatVersion: 2
+guid: 0df4865a5b1404d46affb52f06921e90
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 715df9372183c47e389bb6e19fbc3b52, type: 3}
+  editorImportSettings:
+    generateSecondaryUVSet: 0
+  importSettings:
+    nodeNameMethod: 1
+    animationMethod: 2
+    generateMipMaps: 1
+    texturesReadable: 0
+    defaultMinFilterMode: 9729
+    defaultMagFilterMode: 9729
+    anisotropicFilterLevel: 1
+  instantiationSettings:
+    mask: -1
+    layer: 0
+    skinUpdateWhenOffscreen: 1
+    lightIntensityFactor: 1
+    sceneObjectCreation: 2
+  assetDependencies:
+  - type: 0
+    originalUri: Assets\HertzStudio\Imported\_incoming\93188900-0367-44fd-ab51-f55c305ead6a\scene.bin
+    assetPath: Assets\HertzStudio\Imported\_incoming\93188900-0367-44fd-ab51-f55c305ead6a\scene.bin
+  - type: 1
+    originalUri: Assets\HertzStudio\Imported\_incoming\93188900-0367-44fd-ab51-f55c305ead6a\textures\s_car_baseColor.jpeg
+    assetPath: Assets\HertzStudio\Imported\_incoming\93188900-0367-44fd-ab51-f55c305ead6a\textures\s_car_baseColor.jpeg
+  - type: 1
+    originalUri: Assets\HertzStudio\Imported\_incoming\93188900-0367-44fd-ab51-f55c305ead6a\textures\s_car_metallicRoughness.png
+    assetPath: Assets\HertzStudio\Imported\_incoming\93188900-0367-44fd-ab51-f55c305ead6a\textures\s_car_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\HertzStudio\Imported\_incoming\93188900-0367-44fd-ab51-f55c305ead6a\textures\s_car_normal.jpeg
+    assetPath: Assets\HertzStudio\Imported\_incoming\93188900-0367-44fd-ab51-f55c305ead6a\textures\s_car_normal.jpeg
+  - type: 1
+    originalUri: Assets\HertzStudio\Imported\_incoming\93188900-0367-44fd-ab51-f55c305ead6a\textures\s_car_clearcoat.png
+    assetPath: Assets\HertzStudio\Imported\_incoming\93188900-0367-44fd-ab51-f55c305ead6a\textures\s_car_clearcoat.png
+  - type: 1
+    originalUri: Assets\HertzStudio\Imported\_incoming\93188900-0367-44fd-ab51-f55c305ead6a\textures\glass_normal.jpeg
+    assetPath: Assets\HertzStudio\Imported\_incoming\93188900-0367-44fd-ab51-f55c305ead6a\textures\glass_normal.jpeg
+  - type: 1
+    originalUri: Assets\HertzStudio\Imported\_incoming\93188900-0367-44fd-ab51-f55c305ead6a\textures\Material_baseColor.jpeg
+    assetPath: Assets\HertzStudio\Imported\_incoming\93188900-0367-44fd-ab51-f55c305ead6a\textures\Material_baseColor.jpeg
+  reportItems:
+  - type: 2
+    code: 31
+    messages: []

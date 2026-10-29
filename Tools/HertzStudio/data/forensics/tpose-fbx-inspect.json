@@ -1,0 +1,138 @@
+{
+  "fbx": "C:\\Users\\Kingsley\\HERTZ\\Tools\\HertzStudio\\data\\private\\assets\\ab7afcbf-a39e-4b94-ba9a-912d83ef1288.fbx",
+  "blender": "5.2.2 LTS",
+  "armatureCount": 1,
+  "armatureNames": [
+    "Armature"
+  ],
+  "meshCount": 1,
+  "meshNames": [
+    "SM_Mixamo_Proxy"
+  ],
+  "boneCount": 33,
+  "bones": [
+    "mixamorig:Hips",
+    "mixamorig:Spine",
+    "mixamorig:Spine1",
+    "mixamorig:Spine2",
+    "mixamorig:Neck",
+    "mixamorig:Head",
+    "mixamorig:HeadTop_End",
+    "mixamorig:LeftShoulder",
+    "mixamorig:LeftArm",
+    "mixamorig:LeftForeArm",
+    "mixamorig:LeftHand",
+    "mixamorig:LeftHandIndex1",
+    "mixamorig:LeftHandIndex2",
+    "mixamorig:LeftHandIndex3",
+    "mixamorig:LeftHandIndex4",
+    "mixamorig:RightShoulder",
+    "mixamorig:RightArm",
+    "mixamorig:RightForeArm",
+    "mixamorig:RightHand",
+    "mixamorig:RightHandIndex1",
+    "mixamorig:RightHandIndex2",
+    "mixamorig:RightHandIndex3",
+    "mixamorig:RightHandIndex4",
+    "mixamorig:LeftUpLeg",
+    "mixamorig:LeftLeg",
+    "mixamorig:LeftFoot",
+    "mixamorig:LeftToeBase",
+    "mixamorig:LeftToe_End",
+    "mixamorig:RightUpLeg",
+    "mixamorig:RightLeg",
+    "mixamorig:RightFoot",
+    "mixamorig:RightToeBase",
+    "mixamorig:RightToe_End"
+  ],
+  "boneParents": {
+    "mixamorig:Hips": null,
+    "mixamorig:Spine": "mixamorig:Hips",
+    "mixamorig:Spine1": "mixamorig:Spine",
+    "mixamorig:Spine2": "mixamorig:Spine1",
+    "mixamorig:Neck": "mixamorig:Spine2",
+    "mixamorig:Head": "mixamorig:Neck",
+    "mixamorig:HeadTop_End": "mixamorig:Head",
+    "mixamorig:LeftShoulder": "mixamorig:Spine2",
+    "mixamorig:LeftArm": "mixamorig:LeftShoulder",
+    "mixamorig:LeftForeArm": "mixamorig:LeftArm",
+    "mixamorig:LeftHand": "mixamorig:LeftForeArm",
+    "mixamorig:LeftHandIndex1": "mixamorig:LeftHand",
+    "mixamorig:LeftHandIndex2": "mixamorig:LeftHandIndex1",
+    "mixamorig:LeftHandIndex3": "mixamorig:LeftHandIndex2",
+    "mixamorig:LeftHandIndex4": "mixamorig:LeftHandIndex3",
+    "mixamorig:RightShoulder": "mixamorig:Spine2",
+    "mixamorig:RightArm": "mixamorig:RightShoulder",
+    "mixamorig:RightForeArm": "mixamorig:RightArm",
+    "mixamorig:RightHand": "mixamorig:RightForeArm",
+    "mixamorig:RightHandIndex1": "mixamorig:RightHand",
+    "mixamorig:RightHandIndex2": "mixamorig:RightHandIndex1",
+    "mixamorig:RightHandIndex3": "mixamorig:RightHandIndex2",
+    "mixamorig:RightHandIndex4": "mixamorig:RightHandIndex3",
+    "mixamorig:LeftUpLeg": "mixamorig:Hips",
+    "mixamorig:LeftLeg": "mixamorig:LeftUpLeg",
+    "mixamorig:LeftFoot": "mixamorig:LeftLeg",
+    "mixamorig:LeftToeBase": "mixamorig:LeftFoot",
+    "mixamorig:LeftToe_End": "mixamorig:LeftToeBase",
+    "mixamorig:RightUpLeg": "mixamorig:Hips",
+    "mixamorig:RightLeg": "mixamorig:RightUpLeg",
+    "mixamorig:RightFoot": "mixamorig:RightLeg",
+    "mixamorig:RightToeBase": "mixamorig:RightFoot",
+    "mixamorig:RightToe_End": "mixamorig:RightToeBase"
+  },
+  "handBones": [
+    "mixamorig:LeftHand",
+    "mixamorig:LeftHandIndex1",
+    "mixamorig:LeftHandIndex2",
+    "mixamorig:LeftHandIndex3",
+    "mixamorig:LeftHandIndex4",
+    "mixamorig:RightHand",
+    "mixamorig:RightHandIndex1",
+    "mixamorig:RightHandIndex2",
+    "mixamorig:RightHandIndex3",
+    "mixamorig:RightHandIndex4"
+  ],
+  "fingerBones": [
+    "mixamorig:LeftHandIndex1",
+    "mixamorig:LeftHandIndex2",
+    "mixamorig:LeftHandIndex3",
+    "mixamorig:LeftHandIndex4",
+    "mixamorig:RightHandIndex1",
+    "mixamorig:RightHandIndex2",
+    "mixamorig:RightHandIndex3",
+    "mixamorig:RightHandIndex4"
+  ],
+  "fingerBoneCount": 8,
+  "hasFingerRig": true,
+  "handCenters": {
+    "mixamorig:LeftHand": [
+      -0.0035,
+      -0.0067,
+      0.0001
+    ],
+    "mixamorig:RightHand": [
+      0.0035,
+      -0.0067,
+      0.0001
+    ]
+  },
+  "materials": [],
+  "images": [],
+  "meshBounds": [
+    {
+      "name": "SM_Mixamo_Proxy",
+      "verts": 49688,
+      "min": [
+        -0.0043,
+        -0.0116,
+        -0.0011
+      ],
+      "max": [
+        0.0043,
+        -0.0,
+        0.0011
+      ]
+    }
+  ],
+  "note": "Mixamo T-Pose often has palms facing body; hands can look glued until rest pose / animation. Finger grip needs finger bones + animation or IK, not just presence."
+}

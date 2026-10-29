@@ -1,0 +1,41 @@
+﻿{
+    "capturedAt":  "2026-10-28T22:50:25.6914843Z",
+    "target":  {
+                   "scenePath":  "Assets/Scenes/HertzWeaponTest.unity",
+                   "sceneGuid":  "7d2d09808beb3e749aaf2f2a6f47a30b"
+               },
+    "deployments":  [
+                        {
+                            "requestId":  "target-scene-final-a-1793227812389",
+                            "status":  "applied",
+                            "scenePath":  "Assets/Scenes/HertzWeaponTest.unity",
+                            "sceneGuid":  "7d2d09808beb3e749aaf2f2a6f47a30b",
+                            "managedObjectId":  "GlobalObjectId_V1-2-7d2d09808beb3e749aaf2f2a6f47a30b-1328368075-0"
+                        },
+                        {
+                            "requestId":  "target-scene-final-b-1793227812389",
+                            "status":  "applied",
+                            "scenePath":  "Assets/Scenes/HertzWeaponTest.unity",
+                            "sceneGuid":  "7d2d09808beb3e749aaf2f2a6f47a30b",
+                            "managedObjectId":  "GlobalObjectId_V1-2-7d2d09808beb3e749aaf2f2a6f47a30b-1328368075-0"
+                        }
+                    ],
+    "assertions":  {
+                       "bothApplied":  true,
+                       "acknowledgedSceneIdentityMatches":  true,
+                       "managedObjectIdStable":  true,
+                       "sampleSceneUnchanged":  true
+                   },
+    "hashes":  {
+                   "sampleSceneBefore":  "9fb1efeac51bd4aee87a5dd23cd3613db054ea41bc82977f0adaf27ca5e5f4d9",
+                   "sampleSceneAfter":  "9fb1efeac51bd4aee87a5dd23cd3613db054ea41bc82977f0adaf27ca5e5f4d9",
+                   "targetSceneBefore":  "531a508668ba0a48872236d7b0aa931ec67752157cb8f60d5b0d022d4b15652e",
+                   "targetSceneAfter":  "531a508668ba0a48872236d7b0aa931ec67752157cb8f60d5b0d022d4b15652e"
+               },
+    "health":  {
+                   "apiHttpStatus":  200,
+                   "unityBridgeHttpStatus":  200,
+                   "unityBridgePort":  8795
+               },
+    "recoveryCopy":  "Tools/HertzStudio/data/recovery/HertzWeaponTest.before-target-review-final.unity"
+}

@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "milestone": "W13",
+  "generatedAt": "2026-10-26T07:04:28.680Z",
+  "branch": "main",
+  "head": "7374e57c3f8cfef316a18d6606d5e1385b39170e",
+  "implementationStatus": "vertical_paths_implemented_unity_live_pending",
+  "scope": [
+    "Integration matrix",
+    "recovery documentation",
+    "aggregate local suites"
+  ],
+  "acceptanceCriteria": [
+    {
+      "criterion": "Integration matrix maps workflows to proof types",
+      "status": "passed",
+      "evidence": [
+        "data/w13-integration-matrix.json"
+      ],
+      "notes": ""
+    },
+    {
+      "criterion": "W08-W12 local suites green in aggregate",
+      "status": "passed",
+      "evidence": [
+        "data/w13-integration-proof.json",
+        "regress:w08-w14"
+      ],
+      "notes": "filled by regress"
+    },
+    {
+      "criterion": "Hosted/remote claims",
+      "status": "pending",
+      "evidence": [],
+      "notes": "localhost only"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "Tools/HertzStudio/data/w13-integration-matrix.json",
+      "purpose": "Integration matrix",
+      "risk": "low"
+    },
+    {
+      "path": "Tools/HertzStudio/scripts/regress-w13.mjs",
+      "purpose": "Integration regress",
+      "risk": "low"
+    }
+  ],
+  "apiContracts": [],
+  "persistedSchemas": [],
+  "migrations": [],
+  "unityAssetsCreatedOrChanged": [],
+  "scenesTouched": [],
+  "sampleSceneHashBefore": "9FB1EFEAC51BD4AEE87A5DD23CD3613DB054EA41BC82977F0ADAF27CA5E5F4D9",
+  "sampleSceneHashAfter": "9FB1EFEAC51BD4AEE87A5DD23CD3613DB054EA41BC82977F0ADAF27CA5E5F4D9",
+  "tests": [
+    {
+      "command": "npm run regress:w13",
+      "workingDirectory": "Tools/HertzStudio",
+      "startedAt": "2026-10-26T03:16:59.977Z",
+      "completedAt": "2026-10-26T03:16:59.977Z",
+      "exitCode": 0,
+      "counts": "see aggregate",
+      "result": "passed",
+      "limitations": "Unity/hosted pending"
+    }
+  ],
+  "proofArtifacts": [
+    {
+      "path": "Tools/HertzStudio/data/w13-integration-proof.json",
+      "schemaVersion": 1,
+      "generatedAt": "2026-10-26T03:16:59.977Z",
+      "sourceIdentity": "local-integration",
+      "sceneRevision": "n/a",
+      "fresh": true
+    }
+  ],
+  "manualChecksCompleted": [],
+  "manualChecksPending": [],
+  "externalChecksPending": [],
+  "knownLimitations": [
+    "Live Unity apply pending Editor domain reload for new bridge routes"
+  ],
+  "securityNotes": [],
+  "backwardCompatibility": [
+    "Preserves W01-W07 Studio APIs and XR protections"
+  ],
+  "rollbackOrRecovery": [
+    "Revert milestone module + routes; restore milestone-gates.json gates for this id"
+  ],
+  "reviewHotspots": [],
+  "claimsNotProven": [
+    "remote hosting",
+    "Quest device",
+    "Live Unity vertical apply after domain reload"
+  ],
+  "status": "In progress"
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "buildId": "w06-runtime-proof",
+  "exportedAt": "2026-10-26T20:26:32.8560984Z",
+  "source": "unity_runtime",
+  "sessionId": "0a4e6bf46c414320bbe507f259cf3f61",
+  "levelId": "HertzWeaponTest",
+  "completed": false,
+  "events": [
+    {"eventId":"fd1df0de8f5d49cc916f1d55411bf986","type":"session_start","buildId":"w06-runtime-proof","sessionId":"0a4e6bf46c414320bbe507f259cf3f61","recordedAt":"2026-10-26T20:26:32.8460835Z","levelId":"HertzWeaponTest","tMs":0.01},
+    {"eventId":"1b1f30ad6cbf41f69c76c0ee16a3cabb","type":"level_start","buildId":"w06-runtime-proof","sessionId":"0a4e6bf46c414320bbe507f259cf3f61","recordedAt":"2026-10-26T20:26:32.8460835Z","levelId":"HertzWeaponTest","tMs":0.012},
+    {"eventId":"2d084b48278b43d3b4597c41ecece96e","type":"shot","buildId":"w06-runtime-proof","sessionId":"0a4e6bf46c414320bbe507f259cf3f61","recordedAt":"2026-10-26T20:26:32.8460835Z","levelId":"HertzWeaponTest","tMs":0.074,"weaponId":"0082064f-da62-4b33-b62d-956d1aeac5f7","weaponRole":"left_pistol","hit":false,"damage":0},
+    {"eventId":"e771977f7b0d476d8908aa05ba1edd21","type":"level_end","buildId":"w06-runtime-proof","sessionId":"0a4e6bf46c414320bbe507f259cf3f61","recordedAt":"2026-10-26T20:26:32.8460835Z","levelId":"HertzWeaponTest","tMs":0.234,"completed":false},
+    {"eventId":"e8aef3c6a3ed41b68022685cef48ec50","type":"session_end","buildId":"w06-runtime-proof","sessionId":"0a4e6bf46c414320bbe507f259cf3f61","recordedAt":"2026-10-26T20:26:32.8460835Z","levelId":"HertzWeaponTest","tMs":0.235,"completed":false}
+  ]
+}

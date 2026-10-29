@@ -1,0 +1,31 @@
+---
+description: On every request, re-read project rules and look up the correct method before acting
+alwaysApply: true
+---
+
+# Every request
+
+Before acting on a prompt for this project, and again before the task is complete, open and read every `.mdc` file in `.cursor/rules/`. Text already present in the session is not a substitute for opening the files.
+
+Read the code rules on every task, including when no script is open:
+
+- `hertz.mdc`
+- `unity-vr-core.mdc`
+- `unity-csharp.mdc`
+- `unity-xr-interaction.mdc`
+- `unity-vr-performance.mdc`
+- `unity-agent-safety.mdc`
+- `unity-screenshot-proof.mdc`
+- `look-it-up.mdc`
+- `check-rules-first.mdc`
+- `work-plan.mdc`
+
+Also read any rule file added later. `alwaysApply: false` does not skip this read.
+
+Then:
+
+1. Re-read `WORK_PLAN.md` and follow its workflow for the active task. Read it again before starting each task. Update the implementation handoff when finished.
+2. Look up the correct way to do the task for the installed Unity and package versions. Use the project files, the installed package source, or the matching docs. Do not rely on memory when those sources can be checked.
+3. Make the smallest change that matches those rules and that lookup.
+
+Do not complete a task until every rule file has been read in that turn.

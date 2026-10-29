@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "milestone": "W10",
+  "generatedAt": "2026-10-26T07:04:28.680Z",
+  "branch": "main",
+  "head": "7374e57c3f8cfef316a18d6606d5e1385b39170e",
+  "implementationStatus": "vertical_paths_implemented_unity_live_pending",
+  "scope": [
+    "Performance capture ingest with honest source labels"
+  ],
+  "acceptanceCriteria": [
+    {
+      "criterion": "Source labels never claim Editor/browser as Quest",
+      "status": "passed",
+      "evidence": [
+        "api/src/performance.test.mjs"
+      ],
+      "notes": ""
+    },
+    {
+      "criterion": "Malformed non-finite rejected",
+      "status": "passed",
+      "evidence": [
+        "api/src/performance.test.mjs"
+      ],
+      "notes": ""
+    },
+    {
+      "criterion": "Pagination",
+      "status": "passed",
+      "evidence": [
+        "api/src/performance.test.mjs"
+      ],
+      "notes": ""
+    },
+    {
+      "criterion": "Real Quest 3S capture",
+      "status": "pending",
+      "evidence": [],
+      "notes": ""
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "Tools/HertzStudio/api/src/performance.mjs",
+      "purpose": "Capture ingest",
+      "risk": "medium"
+    },
+    {
+      "path": "Tools/HertzStudio/web/src/pages/Performance.jsx",
+      "purpose": "W10 UI",
+      "risk": "low"
+    }
+  ],
+  "apiContracts": [
+    "GET/POST /api/performance/captures"
+  ],
+  "persistedSchemas": [
+    "store.performance"
+  ],
+  "migrations": [],
+  "unityAssetsCreatedOrChanged": [],
+  "scenesTouched": [],
+  "sampleSceneHashBefore": "9FB1EFEAC51BD4AEE87A5DD23CD3613DB054EA41BC82977F0ADAF27CA5E5F4D9",
+  "sampleSceneHashAfter": "9FB1EFEAC51BD4AEE87A5DD23CD3613DB054EA41BC82977F0ADAF27CA5E5F4D9",
+  "tests": [
+    {
+      "command": "node --test api/src/performance.test.mjs",
+      "workingDirectory": "Tools/HertzStudio",
+      "startedAt": "2026-10-26T03:16:59.977Z",
+      "completedAt": "2026-10-26T03:16:59.977Z",
+      "exitCode": 0,
+      "counts": "pass 3",
+      "result": "passed",
+      "limitations": ""
+    }
+  ],
+  "proofArtifacts": [
+    {
+      "path": "Tools/HertzStudio/data/w10-api-proof.json",
+      "schemaVersion": 1,
+      "generatedAt": "2026-10-26T03:16:59.977Z",
+      "sourceIdentity": "local-api-tests",
+      "sceneRevision": "n/a-api",
+      "fresh": true
+    }
+  ],
+  "manualChecksCompleted": [],
+  "manualChecksPending": [],
+  "externalChecksPending": [
+    "Quest 3S device capture"
+  ],
+  "knownLimitations": [
+    "Live Unity apply pending Editor domain reload for new bridge routes"
+  ],
+  "securityNotes": [],
+  "backwardCompatibility": [
+    "Preserves W01-W07 Studio APIs and XR protections"
+  ],
+  "rollbackOrRecovery": [
+    "Revert milestone module + routes; restore milestone-gates.json gates for this id"
+  ],
+  "reviewHotspots": [],
+  "claimsNotProven": [
+    "Actual headset frame times",
+    "Live Unity vertical apply after domain reload"
+  ],
+  "status": "In progress"
+}

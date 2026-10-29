@@ -1,0 +1,316 @@
+{
+    "version": 1,
+    "nextSequence": 26,
+    "entries": [
+        {
+            "captureId": "c4d947ef9225425d86e70b157b8dd811",
+            "file": "captures/c4d947ef9225425d86e70b157b8dd811.json",
+            "status": "delivered",
+            "createdAt": "2026-10-26T15:21:49.2471000Z",
+            "payloadSha256": "",
+            "sequence": 0,
+            "bytes": 0,
+            "lastError": ""
+        },
+        {
+            "captureId": "0ae31a60e4bc448d9cf17d6bd613b2d4",
+            "file": "captures/0ae31a60e4bc448d9cf17d6bd613b2d4.json",
+            "status": "delivered",
+            "createdAt": "2026-10-26T15:21:49.2571016Z",
+            "payloadSha256": "",
+            "sequence": 0,
+            "bytes": 0,
+            "lastError": ""
+        },
+        {
+            "captureId": "a2032c756a694952b52817506c37fc49",
+            "file": "captures/a2032c756a694952b52817506c37fc49.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T15:21:49.2721058Z",
+            "payloadSha256": "",
+            "sequence": 0,
+            "bytes": 0,
+            "lastError": ""
+        },
+        {
+            "captureId": "25b0852d49844e318475a97ca5d7a4c1",
+            "file": "captures/25b0852d49844e318475a97ca5d7a4c1.json",
+            "status": "delivered",
+            "createdAt": "2026-10-26T15:25:15.8697587Z",
+            "payloadSha256": "",
+            "sequence": 0,
+            "bytes": 0,
+            "lastError": ""
+        },
+        {
+            "captureId": "1ac3eaf3af514770b85492d3fb4f3390",
+            "file": "captures/1ac3eaf3af514770b85492d3fb4f3390.json",
+            "status": "delivered",
+            "createdAt": "2026-10-26T15:25:15.8801818Z",
+            "payloadSha256": "",
+            "sequence": 0,
+            "bytes": 0,
+            "lastError": ""
+        },
+        {
+            "captureId": "814289d44eed41279c48316234f901f7",
+            "file": "captures/814289d44eed41279c48316234f901f7.json",
+            "status": "delivered",
+            "createdAt": "2026-10-26T15:25:15.8981921Z",
+            "payloadSha256": "",
+            "sequence": 0,
+            "bytes": 0,
+            "lastError": ""
+        },
+        {
+            "captureId": "ff15ef1752234767a70d4b94b342e387",
+            "file": "captures/ff15ef1752234767a70d4b94b342e387.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T16:03:19.3315785Z",
+            "payloadSha256": "6909ae63fceb9aca9a468921547c5a586bfd48bac0b9b9225c459cca3d28ebc7",
+            "sequence": 1,
+            "bytes": 19210,
+            "lastError": ""
+        },
+        {
+            "captureId": "70dabf2a3571484fae441c09a2fbbfa0",
+            "file": "captures/70dabf2a3571484fae441c09a2fbbfa0.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T16:04:31.2469012Z",
+            "payloadSha256": "53abc97a3540fc2481eef0b61514cf327732f121983abd0909c0944c1bb0e269",
+            "sequence": 2,
+            "bytes": 2753,
+            "lastError": ""
+        },
+        {
+            "captureId": "6667d3b5efde47f782ba1ca28dddf510",
+            "file": "captures/6667d3b5efde47f782ba1ca28dddf510.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T16:04:31.2842250Z",
+            "payloadSha256": "2e1f8bf9e5a6efb2201f92783db0ab3f250efa538da92ef6362ec482148dbfbe",
+            "sequence": 3,
+            "bytes": 1557,
+            "lastError": ""
+        },
+        {
+            "captureId": "f5fc3507c7144d5cae07ddfb9f401e8e",
+            "file": "captures/f5fc3507c7144d5cae07ddfb9f401e8e.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T16:04:31.3710645Z",
+            "payloadSha256": "53abc97a3540fc2481eef0b61514cf327732f121983abd0909c0944c1bb0e269",
+            "sequence": 4,
+            "bytes": 2753,
+            "lastError": ""
+        },
+        {
+            "captureId": "w06proof_19cbcb5a213946849a38c8bff08c1997",
+            "file": "captures/w06proof_19cbcb5a213946849a38c8bff08c1997.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T16:04:31.4438400Z",
+            "payloadSha256": "ab1dc9ee4d51270d623f39e7950fc19019b7b11c2cb1c6a48d5e7d39eccade69",
+            "sequence": 5,
+            "bytes": 19,
+            "lastError": ""
+        },
+        {
+            "captureId": "w06proof_78a2ba2bb691430ea9b0a670e4afe12d",
+            "file": "captures/w06proof_78a2ba2bb691430ea9b0a670e4afe12d.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T16:04:31.4705736Z",
+            "payloadSha256": "969ec6fb40878e1832359363656de2f793884305870fea5d5147900357653591",
+            "sequence": 6,
+            "bytes": 19,
+            "lastError": ""
+        },
+        {
+            "captureId": "ghost_16665e37fda4443a8cb2d1bfc5b3ff9e",
+            "file": "captures/ghost_16665e37fda4443a8cb2d1bfc5b3ff9e.json",
+            "status": "corrupt",
+            "createdAt": "2026-10-26T16:04:31.4931279Z",
+            "payloadSha256": "00",
+            "sequence": 7,
+            "bytes": 0,
+            "lastError": "missing_payload"
+        },
+        {
+            "captureId": "72a54ce8b8054a03bcff554fbe934b3a",
+            "file": "captures/72a54ce8b8054a03bcff554fbe934b3a.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T16:04:31.6842589Z",
+            "payloadSha256": "4e91a797e4131f76413359667a44574f8357d527c463873786a6c242a26ea7e4",
+            "sequence": 8,
+            "bytes": 3412,
+            "lastError": ""
+        },
+        {
+            "captureId": "8752f917fef846ef8b80255cc7748564",
+            "file": "captures/8752f917fef846ef8b80255cc7748564.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T16:05:47.4880258Z",
+            "payloadSha256": "6375490b53b40fa7ff03b91cc51dc59bda6a8003a48e0b10511a24cef0d95b4b",
+            "sequence": 9,
+            "bytes": 2904,
+            "lastError": ""
+        },
+        {
+            "captureId": "1a644b6c89b74a60883573a2ab82181a",
+            "file": "captures/1a644b6c89b74a60883573a2ab82181a.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T16:06:02.2648991Z",
+            "payloadSha256": "f1a3a91b60e758c91aeefdf0e863c086482b67113c0d78e395a9acf3e37bb210",
+            "sequence": 10,
+            "bytes": 3655,
+            "lastError": ""
+        },
+        {
+            "captureId": "4bc04aa299a947b49e65796df43dd7fa",
+            "file": "captures/4bc04aa299a947b49e65796df43dd7fa.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T16:06:02.3076872Z",
+            "payloadSha256": "fec28c7b43e2884273843cc83baf32bbf9543253b2b947d25219f9b5510d084f",
+            "sequence": 11,
+            "bytes": 1557,
+            "lastError": ""
+        },
+        {
+            "captureId": "b195b08c46614d92b572a21817ca1abb",
+            "file": "captures/b195b08c46614d92b572a21817ca1abb.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T16:06:02.4132836Z",
+            "payloadSha256": "f1a3a91b60e758c91aeefdf0e863c086482b67113c0d78e395a9acf3e37bb210",
+            "sequence": 12,
+            "bytes": 3655,
+            "lastError": ""
+        },
+        {
+            "captureId": "w06proof_268ffd4e953b4606b998871f75803c62",
+            "file": "captures/w06proof_268ffd4e953b4606b998871f75803c62.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T16:06:02.4890251Z",
+            "payloadSha256": "ab1dc9ee4d51270d623f39e7950fc19019b7b11c2cb1c6a48d5e7d39eccade69",
+            "sequence": 13,
+            "bytes": 19,
+            "lastError": ""
+        },
+        {
+            "captureId": "w06proof_2a2769dc10d24b61a2151ece29e3a3e6",
+            "file": "captures/w06proof_2a2769dc10d24b61a2151ece29e3a3e6.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T16:06:02.5167683Z",
+            "payloadSha256": "969ec6fb40878e1832359363656de2f793884305870fea5d5147900357653591",
+            "sequence": 14,
+            "bytes": 19,
+            "lastError": ""
+        },
+        {
+            "captureId": "ghost_36265c05ea2042cdb7d10a9615990c2b",
+            "file": "captures/ghost_36265c05ea2042cdb7d10a9615990c2b.json",
+            "status": "corrupt",
+            "createdAt": "2026-10-26T16:06:02.5403958Z",
+            "payloadSha256": "00",
+            "sequence": 15,
+            "bytes": 0,
+            "lastError": "missing_payload"
+        },
+        {
+            "captureId": "93c25f7963b64fe9b43ccc934b725d37",
+            "file": "captures/93c25f7963b64fe9b43ccc934b725d37.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T16:06:02.7325897Z",
+            "payloadSha256": "b959f5fc23aabe69c2c0768947c856158fd4b38531f5ab39b1fd2755bb688798",
+            "sequence": 16,
+            "bytes": 3412,
+            "lastError": ""
+        },
+        {
+            "captureId": "b224c61defeb4338b8c5b2f19dbe1aeb",
+            "file": "captures/b224c61defeb4338b8c5b2f19dbe1aeb.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T16:06:45.2261610Z",
+            "payloadSha256": "b50ae573ddcd5943b78b196386443bb6b3a011b803d6db7d429500f40aa630c1",
+            "sequence": 17,
+            "bytes": 2905,
+            "lastError": ""
+        },
+        {
+            "captureId": "f14a2c5651a040a885257dbdb9495ada",
+            "file": "captures/f14a2c5651a040a885257dbdb9495ada.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T16:08:47.1657515Z",
+            "payloadSha256": "b20f74af0640f716128d2b01c495eda5b592e746881e2fc69b4fe56b58ba5743",
+            "sequence": 18,
+            "bytes": 2906,
+            "lastError": ""
+        },
+        {
+            "captureId": "4b3f6c8253d445b08e92091f1be56c30",
+            "file": "captures/4b3f6c8253d445b08e92091f1be56c30.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T16:09:31.8252825Z",
+            "payloadSha256": "ff073c6c052c0a71dab003e41f45d04a1593f8b49ef0434fc3eec43174e62de8",
+            "sequence": 19,
+            "bytes": 3653,
+            "lastError": ""
+        },
+        {
+            "captureId": "23f2c10019694fcfa8084d75b3c7b751",
+            "file": "captures/23f2c10019694fcfa8084d75b3c7b751.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T16:09:31.8581067Z",
+            "payloadSha256": "c14d321ff8f6bbb92f7a5d529e227ba7008f30103fb88bdad8ce1084a4eb0bcb",
+            "sequence": 20,
+            "bytes": 1556,
+            "lastError": ""
+        },
+        {
+            "captureId": "a0d1184168eb4d9bb74db49bed90547f",
+            "file": "captures/a0d1184168eb4d9bb74db49bed90547f.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T16:09:31.9572399Z",
+            "payloadSha256": "ff073c6c052c0a71dab003e41f45d04a1593f8b49ef0434fc3eec43174e62de8",
+            "sequence": 21,
+            "bytes": 3653,
+            "lastError": ""
+        },
+        {
+            "captureId": "w06proof_331bfe9dbd2f4969a5014a7a36d4c29b",
+            "file": "captures/w06proof_331bfe9dbd2f4969a5014a7a36d4c29b.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T16:09:32.0242728Z",
+            "payloadSha256": "ab1dc9ee4d51270d623f39e7950fc19019b7b11c2cb1c6a48d5e7d39eccade69",
+            "sequence": 22,
+            "bytes": 19,
+            "lastError": ""
+        },
+        {
+            "captureId": "w06proof_24bda794153e4cfd9bb85ced2cf48e4e",
+            "file": "captures/w06proof_24bda794153e4cfd9bb85ced2cf48e4e.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T16:09:32.0500940Z",
+            "payloadSha256": "969ec6fb40878e1832359363656de2f793884305870fea5d5147900357653591",
+            "sequence": 23,
+            "bytes": 19,
+            "lastError": ""
+        },
+        {
+            "captureId": "ghost_0419220ad50b4981a0feadc09c62d5ba",
+            "file": "captures/ghost_0419220ad50b4981a0feadc09c62d5ba.json",
+            "status": "corrupt",
+            "createdAt": "2026-10-26T16:09:32.0703089Z",
+            "payloadSha256": "00",
+            "sequence": 24,
+            "bytes": 0,
+            "lastError": "missing_payload"
+        },
+        {
+            "captureId": "d47d383fe74747138ec1b2227fc161bb",
+            "file": "captures/d47d383fe74747138ec1b2227fc161bb.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T16:09:32.2580821Z",
+            "payloadSha256": "1cf7d0aa37eb045f45f6d2b0aa537ea248f6082375da8f3108146a8c6b0b421e",
+            "sequence": 25,
+            "bytes": 3413,
+            "lastError": ""
+        }
+    ]
+}

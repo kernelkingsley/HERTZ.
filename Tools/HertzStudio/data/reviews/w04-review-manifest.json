@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "milestone": "W04",
+  "generatedAt": "2026-10-26T03:10:00.000Z",
+  "branch": "main",
+  "head": "7374e57c3f8cfef316a18d6606d5e1385b39170e",
+  "implementationStatus": "Ready for Codex review",
+  "scope": [
+    "Source-prefab identity binding for managed weapon wrappers",
+    "Legacy sidecar recovery with proven nested source",
+    "Confirm path + source GUID verification",
+    "Model-change invalidates incompatible wrappers"
+  ],
+  "acceptanceCriteria": [
+    {
+      "criterion": "Authoritative Asset Library prefab path used for create-anchor-wrapper",
+      "status": "passed",
+      "evidence": ["api/src/weapons.mjs#resolveAuthoritativeWeaponSourcePrefab", "api/src/weapons.test.mjs"],
+      "notes": "Caller path must normalize to exact authoritative path"
+    },
+    {
+      "criterion": "Caller source substitution rejected with wrapper_source_mismatch",
+      "status": "passed",
+      "evidence": ["api/src/weapons.test.mjs"],
+      "notes": ""
+    },
+    {
+      "criterion": "Existing wrapper reuse compares source path/GUID/weaponId",
+      "status": "passed",
+      "evidence": ["Assets/Editor/HertzStudio/HertzWeaponAnchorUtility.cs"],
+      "notes": "Unity Editor domain reload required for live bridge proof"
+    },
+    {
+      "criterion": "Legacy confirmation reconstructs nested source or refuses",
+      "status": "passed",
+      "evidence": ["HertzWeaponAnchorUtility.TryResolveWrapperSourceIdentity"],
+      "notes": "Live bridge confirm pending token/session proof"
+    },
+    {
+      "criterion": "Model A→B clears incompatible wrapper metadata",
+      "status": "passed",
+      "evidence": ["api/src/weapons.test.mjs"],
+      "notes": ""
+    },
+    {
+      "criterion": "Direct Grip/Muzzle without wrapper still syncs",
+      "status": "passed",
+      "evidence": ["api/src/weapons.test.mjs"],
+      "notes": ""
+    },
+    {
+      "criterion": "Browser E2E",
+      "status": "pending",
+      "evidence": [],
+      "notes": "HERTZ_OWNER_PASSWORD unavailable"
+    }
+  ],
+  "changedFiles": [
+    { "path": "Tools/HertzStudio/api/src/weapons.mjs", "purpose": "Authoritative source resolve + model-change invalidate", "risk": "high" },
+    { "path": "Tools/HertzStudio/api/src/server.mjs", "purpose": "Create/confirm bind to authoritative source", "risk": "high" },
+    { "path": "Tools/HertzStudio/api/src/assets/catalog.mjs", "purpose": "Expose prefabGuid on public assets", "risk": "low" },
+    { "path": "Assets/Editor/HertzStudio/HertzWeaponAnchorUtility.cs", "purpose": "Source identity on create/reuse/confirm", "risk": "high" },
+    { "path": "Assets/Editor/HertzStudio/HertzStudioHttpBridge.cs", "purpose": "Pass expected GUID/path on create/confirm", "risk": "medium" },
+    { "path": "Tools/HertzStudio/api/src/weapons.test.mjs", "purpose": "Source-identity regressions", "risk": "low" }
+  ],
+  "apiContracts": [
+    "POST /api/weapons/:id/create-anchor-wrapper — authoritative source only; 409 wrapper_source_mismatch",
+    "POST /api/weapons/:id/confirm-anchor-wrapper — saved path + expected source identity"
+  ],
+  "persistedSchemas": ["weapon.wrapperAnchorMeta.sourcePrefabPath/Guid/modelAssetId"],
+  "migrations": [],
+  "unityAssetsCreatedOrChanged": [],
+  "scenesTouched": [],
+  "sampleSceneHashBefore": "9FB1EFEAC51BD4AEE87A5DD23CD3613DB054EA41BC82977F0ADAF27CA5E5F4D9",
+  "sampleSceneHashAfter": "9FB1EFEAC51BD4AEE87A5DD23CD3613DB054EA41BC82977F0ADAF27CA5E5F4D9",
+  "tests": [
+    {
+      "command": "node --test Tools/HertzStudio/api/src/weapons.test.mjs",
+      "workingDirectory": "c:/Users/Kingsley/HERTZ",
+      "startedAt": "2026-10-26T03:07:00.000Z",
+      "completedAt": "2026-10-26T03:07:12.000Z",
+      "exitCode": 0,
+      "counts": "43/43",
+      "result": "passed",
+      "limitations": ""
+    },
+    {
+      "command": "vitest run ModelViewer.readiness WeaponStudioFirePreview Weapons",
+      "workingDirectory": "Tools/HertzStudio/web",
+      "startedAt": "2026-10-26T03:08:36.000Z",
+      "completedAt": "2026-10-26T03:08:39.000Z",
+      "exitCode": 0,
+      "counts": "25/25",
+      "result": "passed",
+      "limitations": ""
+    }
+  ],
+  "proofArtifacts": [
+    {
+      "path": "Tools/HertzStudio/data/w04-wrapper-legacy-recovery-proof.json",
+      "schemaVersion": 1,
+      "generatedAt": "2026-10-26T02:51:32.655Z",
+      "sourceIdentity": "api_unit_and_static",
+      "sceneRevision": "",
+      "fresh": false
+    }
+  ],
+  "manualChecksCompleted": [],
+  "manualChecksPending": ["Unity domain reload", "Studio Confirm on legacy wrapper if used", "Headset feel"],
+  "externalChecksPending": ["proof:w04-browser (HERTZ_OWNER_PASSWORD)", "Live bridge create/confirm with token after domain reload"],
+  "knownLimitations": ["Live Unity bridge mutating proof not re-run this session"],
+  "securityNotes": ["No secrets in artifacts"],
+  "backwardCompatibility": ["Direct GripAttach/MuzzlePoint without wrapper unchanged"],
+  "rollbackOrRecovery": ["Revert weapons.mjs/server.mjs/HertzWeaponAnchorUtility.cs; wrappers on disk preserved"],
+  "reviewHotspots": [
+    {
+      "file": "Tools/HertzStudio/api/src/weapons.mjs",
+      "symbol": "resolveAuthoritativeWeaponSourcePrefab",
+      "reason": "Caller path must never override Asset Library import",
+      "invariants": ["exact path equality after normalize", "never Wrappers/ as source"],
+      "test": "authoritative source binding rejects caller substitution"
+    },
+    {
+      "file": "Assets/Editor/HertzStudio/HertzWeaponAnchorUtility.cs",
+      "symbol": "TryResolveWrapperSourceIdentity",
+      "reason": "Legacy confirm must not invent source from name alone",
+      "invariants": ["PrefabUtility/nested only", "mismatch refuses confirm"],
+      "test": "Unity Editor / bridge pending"
+    }
+  ],
+  "claimsNotProven": ["Live Unity PrefabUtility reconstruction on the 0082064f legacy wrapper"],
+  "status": "Ready for Codex review"
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "buildId": "w06-runtime-proof",
+  "exportedAt": "2026-10-26T16:04:31.2358858Z",
+  "source": "unity_runtime",
+  "sessionId": "70dabf2a3571484fae441c09a2fbbfa0",
+  "levelId": "HertzWeaponTest",
+  "completed": true,
+  "events": [
+    {"eventId":"7d839b2d1fec43a6a9cf2a78cc493f04","type":"session_start","buildId":"editor-dev","sessionId":"70dabf2a3571484fae441c09a2fbbfa0","recordedAt":"2026-10-26T16:04:29.5723640Z","levelId":"HertzWeaponTest","tMs":0.004},
+    {"eventId":"cb3f8894d1f34222962c10f90bf25966","type":"level_start","buildId":"editor-dev","sessionId":"70dabf2a3571484fae441c09a2fbbfa0","recordedAt":"2026-10-26T16:04:29.5723640Z","levelId":"HertzWeaponTest","tMs":0.006},
+    {"eventId":"a8d0d9b8a7f04e00ba4748d38756822b","type":"frame_sample","buildId":"w06-runtime-proof","sessionId":"70dabf2a3571484fae441c09a2fbbfa0","recordedAt":"2026-10-26T16:04:30.1907848Z","levelId":"HertzWeaponTest","tMs":618.411,"frameMs":1976.749},
+    {"eventId":"b316ccb697be48b488b3af9f238bc54a","type":"frame_sample","buildId":"w06-runtime-proof","sessionId":"70dabf2a3571484fae441c09a2fbbfa0","recordedAt":"2026-10-26T16:04:30.4363229Z","levelId":"HertzWeaponTest","tMs":863.627,"frameMs":1.68},
+    {"eventId":"0de789a0723847779aea9abb37bb8198","type":"enemy_defeat","buildId":"w06-runtime-proof","sessionId":"70dabf2a3571484fae441c09a2fbbfa0","recordedAt":"2026-10-26T16:04:30.5200127Z","levelId":"HertzWeaponTest","tMs":947.716,"enemyId":"ProofTarget_Hit"},
+    {"eventId":"eb52f30b0b02471fb81fe13a48534e7a","type":"frame_sample","buildId":"w06-runtime-proof","sessionId":"70dabf2a3571484fae441c09a2fbbfa0","recordedAt":"2026-10-26T16:04:30.6878123Z","levelId":"HertzWeaponTest","tMs":1115.399,"frameMs":2.25},
+    {"eventId":"dfe7b3770e75465f8dc4473e7e33cfce","type":"frame_sample","buildId":"w06-runtime-proof","sessionId":"70dabf2a3571484fae441c09a2fbbfa0","recordedAt":"2026-10-26T16:04:30.9397800Z","levelId":"HertzWeaponTest","tMs":1366.644,"frameMs":2.545},
+    {"eventId":"5a9cbf0fd9fc48f093cc5d6bfc2f594e","type":"frame_sample","buildId":"w06-runtime-proof","sessionId":"70dabf2a3571484fae441c09a2fbbfa0","recordedAt":"2026-10-26T16:04:31.1899115Z","levelId":"HertzWeaponTest","tMs":1616.952,"frameMs":1.731},
+    {"eventId":"f11083678f8849bcb00d898da6eb3065","type":"level_end","buildId":"w06-runtime-proof","sessionId":"70dabf2a3571484fae441c09a2fbbfa0","recordedAt":"2026-10-26T16:04:31.2328855Z","levelId":"HertzWeaponTest","tMs":1660.44,"completed":true},
+    {"eventId":"c031c6a9f6d24cfaa9d8902520029777","type":"session_end","buildId":"w06-runtime-proof","sessionId":"70dabf2a3571484fae441c09a2fbbfa0","recordedAt":"2026-10-26T16:04:31.2328855Z","levelId":"HertzWeaponTest","tMs":1660.442,"completed":true}
+  ]
+}

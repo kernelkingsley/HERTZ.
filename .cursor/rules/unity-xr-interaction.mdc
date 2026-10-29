@@ -15,6 +15,15 @@ Prefer XR interaction events over per-frame polling. Prevent duplicate interacti
 
 Comfort outranks visual spectacle. Keep world scale consistent. No unexpected artificial acceleration or forced rotation. Support snap and smooth turn where locomotion exists, with comfort options. Keep interaction distance and UI placement comfortable. Avoid excessive flashing and effects. Keep frame rate stable.
 
+### Viewpoint and reach (HERTZ)
+
+- The in-game camera is the tracked HMD. Do not detach or freely place it for normal play.
+- External USB/PSVR-style room cameras (if ever used) are physical setup only: ~1.5–2 m from play space, eye level or ~30 cm above the head, angled slightly down. That is not the Unity Main Camera.
+- **Physical sandbox scale (locked):** world stays 1 unit = 1 meter. Do not scale the XR camera rig to fake a shared competitive eye height. Scale the avatar mesh to the player: `scale = HMD_eye_height / default_model_eye_height` (default boy ~1.75–1.80 m). Keep face clearance small (~0.06–0.10 m behind) so shoulders stay attached in FP.
+- Environment benchmarks around that reference: door width ≥1.0 m, ceiling ~2.7–3.0 m, table/counter ~0.9 m.
+- Virtual hands / grips: comfortable rest reach is about **0.45–0.60 m in front of the torso** (not glued to the face). Players may stretch farther; do not force max reach.
+- Interactive UI: not in the face (convergence strain) and not so high that users block their view with raised arms.
+
 ## Physics
 
 Use layers deliberately. Do not run expensive physics checks every frame unless required. Match collision detection to fast motion. Keep physics work in the simulation step. Distinguish physical projectiles from hitscan. Pool repeated projectiles and effects. Use the simplest reliable solution.

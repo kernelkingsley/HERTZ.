@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HERTZ W03 SampleScene native-mesh proof</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: #0b0d10;
+        color: #e8eef7;
+        font: 13px/1.4 system-ui, sans-serif;
+      }
+      #hud {
+        position: absolute;
+        left: 12px;
+        top: 12px;
+        z-index: 2;
+        background: rgba(0, 0, 0, 0.55);
+        padding: 10px 12px;
+        border-radius: 10px;
+        max-width: 420px;
+      }
+      canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="hud">Loading SampleScene native meshes…</div>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.170.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.170.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module">
+      import * as THREE from "three";
+      import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+
+      const SNAP = new URL("./render-snapshots/a4610f9833fe5b5fc5099c00827731e1/", import.meta.url);
+      const hud = document.getElementById("hud");
+
+      function unityLocalToThreePosition(p) {
+        return new THREE.Vector3(Number(p.x) || 0, Number(p.y) || 0, -(Number(p.z) || 0));
+      }
+      function unityLocalToThreeQuaternion(eulerDeg) {
+        const e = new THREE.Euler(
+          THREE.MathUtils.degToRad(Number(eulerDeg.x) || 0),
+          THREE.MathUtils.degToRad(-(Number(eulerDeg.y) || 0)),
+          THREE.MathUtils.degToRad(-(Number(eulerDeg.z) || 0)),
+          "YXZ",
+        );
+        return new THREE.Quaternion().setFromEuler(e);
+      }
+      function unityLocalToThreeScale(s) {
+        return new THREE.Vector3(
+          Number(s.x) || 1,
+          Number(s.y) || 1,
+          Math.abs(Number(s.z) || 1) * Math.sign(Number(s.z) || 1) || 1,
+        );
+      }
+
+      async function loadHmsh(url) {
+        const res = await fetch(url);
+        if (!res.ok) throw new Error(`hmsh ${res.status}`);
+        const buf = await res.arrayBuffer();
+        const view = new DataView(buf);
+        const magic = String.fromCharCode(view.getUint8(0), view.getUint8(1), view.getUint8(2), view.getUint8(3));
+        if (magic !== "HMSH") throw new Error("bad magic");
+        const version = view.getUint32(4, true);
+        const vCount = view.getUint32(8, true);
+        const iCount = view.getUint32(12, true);
+        const flags = view.getUint32(16, true);
+        let o = 20;
+        const pos = new Float32Array(vCount * 3);
+        for (let i = 0; i < vCount; i++) {
+          const x = view.getFloat32(o, true); o += 4;
+          const y = view.getFloat32(o, true); o += 4;
+          const z = view.getFloat32(o, true); o += 4;
+          // Unity LH → Three RH: negate Z
+          pos[i * 3] = x;
+          pos[i * 3 + 1] = y;
+          pos[i * 3 + 2] = -z;
+        }
+        let normals = null;
+        if (flags & 1) {
+          normals = new Float32Array(vCount * 3);
+          for (let i = 0; i < vCount; i++) {
+            const x = view.getFloat32(o, true); o += 4;
+            const y = view.getFloat32(o, true); o += 4;
+            const z = view.getFloat32(o, true); o += 4;
+            normals[i * 3] = x;
+            normals[i * 3 + 1] = y;
+            normals[i * 3 + 2] = -z;
+          }
+        }
+        if (flags & 2) o += vCount * 8;
+        const idx = new Uint32Array(iCount);
+        for (let i = 0; i < iCount; i += 3) {
+          // flip winding with Z negation
+          const a = view.getUint32(o, true); o += 4;
+          const b = view.getUint32(o, true); o += 4;
+          const c = view.getUint32(o, true); o += 4;
+          idx[i] = a;
+          idx[i + 1] = c;
+          idx[i + 2] = b;
+        }
+        const geo = new THREE.BufferGeometry();
+        geo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+        if (normals) geo.setAttribute("normal", new THREE.BufferAttribute(normals, 3));
+        else geo.computeVertexNormals();
+        geo.setIndex(new THREE.BufferAttribute(idx, 1));
+        return geo;
+      }
+
+      const scene = new THREE.Scene();
+      scene.background = new THREE.Color(0x1a2230);
+      const camera = new THREE.PerspectiveCamera(50, innerWidth / innerHeight, 0.05, 500);
+      camera.position.set(8, 6, 10);
+      const renderer = new THREE.WebGLRenderer({ antialias: true });
+      renderer.setSize(innerWidth, innerHeight);
+      renderer.setPixelRatio(devicePixelRatio);
+      document.body.appendChild(renderer.domElement);
+      const controls = new OrbitControls(camera, renderer.domElement);
+      controls.target.set(0, 1.2, 0);
+      scene.add(new THREE.AmbientLight(0xffffff, 0.55));
+      const sun = new THREE.DirectionalLight(0xffffff, 1.1);
+      sun.position.set(4, 10, 2);
+      scene.add(sun);
+
+      const store = await (await fetch("./store.json")).json();
+      const objects = store.project.lastSceneExport.objects;
+      const manifest = await (await fetch(new URL("manifest.json", SNAP))).json();
+      const byId = new Map(objects.map((o) => [o.objectId, o]));
+      const nodeById = new Map();
+      const root = new THREE.Group();
+      scene.add(root);
+
+      for (const obj of objects) {
+        const node = new THREE.Object3D();
+        node.name = obj.name || obj.objectId;
+        node.position.copy(unityLocalToThreePosition(obj.localPosition || obj.position || {}));
+        node.quaternion.copy(unityLocalToThreeQuaternion(obj.localRotation || obj.rotation || {}));
+        const s = unityLocalToThreeScale(obj.localScale || obj.scale || { x: 1, y: 1, z: 1 });
+        node.scale.copy(s);
+        nodeById.set(obj.objectId, node);
+      }
+      for (const obj of objects) {
+        const node = nodeById.get(obj.objectId);
+        const parent = obj.parentObjectId && nodeById.get(obj.parentObjectId);
+        if (parent) parent.add(node);
+        else root.add(node);
+      }
+
+      let loaded = 0;
+      let failed = 0;
+      const names = [];
+      for (const entry of manifest.meshes) {
+        const obj = byId.get(entry.objectId);
+        const node = nodeById.get(entry.objectId);
+        if (!obj || !node) continue;
+        try {
+          const geo = await loadHmsh(new URL(entry.file, SNAP));
+          const bc = entry.baseColor || {};
+          const mat = new THREE.MeshStandardMaterial({
+            color: new THREE.Color(bc.r ?? 0.75, bc.g ?? 0.75, bc.b ?? 0.75),
+            roughness: 0.65,
+            metalness: 0.05,
+            side: THREE.DoubleSide,
+          });
+          const mesh = new THREE.Mesh(geo, mat);
+          node.add(mesh);
+          loaded += 1;
+          if (/Floor|Ceiling|Wall_/i.test(obj.name || "")) names.push(obj.name);
+        } catch (err) {
+          failed += 1;
+          console.warn(obj.name, err);
+        }
+      }
+
+      hud.textContent = [
+        "SampleScene native-mesh proof (hierarchy + hmsh)",
+        `Native meshes rendered: ${loaded} / failed: ${failed}`,
+        `Environment: ${names.sort().join(", ")}`,
+        "Not pixel-perfect Unity URP — geometry/transform fidelity check.",
+      ].join("\n");
+      hud.style.whiteSpace = "pre-wrap";
+
+      function tick() {
+        controls.update();
+        renderer.render(scene, camera);
+        requestAnimationFrame(tick);
+      }
+      tick();
+      window.__HERTZ_FIDELITY_PROOF__ = { loaded, failed, names };
+    </script>
+  </body>
+</html>

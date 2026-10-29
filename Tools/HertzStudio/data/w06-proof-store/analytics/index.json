@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "captures": [
+    {
+      "captureId": "a1fd0466-23ea-4d25-abf2-4c1f08d0dc50",
+      "buildId": "w06-runtime-proof",
+      "importedAt": "2026-10-27T20:51:45.199Z",
+      "exportedAt": "2026-10-27T20:45:37.212Z",
+      "source": "unity_runtime",
+      "eventCount": 13,
+      "payloadHash": "c7ada5ea99fd53b42b3c31cf42bb6eb189f2bab9b0418786e4e641995e8a1f11",
+      "sessionIds": [
+        "b726f1c4ba6a42f1b4d2e98ed8e78306"
+      ]
+    }
+  ],
+  "seenEventIds": {
+    "08ea29a89135478fb1e76f6ebe5ccec0": true,
+    "f51e2e902e2f4daf9eb70df2ea6d58c6": true,
+    "7993406538b146bb9fe201f18348c3f4": true,
+    "60046a36293640578e4ff7d6518c73ba": true,
+    "6cfd67604742490bbadb567f24373c87": true,
+    "e87c7e542d6b4bfca4a32a3fd434632e": true,
+    "5f88d46e3ed54a379a23d491aa2e7d02": true,
+    "de686f0ffe2946feaa769990ab414e67": true,
+    "3d4b89d1ddbb405ca8ed7f76fe4e5cd2": true,
+    "c776e0f960b34b14a8996cf9fa8ddbd2": true,
+    "4ef59c45e038445ca8dcf81630411963": true,
+    "f338dabb9c1b4b8da004b86c2bad4a61": true,
+    "a18746aedc63467f9bd798f631158d6d": true
+  }
+}

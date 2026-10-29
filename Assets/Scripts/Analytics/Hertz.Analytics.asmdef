@@ -1,0 +1,17 @@
+{
+    "name": "Hertz.Analytics",
+    "rootNamespace": "Hertz.Analytics",
+    "references": [
+        "Hertz.Weapons",
+        "Hertz.Characters"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

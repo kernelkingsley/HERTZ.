@@ -1,0 +1,21 @@
+{
+    "capturedAtUtc": "2026-10-29T22:12:41.0905222Z",
+    "scenePath": "Assets/Scenes/HertzAvatarBodyTest.unity",
+    "playMode": true,
+    "headScaleIntact": true,
+    "neckScaleIntact": true,
+    "leftHandToControllerMeters": 0.12593378126621247,
+    "rightHandToControllerMeters": 0.12285073846578598,
+    "hmdToAvatarEyeMeters": 0.0824621170759201,
+    "headLocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+    },
+    "neckLocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+    },
+    "note": "Static editor proof uses the scene's simulated controller transforms; headset fit remains a physical-device check."
+}

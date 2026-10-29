@@ -1,0 +1,38 @@
+﻿{
+    "capturedAt":  "2026-10-28T23:14:31.5127901+00:00",
+    "purpose":  "Non-mutating proof that an explicitly selected SampleScene reaches weapon-definition validation instead of a name-based refusal.",
+    "request":  {
+                    "requestId":  "codex-samplescene-negative-1793229271104",
+                    "weaponId":  "codex-nonexistent-definition",
+                    "scenePath":  "Assets/Scenes/SampleScene.unity",
+                    "sceneGuid":  "55daccc09a3b69647bbab145b54a3ab3",
+                    "expectedUnityRevision":  46,
+                    "confirmSave":  true
+                },
+    "response":  {
+                     "httpStatus":  400,
+                     "body":  {
+                                  "status":  "failed",
+                                  "requestId":  "codex-samplescene-negative-1793229271104",
+                                  "weaponId":  "codex-nonexistent-definition",
+                                  "error":  "HertzWeaponDefinition not found at Assets/HertzStudio/Weapons/Definitions/codex-nonexistent-definition.asset. Sync the definition first.",
+                                  "modelImported":  false,
+                                  "definitionSynced":  false,
+                                  "anchorsValid":  false,
+                                  "runtimeDeployApplied":  false,
+                                  "runtimePlayable":  false,
+                                  "missingAnchors":  [
+
+                                                     ],
+                                  "unityRevision":  46
+                              },
+                     "reachedDefinitionValidation":  true,
+                     "staleSampleSceneGuardObserved":  false
+                 },
+    "sceneIntegrity":  {
+                           "sha256Before":  "9fb1efeac51bd4aee87a5dd23cd3613db054ea41bc82977f0adaf27ca5e5f4d9",
+                           "sha256After":  "9fb1efeac51bd4aee87a5dd23cd3613db054ea41bc82977f0adaf27ca5e5f4d9",
+                           "unchanged":  true
+                       },
+    "conclusion":  "SampleScene is accepted as a target by the Unity weapon command. The deliberate missing definition stopped processing before the scene opened or changed."
+}

@@ -1,0 +1,507 @@
+{
+  "startedAt": "2026-10-21T01:30:21.845Z",
+  "checks": [
+    {
+      "name": "kenney_2D_imports",
+      "pass": true,
+      "created": 1,
+      "category": "2D",
+      "license": "CC0"
+    },
+    {
+      "name": "kenney_2D_cc0_provenance",
+      "pass": true
+    },
+    {
+      "name": "kenney_2D_metadata_a91de80a",
+      "pass": true
+    },
+    {
+      "name": "kenney_3D_imports",
+      "pass": true,
+      "created": 1,
+      "category": "3D",
+      "license": "CC0"
+    },
+    {
+      "name": "kenney_3D_cc0_provenance",
+      "pass": true
+    },
+    {
+      "name": "kenney_3D_metadata_bed03201",
+      "pass": true
+    },
+    {
+      "name": "kenney_UI_imports",
+      "pass": true,
+      "created": 1,
+      "category": "UI",
+      "license": "CC0"
+    },
+    {
+      "name": "kenney_UI_cc0_provenance",
+      "pass": true
+    },
+    {
+      "name": "kenney_UI_metadata_3733d699",
+      "pass": true
+    },
+    {
+      "name": "kenney_Audio_imports",
+      "pass": true,
+      "created": 1,
+      "category": "Audio",
+      "license": "CC0"
+    },
+    {
+      "name": "kenney_Audio_cc0_provenance",
+      "pass": true
+    },
+    {
+      "name": "kenney_Audio_metadata_39c5f2f3",
+      "pass": true
+    },
+    {
+      "name": "kenney_Pixel_imports",
+      "pass": true,
+      "created": 1,
+      "category": "Pixel",
+      "license": "CC0"
+    },
+    {
+      "name": "kenney_Pixel_cc0_provenance",
+      "pass": true
+    },
+    {
+      "name": "kenney_Pixel_metadata_cb688020",
+      "pass": true
+    },
+    {
+      "name": "kenney_Textures_imports",
+      "pass": true,
+      "created": 1,
+      "category": "Textures",
+      "license": "CC0"
+    },
+    {
+      "name": "kenney_Textures_cc0_provenance",
+      "pass": true
+    },
+    {
+      "name": "kenney_Textures_metadata_7417f951",
+      "pass": true
+    },
+    {
+      "name": "kenney_covers_typed_entries",
+      "pass": true,
+      "types": [
+        "sprite",
+        "model_3d",
+        "ui",
+        "audio",
+        "pixel",
+        "texture"
+      ]
+    },
+    {
+      "name": "duplicate_pack_dedupes_by_hash",
+      "pass": true,
+      "created": 0,
+      "skipped": 1,
+      "countBefore": 6,
+      "countAfter": 6
+    },
+    {
+      "name": "zip_safe_extracts_ok",
+      "pass": true
+    },
+    {
+      "name": "zip_rejects_path_traversal",
+      "pass": true,
+      "rejected": [
+        "unsafe path rejected by parser: invalid relative path: ../escape.png"
+      ]
+    },
+    {
+      "name": "zip_no_escape_file_written",
+      "pass": true
+    },
+    {
+      "name": "sha256_duplicate_import",
+      "pass": true
+    },
+    {
+      "name": "rejects_invalid_file_type",
+      "pass": true
+    },
+    {
+      "name": "upload_limits_configured",
+      "pass": true,
+      "limits": {
+        "maxFileBytes": 41943040,
+        "maxZipBytes": 83886080,
+        "maxExtractedBytes": 125829120,
+        "maxZipEntries": 500,
+        "maxChunkBytes": 2097152,
+        "storageQuotaBytes": 536870912
+      }
+    },
+    {
+      "name": "catalog_has_assets_before_reload",
+      "pass": true
+    },
+    {
+      "name": "restart_persistence_catalog",
+      "pass": true
+    },
+    {
+      "name": "public_asset_hides_blob_path",
+      "pass": true
+    },
+    {
+      "name": "list_paginated",
+      "pass": true
+    },
+    {
+      "name": "secret_redaction",
+      "pass": true,
+      "redacted": "Bearer [REDACTED] and access_token=[REDACTED]"
+    },
+    {
+      "name": "sketchfab_save_meta_no_raw_token",
+      "pass": true
+    },
+    {
+      "name": "sketchfab_meta_file_no_raw_token",
+      "pass": true
+    },
+    {
+      "name": "sketchfab_dpapi_blob_not_plaintext",
+      "pass": true
+    },
+    {
+      "name": "sketchfab_roundtrip_token",
+      "pass": true
+    },
+    {
+      "name": "sketchfab_replace",
+      "pass": true
+    },
+    {
+      "name": "sketchfab_revoke",
+      "pass": true
+    },
+    {
+      "name": "sketchfab_marked_pending_without_live_token",
+      "pass": true
+    },
+    {
+      "name": "sketchfab_search_without_credential",
+      "pass": true
+    },
+    {
+      "name": "has_asset_for_unity_queue",
+      "pass": true
+    },
+    {
+      "name": "unity_offline_pending_state",
+      "pass": true
+    },
+    {
+      "name": "idempotent_enqueue_same_requestId",
+      "pass": true
+    },
+    {
+      "name": "importing_unity_state",
+      "pass": true
+    },
+    {
+      "name": "ack_applied_once",
+      "pass": true
+    },
+    {
+      "name": "ack_idempotent_duplicate_delivery",
+      "pass": true
+    },
+    {
+      "name": "chunk_init",
+      "pass": true
+    },
+    {
+      "name": "chunk_append",
+      "pass": true
+    },
+    {
+      "name": "chunk_cancel",
+      "pass": true
+    },
+    {
+      "name": "no_store_json_required_for_assets",
+      "pass": true
+    },
+    {
+      "name": "rejects_malformed_png_content",
+      "pass": true
+    },
+    {
+      "name": "ingest_rejects_malformed_png",
+      "pass": true
+    },
+    {
+      "name": "accepts_real_png_content",
+      "pass": true
+    },
+    {
+      "name": "accepts_padded_sketchfab_like_gltf",
+      "pass": true
+    },
+    {
+      "name": "ingest_padded_gltf_with_deps",
+      "pass": true
+    },
+    {
+      "name": "rejects_truncated_gltf_json",
+      "pass": true
+    },
+    {
+      "name": "rejects_gltf_missing_version",
+      "pass": true
+    },
+    {
+      "name": "failed_gltf_ingest_no_extra_rows",
+      "pass": true
+    },
+    {
+      "name": "catalog_recovery_has_assets_seed",
+      "pass": true
+    },
+    {
+      "name": "catalog_corruption_restores_good",
+      "pass": true,
+      "recovery": {
+        "recoveredAt": "2026-10-21T01:30:30.695Z",
+        "reason": "primary_catalog_corrupt",
+        "corruptBackup": "assets-catalog.json.corrupt.1792546230694.bak",
+        "restoredFrom": "assets-catalog.json.good",
+        "emptyReset": false
+      },
+      "restored": 8
+    },
+    {
+      "name": "catalog_recovery_visible_on_list",
+      "pass": true
+    },
+    {
+      "name": "sketchfab_zip_shape_extracts_gltf_and_bin",
+      "pass": true,
+      "files": [
+        "scene.bin",
+        "scene.gltf"
+      ]
+    },
+    {
+      "name": "sketchfab_signed_url_fetch_without_token",
+      "pass": true
+    },
+    {
+      "name": "gltf_dependencies_recorded",
+      "pass": true,
+      "deps": [
+        {
+          "relativePath": "scene.bin",
+          "blobName": "5106d727-21a0-4159-b196-b4c68b09f4b6__scene.bin",
+          "byteSize": 4
+        }
+      ]
+    },
+    {
+      "name": "zip_traversal_rejected",
+      "pass": true,
+      "rejected": [
+        "unsafe path rejected by parser: invalid relative path: ../escape.txt"
+      ]
+    },
+    {
+      "name": "zip_traversal_no_escape_file",
+      "pass": true
+    },
+    {
+      "name": "zip_upload_route_has_extraction_finally",
+      "pass": true
+    },
+    {
+      "name": "connector_project_root_is_hertz",
+      "pass": true,
+      "root": "C:\\Users\\Kingsley\\HERTZ"
+    },
+    {
+      "name": "connector_has_single_instance_pid_lock",
+      "pass": true
+    },
+    {
+      "name": "login_password_not_prefilled",
+      "pass": true
+    },
+    {
+      "name": "store_no_default_password_fallback",
+      "pass": true
+    },
+    {
+      "name": "frontend_bundle_no_default_password",
+      "pass": true,
+      "hits": []
+    },
+    {
+      "name": "animation_ext_allowed",
+      "pass": true
+    },
+    {
+      "name": "aiff_ext_allowed",
+      "pass": true
+    },
+    {
+      "name": "kenney_parse_pack_metadata",
+      "pass": true
+    },
+    {
+      "name": "kenney_download_never_invented",
+      "pass": true
+    },
+    {
+      "name": "kenney_retains_official_url",
+      "pass": true
+    },
+    {
+      "name": "bridge_requires_uuid_asset_id",
+      "pass": true
+    },
+    {
+      "name": "bridge_confines_source_and_dest",
+      "pass": true
+    },
+    {
+      "name": "bridge_rejects_absolute_source_paths",
+      "pass": true
+    },
+    {
+      "name": "store_good_promotion_no_leftover_temps",
+      "pass": true,
+      "tempsAfter": []
+    },
+    {
+      "name": "store_temp_cleanup_removes_orphans",
+      "pass": true
+    },
+    {
+      "name": "fbx_default_model_unless_override",
+      "pass": true
+    },
+    {
+      "name": "fbx_force_animation_override",
+      "pass": true
+    },
+    {
+      "name": "fbx_force_model_override",
+      "pass": true
+    },
+    {
+      "name": "invalid_override_rejected",
+      "pass": true
+    },
+    {
+      "name": "gltf_cannot_be_animation_override",
+      "pass": true
+    },
+    {
+      "name": "nested_duplicate_basename_deps_recorded",
+      "pass": true
+    },
+    {
+      "name": "library_image_preview_not_generic_model",
+      "pass": true
+    },
+    {
+      "name": "delete_library_asset_removes_row",
+      "pass": true
+    },
+    {
+      "name": "delete_library_asset_idempotent",
+      "pass": true
+    },
+    {
+      "name": "delete_does_not_claim_unity_wipe",
+      "pass": true
+    },
+    {
+      "name": "delete_leaves_other_assets",
+      "pass": true
+    },
+    {
+      "name": "sketchfab_display_not_scene_a",
+      "pass": true
+    },
+    {
+      "name": "sketchfab_display_not_scene_b",
+      "pass": true
+    },
+    {
+      "name": "entrypoint_filename_preserved_a",
+      "pass": true
+    },
+    {
+      "name": "two_scene_gltf_archives_distinct_titles",
+      "pass": true
+    },
+    {
+      "name": "zip_package_name_as_display",
+      "pass": true
+    },
+    {
+      "name": "explicit_package_name_wins",
+      "pass": true
+    },
+    {
+      "name": "unicode_unsafe_title_sanitized",
+      "pass": true
+    },
+    {
+      "name": "entrypoint_fallback_may_be_scene",
+      "pass": true
+    },
+    {
+      "name": "duplicate_hash_improves_scene_title",
+      "pass": true
+    },
+    {
+      "name": "duplicate_hash_surfaces_existing",
+      "pass": true
+    },
+    {
+      "name": "duplicate_hash_new_title",
+      "pass": true
+    },
+    {
+      "name": "owner_rename_display",
+      "pass": true
+    },
+    {
+      "name": "owner_rename_keeps_entrypoint",
+      "pass": true
+    },
+    {
+      "name": "migrate_scene_names_api_returns",
+      "pass": true
+    },
+    {
+      "name": "no_retired_default_password_in_studio_sources",
+      "pass": true,
+      "hits": []
+    }
+  ],
+  "ok": true,
+  "sketchfabLiveVerified": false,
+  "notes": [
+    "Sketchfab live API verification pending — no HERTZ_SKETCHFAB_TEST_TOKEN in environment."
+  ],
+  "finishedAt": "2026-10-21T01:30:32.288Z"
+}

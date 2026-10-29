@@ -1,7 +1,6 @@
 ---
-description: C# and Unity lifecycle standards
-globs: "**/*.cs"
-alwaysApply: false
+description: C# and Unity lifecycle standards for every task
+alwaysApply: true
 ---
 
 # C# and Unity Lifecycle

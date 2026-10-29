@@ -1,0 +1,38 @@
+﻿{
+    "schemaVersion":  1,
+    "generatedAt":  "2026-10-27T21:58:10.3630073Z",
+    "status":  "passed",
+    "scope":  "shared Studio target-scene contract plus first weapon deploy path",
+    "target":  {
+                   "scenePath":  "Assets/Scenes/HertzWeaponTest.unity",
+                   "sceneGuid":  "7d2d09808beb3e749aaf2f2a6f47a30b",
+                   "expectedUnityRevision":  153
+               },
+    "request":  {
+                    "requestId":  "target-scene-proof-1793137508274",
+                    "weaponId":  "0082064f-da62-4b33-b62d-956d1aeac5f7",
+                    "status":  "applied",
+                    "attempts":  1,
+                    "appliedAt":  "2026-10-27T21:45:12.900Z"
+                },
+    "checks":  {
+                   "sharedTargetPersisted":  true,
+                   "jobUsedSelectedPathAndGuid":  true,
+                   "unityBridgeHealthy":  true,
+                   "sampleSceneUnchanged":  true,
+                   "guidMismatchRejectedWith409":  true,
+                   "storeRecoveryNull":  true
+               },
+    "sceneHashes":  {
+                        "weaponBefore":  "3862b2167aec4360822ce5773a7033d266304e9d6cbadb9cdd748168ec0f966f",
+                        "weaponAfter":  "abed39f808b16f23897787a25292706a788250a5979cc800e89db7257c4e814d",
+                        "sampleBefore":  "9fb1efeac51bd4aee87a5dd23cd3613db054ea41bc82977f0adaf27ca5e5f4d9",
+                        "sampleAfter":  "9fb1efeac51bd4aee87a5dd23cd3613db054ea41bc82977f0adaf27ca5e5f4d9"
+                    },
+    "recoveryCopy":  "Tools/HertzStudio/data/recovery/HertzWeaponTest.before-target-contract.unity",
+    "notes":  [
+                  "The deployed managed weapon updated only the selected HertzWeaponTest scene.",
+                  "SampleScene XR content was not modified by this proof.",
+                  "Other Studio feature families are intentionally not wired in this checkpoint."
+              ]
+}

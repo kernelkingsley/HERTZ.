@@ -1,0 +1,34 @@
+{
+  "capturedAt": "2026-10-20T13:55:30.000Z",
+  "method": "AssetDatabase.ImportAsset ForceUpdate on HertzStudioHttpBridge.cs after CurrentProcessId fix. Not Assets/Refresh.",
+  "sameUnityPid": 28384,
+  "ready": true,
+  "verdict": "PASS",
+  "before": {
+    "at": "2026-10-20T13:43:11.6284465Z",
+    "unityPid": 28384,
+    "health8791": "{\"ok\":true,\"scenePath\":\"Assets/Scenes/HertzStudioTest.unity\",\"sceneName\":\"HertzStudioTest\",\"unityRevision\":18,\"authConfigured\":true}",
+    "listening": ["  TCP    127.0.0.1:8791         0.0.0.0:0              LISTENING       28384"]
+  },
+  "reload": {
+    "domainReloadBefore": ["HERTZ bridge DOMAIN_RELOAD before pid=28384 stamp=w01-domain-reload-20261020T1350Z port=8791"],
+    "domainReloadAfter": ["HERTZ bridge DOMAIN_RELOAD after pid=28384 stamp=w01-domain-reload-20261020T1350Z"],
+    "successfulListenWithStamp": ["HERTZ Studio Editor bridge listening on http://127.0.0.1:8791/ stamp=w01-domain-reload-20261020T1350Z pid=28384"],
+    "bindFailuresWithStamp": []
+  },
+  "after": {
+    "at": "2026-10-20T13:55:30.000Z",
+    "unityAlive": true,
+    "listening": ["  TCP    127.0.0.1:8791         0.0.0.0:0              LISTENING       28384"],
+    "health": "{\"ok\":true,\"scenePath\":\"Assets/Scenes/HertzStudioTest.unity\",\"sceneName\":\"HertzStudioTest\",\"unityRevision\":18,\"authConfigured\":true}"
+  },
+  "checks": {
+    "sawDomainReloadBefore": true,
+    "sawDomainReloadAfter": true,
+    "sawSuccessfulListenWithStamp": true,
+    "zeroBindFailuresAfterReload": true,
+    "no8792Listener": true,
+    "healthOk": true,
+    "sameUnityPidListening": true
+  }
+}

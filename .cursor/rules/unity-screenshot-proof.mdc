@@ -1,0 +1,33 @@
+---
+description: Always attach Unity screenshot proofs for visual/avatar/XR view work
+alwaysApply: true
+---
+
+# Unity screenshot proof
+
+Kingsley requires screenshots on Unity visual work. Do not finish a Unity view, avatar, camera, IK, material, or scene-layout task with text-only claims.
+
+## When it applies
+
+Any task that changes or verifies how something looks in Unity, including:
+
+- Avatar / body / arms / first-person camera
+- XR rig, controllers, locomotion comfort view
+- Materials, lighting, scene composition, prefab appearance
+- “Does this look right?” / arms-out / look-down / face lock checks
+
+## Required workflow
+
+1. Make the Unity change.
+2. Capture fresh PNG proof from the relevant camera (Play Mode when IK/runtime matters).
+3. Save under `Assets/HertzStudio/Characters/KingsleyAvatar/Previews/` when avatar-related, and sync copies to `Tools/HertzStudio/data/avatar-previews/` and `Tools/HertzStudio/web/public/avatar-previews/` when Studio gallery should show them.
+4. **Show the screenshot(s) in the chat reply** (read/attach the image files). Text metrics alone are not enough.
+5. Record capture paths and brief metrics in the `WORK_PLAN.md` checkpoint.
+
+## Rules of thumb
+
+- Prefer one clear shot that answers the ask over many unlabeled shots.
+- **Before uploading a new Studio preview batch:** delete the old PNGs in `Assets/HertzStudio/Characters/KingsleyAvatar/Previews/`, `Tools/HertzStudio/data/avatar-previews/`, and `Tools/HertzStudio/web/public/avatar-previews/`, then write the new files.
+- Always show the new screenshot(s) in chat so Kingsley can check Studio and the reply.
+- If Unity MCP/bridge is down, say so and do not invent screenshots; recover Unity then capture.
+- Do not move tracked HMD/controllers for real XR feel proofs beyond temporary editor pose for capture.

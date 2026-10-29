@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-26T04:50:00.000Z",
+  "branch": "main",
+  "head": "7374e57c3f8cfef316a18d6606d5e1385b39170e",
+  "sampleSceneHash": "9FB1EFEAC51BD4AEE87A5DD23CD3613DB054EA41BC82977F0ADAF27CA5E5F4D9",
+  "entries": [
+    {
+      "path": "Tools/HertzStudio/data/reviews/w04-review-manifest.json",
+      "milestone": "W04",
+      "schemaVersion": 1,
+      "generatedAt": "2026-10-26T03:10:00.000Z",
+      "sourceIdentity": "w04-source-prefab-identity",
+      "fresh": true,
+      "status": "Ready for Codex review"
+    },
+    {
+      "path": "Tools/HertzStudio/data/reviews/w08-review-manifest.json",
+      "milestone": "W08",
+      "schemaVersion": 1,
+      "generatedAt": "2026-10-26T04:30:00.000Z",
+      "sourceIdentity": "local-api-tests",
+      "fresh": true,
+      "status": "Ready for Codex review"
+    },
+    {
+      "path": "Tools/HertzStudio/data/reviews/w09-review-manifest.json",
+      "milestone": "W09",
+      "schemaVersion": 1,
+      "generatedAt": "2026-10-26T04:30:00.000Z",
+      "sourceIdentity": "local-api-tests",
+      "fresh": true,
+      "status": "Ready for Codex review"
+    },
+    {
+      "path": "Tools/HertzStudio/data/reviews/w10-review-manifest.json",
+      "milestone": "W10",
+      "schemaVersion": 1,
+      "generatedAt": "2026-10-26T04:30:00.000Z",
+      "sourceIdentity": "local-api-tests",
+      "fresh": true,
+      "status": "Ready for Codex review"
+    },
+    {
+      "path": "Tools/HertzStudio/data/reviews/w11-review-manifest.json",
+      "milestone": "W11",
+      "schemaVersion": 1,
+      "generatedAt": "2026-10-26T04:30:00.000Z",
+      "sourceIdentity": "local-api-tests",
+      "fresh": true,
+      "status": "Ready for Codex review"
+    },
+    {
+      "path": "Tools/HertzStudio/data/reviews/w12-review-manifest.json",
+      "milestone": "W12",
+      "schemaVersion": 1,
+      "generatedAt": "2026-10-26T04:30:00.000Z",
+      "sourceIdentity": "local-api-tests",
+      "fresh": true,
+      "status": "Ready for Codex review"
+    },
+    {
+      "path": "Tools/HertzStudio/data/reviews/w13-review-manifest.json",
+      "milestone": "W13",
+      "schemaVersion": 1,
+      "generatedAt": "2026-10-26T04:30:00.000Z",
+      "sourceIdentity": "local-integration",
+      "fresh": true,
+      "status": "Ready for Codex review"
+    },
+    {
+      "path": "Tools/HertzStudio/data/reviews/w14-review-manifest.json",
+      "milestone": "W14",
+      "schemaVersion": 1,
+      "generatedAt": "2026-10-26T04:30:00.000Z",
+      "sourceIdentity": "local-api-tests",
+      "fresh": true,
+      "status": "Ready for Codex review"
+    },
+    {
+      "path": "Tools/HertzStudio/data/w08-api-proof.json",
+      "milestone": "W08",
+      "schemaVersion": 1,
+      "generatedAt": "from regress:w08",
+      "sourceIdentity": "local-api-tests",
+      "fresh": true,
+      "status": "proof"
+    },
+    {
+      "path": "Tools/HertzStudio/data/w09-api-proof.json",
+      "milestone": "W09",
+      "schemaVersion": 1,
+      "generatedAt": "from regress:w09",
+      "sourceIdentity": "local-api-tests",
+      "fresh": true,
+      "status": "proof"
+    },
+    {
+      "path": "Tools/HertzStudio/data/w10-api-proof.json",
+      "milestone": "W10",
+      "schemaVersion": 1,
+      "generatedAt": "from regress:w10",
+      "sourceIdentity": "local-api-tests",
+      "fresh": true,
+      "status": "proof"
+    },
+    {
+      "path": "Tools/HertzStudio/data/w11-api-proof.json",
+      "milestone": "W11",
+      "schemaVersion": 1,
+      "generatedAt": "from regress:w11",
+      "sourceIdentity": "local-api-tests",
+      "fresh": true,
+      "status": "proof"
+    },
+    {
+      "path": "Tools/HertzStudio/data/w12-api-proof.json",
+      "milestone": "W12",
+      "schemaVersion": 1,
+      "generatedAt": "from regress:w12",
+      "sourceIdentity": "local-api-tests",
+      "fresh": true,
+      "status": "proof"
+    },
+    {
+      "path": "Tools/HertzStudio/data/w13-integration-matrix.json",
+      "milestone": "W13",
+      "schemaVersion": 1,
+      "generatedAt": "2026-10-26T04:30:00.000Z",
+      "sourceIdentity": "integration-matrix",
+      "fresh": true,
+      "status": "matrix"
+    },
+    {
+      "path": "Tools/HertzStudio/data/w13-integration-proof.json",
+      "milestone": "W13",
+      "schemaVersion": 1,
+      "generatedAt": "from aggregate",
+      "sourceIdentity": "local-integration",
+      "fresh": true,
+      "status": "proof"
+    },
+    {
+      "path": "Tools/HertzStudio/data/w14-deploy-plan-proof.json",
+      "milestone": "W14",
+      "schemaVersion": 1,
+      "generatedAt": "from regress:w14",
+      "sourceIdentity": "local-api-tests",
+      "fresh": true,
+      "status": "proof"
+    },
+    {
+      "path": "Tools/HertzStudio/data/w08-w14-aggregate-proof.json",
+      "milestone": "W08-W14",
+      "schemaVersion": 1,
+      "generatedAt": "2026-10-26T03:17:57.378Z",
+      "sourceIdentity": "regress:w08-w14",
+      "fresh": true,
+      "status": "aggregate_passed"
+    }
+  ]
+}

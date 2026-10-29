@@ -1,0 +1,16 @@
+{
+  "investigatedAt": "2026-10-24T10:50:00.000Z",
+  "sampleScenePath": "Assets/Scenes/SampleScene.unity",
+  "currentDiskSha256": "9FB1EFEAC51BD4AEE87A5DD23CD3613DB054EA41BC82977F0ADAF27CA5E5F4D9",
+  "previousReferenceSha256": "5EE3954E…419A",
+  "origin": "preexisting_tmp_ui_serialization",
+  "evidence": [
+    "git diff shows only TMP m_characterHorizontalScale additions and UI SizeDelta/localPosition overrides on XR Interaction Toolkit sample prefab instances",
+    "LastWriteTime 23/10/2026 predates this W03 completion batch",
+    "No W03 transform/proof object names in the SampleScene diff"
+  ],
+  "decision": "preserve_exactly",
+  "mutationProofScene": "Assets/Scenes/HertzStudioTest.unity",
+  "doNotRevert": true,
+  "doNotUsePreviousHashAsExpectedBaseline": true
+}

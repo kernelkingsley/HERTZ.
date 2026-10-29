@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-21T00:08:09.195Z",
+  "assetId": "50917d96-259a-4060-a85a-8f534633cfdb",
+  "requestId": "proof-766ceddf-aa8a-4ddc-b891-f169c1eff945",
+  "acceptStatus": 202,
+  "terminal": {
+    "status": "applied",
+    "requestId": "proof-766ceddf-aa8a-4ddc-b891-f169c1eff945",
+    "assetId": "50917d96-259a-4060-a85a-8f534633cfdb",
+    "importedPath": "Assets/HertzStudio/Imported/50917d96-259a-4060-a85a-8f534633cfdb/scene.gltf",
+    "prefabPath": "Assets/HertzStudio/Imported/50917d96-259a-4060-a85a-8f534633cfdb/Import Loop Proof Prop.prefab",
+    "payloadHash": "3b175d62d3a34a27ed76484e17b229eab9ae4c6069156b5bc50ca25213584305",
+    "copied": true
+  },
+  "duplicate": {
+    "status": "applied",
+    "requestId": "proof-766ceddf-aa8a-4ddc-b891-f169c1eff945",
+    "assetId": "50917d96-259a-4060-a85a-8f534633cfdb",
+    "importedPath": "Assets/HertzStudio/Imported/50917d96-259a-4060-a85a-8f534633cfdb/scene.gltf",
+    "prefabPath": "Assets/HertzStudio/Imported/50917d96-259a-4060-a85a-8f534633cfdb/Import Loop Proof Prop.prefab",
+    "payloadHash": "3b175d62d3a34a27ed76484e17b229eab9ae4c6069156b5bc50ca25213584305",
+    "copied": true
+  },
+  "destExists": true,
+  "destFiles": [
+    "buffers",
+    "buffers.meta",
+    "Import Loop Proof Prop.prefab",
+    "Import Loop Proof Prop.prefab.meta",
+    "scene.gltf",
+    "scene.gltf.meta",
+    "textures",
+    "textures.meta",
+    "buffers\\mesh.bin",
+    "buffers\\mesh.bin.meta",
+    "textures\\albedo.png",
+    "textures\\albedo.png.meta",
+    "textures\\detail.png",
+    "textures\\detail.png.meta"
+  ],
+  "stagingGone": true
+}

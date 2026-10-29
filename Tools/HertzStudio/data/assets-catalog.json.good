@@ -1,0 +1,1203 @@
+{
+  "version": 1,
+  "assets": {
+    "e0813cd1-27b6-49f7-995f-f321f7c41f6b": {
+      "id": "e0813cd1-27b6-49f7-995f-f321f7c41f6b",
+      "displayName": "e2e-triangle",
+      "description": "",
+      "assetType": "model_3d",
+      "provider": "upload",
+      "sourceUrl": null,
+      "author": null,
+      "license": "uploaded",
+      "packName": null,
+      "packVersion": null,
+      "fileFormat": "glb",
+      "byteSize": 400,
+      "contentHash": "1f338f6bd4f895a91b9012b1278422931b0321125b6543e6487b67e971e82d00",
+      "blobPath": "private/assets/e0813cd1-27b6-49f7-995f-f321f7c41f6b.glb",
+      "preview": {
+        "kind": "model",
+        "url": "/api/assets/previews/e0813cd1-27b6-49f7-995f-f321f7c41f6b.glb",
+        "relativePath": "e0813cd1-27b6-49f7-995f-f321f7c41f6b.glb",
+        "note": "model_preview_on_details_route"
+      },
+      "unity": {
+        "readiness": "ready",
+        "importedPath": "Assets/HertzStudio/Imported/e0813cd1-27b6-49f7-995f-f321f7c41f6b/e2e-triangle.glb",
+        "prefabPath": "Assets/HertzStudio/Imported/e0813cd1-27b6-49f7-995f-f321f7c41f6b/e2e-triangle.prefab",
+        "dependencies": []
+      },
+      "state": "unity_imported",
+      "importError": null,
+      "validationState": "ok",
+      "createdAt": "2026-10-20T16:41:27.729Z",
+      "updatedAt": "2026-10-20T16:41:29.345Z"
+    },
+    "982c66d1-0a77-4a40-b140-b7e3c4b944c3": {
+      "id": "982c66d1-0a77-4a40-b140-b7e3c4b944c3",
+      "displayName": "e2e-triangle",
+      "description": "",
+      "assetType": "model_3d",
+      "provider": "upload",
+      "sourceUrl": null,
+      "author": null,
+      "license": "uploaded",
+      "packName": null,
+      "packVersion": null,
+      "fileFormat": "glb",
+      "byteSize": 428,
+      "contentHash": "c2988341816ee10633d89562e8cb5b26c86144da353e8f403bd806e8520d4295",
+      "blobPath": "private/assets/982c66d1-0a77-4a40-b140-b7e3c4b944c3.glb",
+      "preview": {
+        "kind": "model",
+        "url": "/api/assets/previews/982c66d1-0a77-4a40-b140-b7e3c4b944c3.glb",
+        "relativePath": "982c66d1-0a77-4a40-b140-b7e3c4b944c3.glb",
+        "note": "model_preview_on_details_route"
+      },
+      "unity": {
+        "readiness": "ready",
+        "importedPath": "Assets/HertzStudio/Imported/982c66d1-0a77-4a40-b140-b7e3c4b944c3/e2e-triangle.glb",
+        "prefabPath": "Assets/HertzStudio/Imported/982c66d1-0a77-4a40-b140-b7e3c4b944c3/e2e-triangle.prefab",
+        "dependencies": []
+      },
+      "state": "unity_imported",
+      "importError": null,
+      "validationState": "ok",
+      "createdAt": "2026-10-20T19:03:58.503Z",
+      "updatedAt": "2026-10-20T19:06:03.712Z"
+    },
+    "3aa1b520-0381-4bac-a43f-16efee282af4": {
+      "id": "3aa1b520-0381-4bac-a43f-16efee282af4",
+      "displayName": "scene",
+      "description": "",
+      "assetType": "model_3d",
+      "provider": "upload",
+      "sourceUrl": null,
+      "author": null,
+      "license": "uploaded",
+      "packName": null,
+      "packVersion": null,
+      "fileFormat": "gltf",
+      "byteSize": 1062,
+      "contentHash": "d8b0e21493208c338fb51691517b4d0c7f0d976ae6c8d63d34a2031eb969b03b",
+      "blobPath": "private/assets/3aa1b520-0381-4bac-a43f-16efee282af4.gltf",
+      "preview": {
+        "kind": "model",
+        "url": "/api/assets/previews/3aa1b520-0381-4bac-a43f-16efee282af4.gltf",
+        "relativePath": "3aa1b520-0381-4bac-a43f-16efee282af4.gltf",
+        "note": "model_preview_on_details_route"
+      },
+      "unity": {
+        "readiness": "ready",
+        "importedPath": "Assets/HertzStudio/Imported/3aa1b520-0381-4bac-a43f-16efee282af4/scene.gltf",
+        "prefabPath": null,
+        "dependencies": [
+          {
+            "relativePath": "buffers/mesh.bin",
+            "blobName": "3aa1b520-0381-4bac-a43f-16efee282af4__buffers_mesh.bin",
+            "byteSize": 36
+          },
+          {
+            "relativePath": "textures/albedo.png",
+            "blobName": "3aa1b520-0381-4bac-a43f-16efee282af4__textures_albedo.png",
+            "byteSize": 70
+          }
+        ]
+      },
+      "state": "unity_imported",
+      "importError": null,
+      "validationState": "ok",
+      "createdAt": "2026-10-20T19:06:07.503Z",
+      "updatedAt": "2026-10-20T19:06:09.430Z"
+    },
+    "59813a75-319f-4ff1-9d8a-59fc9e8e4356": {
+      "id": "59813a75-319f-4ff1-9d8a-59fc9e8e4356",
+      "displayName": "scene",
+      "description": "This little car was so funny to make, the concept its from @gatring3 on twitter.\nI made this guy using blender and substance painter.\nIts been a while since my last animation so im proud of this!\n\nMy ig is @cuadot_v if you want to see more renders",
+      "assetType": "model_3d",
+      "provider": "sketchfab",
+      "sourceUrl": "https://sketchfab.com/3d-models/car-acccd15d4e454399a39dbe40f4f6df71",
+      "author": "cuadot.fbx",
+      "license": "CC Attribution",
+      "packName": null,
+      "packVersion": null,
+      "fileFormat": "gltf",
+      "byteSize": 309202,
+      "contentHash": "dd59d998ed0a067e5446827840235a6cd75d10ed9b15d0a99fd4295e6272b77b",
+      "blobPath": "private/assets/59813a75-319f-4ff1-9d8a-59fc9e8e4356.gltf",
+      "preview": {
+        "kind": "model",
+        "url": "/api/assets/previews/59813a75-319f-4ff1-9d8a-59fc9e8e4356.gltf",
+        "relativePath": "59813a75-319f-4ff1-9d8a-59fc9e8e4356.gltf",
+        "note": "model_preview_on_details_route"
+      },
+      "unity": {
+        "readiness": "pending",
+        "importedPath": null,
+        "prefabPath": null,
+        "dependencies": [
+          {
+            "relativePath": "license.txt",
+            "blobName": "59813a75-319f-4ff1-9d8a-59fc9e8e4356__license.txt",
+            "byteSize": 624
+          },
+          {
+            "relativePath": "scene.bin",
+            "blobName": "59813a75-319f-4ff1-9d8a-59fc9e8e4356__scene.bin",
+            "byteSize": 2101012
+          },
+          {
+            "relativePath": "textures/Mat_Robot_baseColor.png",
+            "blobName": "59813a75-319f-4ff1-9d8a-59fc9e8e4356__textures_Mat_Robot_baseColor.png",
+            "byteSize": 7948486
+          },
+          {
+            "relativePath": "textures/Mat_Robot_emissive.png",
+            "blobName": "59813a75-319f-4ff1-9d8a-59fc9e8e4356__textures_Mat_Robot_emissive.png",
+            "byteSize": 30634
+          },
+          {
+            "relativePath": "textures/Mat_Robot_metallicRoughness.png",
+            "blobName": "59813a75-319f-4ff1-9d8a-59fc9e8e4356__textures_Mat_Robot_metallicRoughness.png",
+            "byteSize": 1617518
+          },
+          {
+            "relativePath": "textures/Mat_Robot_normal.png",
+            "blobName": "59813a75-319f-4ff1-9d8a-59fc9e8e4356__textures_Mat_Robot_normal.png",
+            "byteSize": 3946590
+          }
+        ]
+      },
+      "state": "preview_ready",
+      "importError": null,
+      "validationState": "ok",
+      "createdAt": "2026-10-20T19:14:43.141Z",
+      "updatedAt": "2026-10-20T19:14:43.141Z"
+    },
+    "93188900-0367-44fd-ab51-f55c305ead6a": {
+      "id": "93188900-0367-44fd-ab51-f55c305ead6a",
+      "displayName": "scene",
+      "description": "Here is [my futuristic car](http://wp.me/P3dmoi-1pt) design. \n\n![](https://3dartdh.files.wordpress.com/2013/02/speed_car_cycles_render_wip_by_dennish2010-d4w3po2.png)\n\nI modeled, textured and rigged this car in [Blender](https://www.blender.org/). \n\nThe concept was created by [Piotr Kupsc](https://goo.gl/GtVuRb).\n\n![Future Car](https://3dartdh.files.wordpress.com/2017/02/concept-car.jpg)\n\nHere are some cool projects where this car has found a use:\n\n* [Futuristic Car painting contest](https://goo",
+      "assetType": "model_3d",
+      "provider": "sketchfab",
+      "sourceUrl": "https://sketchfab.com/3d-models/future-car-hliAt7xc6YU2XjXh5G4lzmQwFmR",
+      "author": "3DHaupt",
+      "license": "CC Attribution",
+      "packName": null,
+      "packVersion": null,
+      "fileFormat": "gltf",
+      "byteSize": 20305,
+      "contentHash": "aa499f708e1944b2b1ac2e0a8858812c4607165eb300c5f259c88029acb521de",
+      "blobPath": "private/assets/93188900-0367-44fd-ab51-f55c305ead6a.gltf",
+      "preview": {
+        "kind": "image",
+        "url": "/api/assets/previews/93188900-0367-44fd-ab51-f55c305ead6a.jpg",
+        "relativePath": "93188900-0367-44fd-ab51-f55c305ead6a.jpg"
+      },
+      "unity": {
+        "readiness": "ready",
+        "importedPath": "Assets/HertzStudio/Imported/93188900-0367-44fd-ab51-f55c305ead6a/scene.gltf",
+        "prefabPath": null,
+        "dependencies": [
+          {
+            "relativePath": "license.txt",
+            "blobName": "93188900-0367-44fd-ab51-f55c305ead6a__license.txt",
+            "byteSize": 654
+          },
+          {
+            "relativePath": "scene.bin",
+            "blobName": "93188900-0367-44fd-ab51-f55c305ead6a__scene.bin",
+            "byteSize": 7456464
+          },
+          {
+            "relativePath": "textures/Material_baseColor.jpeg",
+            "blobName": "93188900-0367-44fd-ab51-f55c305ead6a__textures_Material_baseColor.jpeg",
+            "byteSize": 76157
+          },
+          {
+            "relativePath": "textures/glass_normal.jpeg",
+            "blobName": "93188900-0367-44fd-ab51-f55c305ead6a__textures_glass_normal.jpeg",
+            "byteSize": 8454828
+          },
+          {
+            "relativePath": "textures/s_car_baseColor.jpeg",
+            "blobName": "93188900-0367-44fd-ab51-f55c305ead6a__textures_s_car_baseColor.jpeg",
+            "byteSize": 9569844
+          },
+          {
+            "relativePath": "textures/s_car_clearcoat.png",
+            "blobName": "93188900-0367-44fd-ab51-f55c305ead6a__textures_s_car_clearcoat.png",
+            "byteSize": 10052025
+          },
+          {
+            "relativePath": "textures/s_car_metallicRoughness.png",
+            "blobName": "93188900-0367-44fd-ab51-f55c305ead6a__textures_s_car_metallicRoughness.png",
+            "byteSize": 10051378
+          },
+          {
+            "relativePath": "textures/s_car_normal.jpeg",
+            "blobName": "93188900-0367-44fd-ab51-f55c305ead6a__textures_s_car_normal.jpeg",
+            "byteSize": 2357484
+          }
+        ]
+      },
+      "state": "unity_imported",
+      "importError": null,
+      "validationState": "ok",
+      "createdAt": "2026-10-20T23:40:06.830Z",
+      "updatedAt": "2026-10-20T23:43:36.361Z"
+    },
+    "ce7d1bb4-2ddd-4c9e-abde-049abd669b73": {
+      "id": "ce7d1bb4-2ddd-4c9e-abde-049abd669b73",
+      "displayName": "Futuristic racing car - Molnia",
+      "entrypointFileName": "scene.gltf",
+      "description": "Futuristic racing car. \nModeled in Blender and textured in Substance Painter.",
+      "assetType": "model_3d",
+      "provider": "sketchfab",
+      "sourceUrl": "https://sketchfab.com/3d-models/futuristic-racing-car-molnia-738a78a4c9154614b90029bf8bb80d61",
+      "author": "TuppsM",
+      "license": "CC Attribution",
+      "packName": null,
+      "packVersion": null,
+      "fileFormat": "gltf",
+      "byteSize": 55859,
+      "contentHash": "b8625dbcbb29c216e030f2c5b50d9f012f01649344d74c4128c69b8978712c25",
+      "blobPath": "private/assets/ce7d1bb4-2ddd-4c9e-abde-049abd669b73.gltf",
+      "preview": {
+        "kind": "image",
+        "url": "/api/assets/previews/ce7d1bb4-2ddd-4c9e-abde-049abd669b73.jpg",
+        "relativePath": "ce7d1bb4-2ddd-4c9e-abde-049abd669b73.jpg"
+      },
+      "unity": {
+        "readiness": "ready",
+        "importedPath": "Assets/HertzStudio/Imported/ce7d1bb4-2ddd-4c9e-abde-049abd669b73/scene.gltf",
+        "prefabPath": "Assets/HertzStudio/Imported/ce7d1bb4-2ddd-4c9e-abde-049abd669b73/Futuristic racing car - Molnia.prefab",
+        "dependencies": [
+          {
+            "relativePath": "license.txt",
+            "blobName": "ce7d1bb4-2ddd-4c9e-abde-049abd669b73__license.txt",
+            "byteSize": 732
+          },
+          {
+            "relativePath": "scene.bin",
+            "blobName": "ce7d1bb4-2ddd-4c9e-abde-049abd669b73__scene.bin",
+            "byteSize": 1030308
+          },
+          {
+            "relativePath": "textures/Molnia_baseColor.png",
+            "blobName": "ce7d1bb4-2ddd-4c9e-abde-049abd669b73__textures_Molnia_baseColor.png",
+            "byteSize": 8079314
+          },
+          {
+            "relativePath": "textures/Molnia_emissive.png",
+            "blobName": "ce7d1bb4-2ddd-4c9e-abde-049abd669b73__textures_Molnia_emissive.png",
+            "byteSize": 178955
+          },
+          {
+            "relativePath": "textures/Molnia_metallicRoughness.png",
+            "blobName": "ce7d1bb4-2ddd-4c9e-abde-049abd669b73__textures_Molnia_metallicRoughness.png",
+            "byteSize": 14270826
+          },
+          {
+            "relativePath": "textures/Molnia_normal.png",
+            "blobName": "ce7d1bb4-2ddd-4c9e-abde-049abd669b73__textures_Molnia_normal.png",
+            "byteSize": 8696884
+          },
+          {
+            "relativePath": "textures/Molnia_transmission.png",
+            "blobName": "ce7d1bb4-2ddd-4c9e-abde-049abd669b73__textures_Molnia_transmission.png",
+            "byteSize": 51824
+          }
+        ]
+      },
+      "state": "unity_imported",
+      "importError": null,
+      "validationState": "ok",
+      "createdAt": "2026-10-21T00:17:41.288Z",
+      "updatedAt": "2026-10-21T00:19:31.618Z"
+    },
+    "44921c6c-07fc-47ae-9bd0-40fbb54d9a36": {
+      "id": "44921c6c-07fc-47ae-9bd0-40fbb54d9a36",
+      "displayName": "Zombie Dog",
+      "entrypointFileName": "scene.gltf",
+      "description": "Zombie Dog",
+      "assetType": "model_3d",
+      "provider": "sketchfab",
+      "sourceUrl": "https://sketchfab.com/3d-models/zombie-dog-a0570f82ac974a6bb3214364b0e2b16d",
+      "author": "Long Nguyễn",
+      "license": "CC Attribution",
+      "packName": null,
+      "packVersion": null,
+      "fileFormat": "gltf",
+      "byteSize": 3754,
+      "contentHash": "68ad70ececa58ccfa9a452e25462b8cc2430476f5bef46702fcf3aac98fe5355",
+      "blobPath": "private/assets/44921c6c-07fc-47ae-9bd0-40fbb54d9a36.gltf",
+      "preview": {
+        "kind": "image",
+        "url": "/api/assets/previews/44921c6c-07fc-47ae-9bd0-40fbb54d9a36.jpg",
+        "relativePath": "44921c6c-07fc-47ae-9bd0-40fbb54d9a36.jpg"
+      },
+      "unity": {
+        "readiness": "ready",
+        "importedPath": "Assets/HertzStudio/Imported/44921c6c-07fc-47ae-9bd0-40fbb54d9a36/scene.gltf",
+        "prefabPath": "Assets/HertzStudio/Imported/44921c6c-07fc-47ae-9bd0-40fbb54d9a36/Zombie Dog.prefab",
+        "dependencies": [
+          {
+            "relativePath": "license.txt",
+            "blobName": "44921c6c-07fc-47ae-9bd0-40fbb54d9a36__license.txt",
+            "byteSize": 678
+          },
+          {
+            "relativePath": "scene.bin",
+            "blobName": "44921c6c-07fc-47ae-9bd0-40fbb54d9a36__scene.bin",
+            "byteSize": 80512
+          },
+          {
+            "relativePath": "textures/material_0_baseColor.png",
+            "blobName": "44921c6c-07fc-47ae-9bd0-40fbb54d9a36__textures_material_0_baseColor.png",
+            "byteSize": 207192
+          },
+          {
+            "relativePath": "textures/material_0_metallicRoughness.png",
+            "blobName": "44921c6c-07fc-47ae-9bd0-40fbb54d9a36__textures_material_0_metallicRoughness.png",
+            "byteSize": 79525
+          }
+        ]
+      },
+      "state": "unity_imported",
+      "importError": null,
+      "validationState": "ok",
+      "createdAt": "2026-10-21T00:22:21.469Z",
+      "updatedAt": "2026-10-21T00:22:28.532Z"
+    },
+    "ee0f6132-7f22-400e-b98a-b4fa2f98ce66": {
+      "id": "ee0f6132-7f22-400e-b98a-b4fa2f98ce66",
+      "displayName": "Female bag",
+      "entrypointFileName": "scene.gltf",
+      "description": "It's Gucci's bag. But there is no logo",
+      "assetType": "model_3d",
+      "provider": "sketchfab",
+      "sourceUrl": "https://sketchfab.com/3d-models/female-bag-37c6cdee47f548b89f5927be0d01fd79",
+      "author": "DailyArt",
+      "license": "CC Attribution-NonCommercial",
+      "packName": null,
+      "packVersion": null,
+      "fileFormat": "gltf",
+      "byteSize": 37975,
+      "contentHash": "246d2417c03bf68520d61b6099b37891615a9249b5914524a43a4f9252c5f1f8",
+      "blobPath": "private/assets/ee0f6132-7f22-400e-b98a-b4fa2f98ce66.gltf",
+      "preview": {
+        "kind": "image",
+        "url": "/api/assets/previews/ee0f6132-7f22-400e-b98a-b4fa2f98ce66.jpg",
+        "relativePath": "ee0f6132-7f22-400e-b98a-b4fa2f98ce66.jpg"
+      },
+      "unity": {
+        "readiness": "pending",
+        "importedPath": null,
+        "prefabPath": null,
+        "dependencies": [
+          {
+            "relativePath": "license.txt",
+            "blobName": "ee0f6132-7f22-400e-b98a-b4fa2f98ce66__license.txt",
+            "byteSize": 658
+          },
+          {
+            "relativePath": "textures/baobao_baseColor.jpeg",
+            "blobName": "ee0f6132-7f22-400e-b98a-b4fa2f98ce66__textures_baobao_baseColor.jpeg",
+            "byteSize": 4665243
+          },
+          {
+            "relativePath": "textures/baobao_normal.jpeg",
+            "blobName": "ee0f6132-7f22-400e-b98a-b4fa2f98ce66__textures_baobao_normal.jpeg",
+            "byteSize": 8026216
+          },
+          {
+            "relativePath": "textures/budai_baseColor.jpeg",
+            "blobName": "ee0f6132-7f22-400e-b98a-b4fa2f98ce66__textures_budai_baseColor.jpeg",
+            "byteSize": 3429808
+          },
+          {
+            "relativePath": "textures/budai_metallicRoughness.png",
+            "blobName": "ee0f6132-7f22-400e-b98a-b4fa2f98ce66__textures_budai_metallicRoughness.png",
+            "byteSize": 2430590
+          },
+          {
+            "relativePath": "textures/budai_normal.jpeg",
+            "blobName": "ee0f6132-7f22-400e-b98a-b4fa2f98ce66__textures_budai_normal.jpeg",
+            "byteSize": 7436778
+          },
+          {
+            "relativePath": "textures/daizi_baseColor.jpeg",
+            "blobName": "ee0f6132-7f22-400e-b98a-b4fa2f98ce66__textures_daizi_baseColor.jpeg",
+            "byteSize": 999908
+          },
+          {
+            "relativePath": "textures/daizi_normal.jpeg",
+            "blobName": "ee0f6132-7f22-400e-b98a-b4fa2f98ce66__textures_daizi_normal.jpeg",
+            "byteSize": 6554486
+          }
+        ]
+      },
+      "state": "preview_ready",
+      "importError": null,
+      "validationState": "ok",
+      "createdAt": "2026-10-21T00:37:28.191Z",
+      "updatedAt": "2026-10-21T00:37:28.191Z"
+    },
+    "8e7aeace-df2b-40ba-842d-9a94e99e1e8f": {
+      "id": "8e7aeace-df2b-40ba-842d-9a94e99e1e8f",
+      "displayName": "Armored cat",
+      "entrypointFileName": "scene.gltf",
+      "description": "Hello! Fun model.\nA cat from the suffering Middle Ages",
+      "assetType": "model_3d",
+      "provider": "sketchfab",
+      "sourceUrl": "https://sketchfab.com/3d-models/armored-cat-451dfa3bc859420698391faefae353a0",
+      "author": "Groccel",
+      "license": "CC Attribution",
+      "packName": null,
+      "packVersion": null,
+      "fileFormat": "gltf",
+      "byteSize": 5538,
+      "contentHash": "b589c20c883716b3d0c09e76e27a7424cc83e8c3dd215752108b9b9c963a7f84",
+      "blobPath": "private/assets/8e7aeace-df2b-40ba-842d-9a94e99e1e8f.gltf",
+      "preview": {
+        "kind": "image",
+        "url": "/api/assets/previews/8e7aeace-df2b-40ba-842d-9a94e99e1e8f.jpg",
+        "relativePath": "8e7aeace-df2b-40ba-842d-9a94e99e1e8f.jpg"
+      },
+      "unity": {
+        "readiness": "ready",
+        "importedPath": "Assets/HertzStudio/Imported/8e7aeace-df2b-40ba-842d-9a94e99e1e8f/scene.gltf",
+        "prefabPath": "Assets/HertzStudio/Imported/8e7aeace-df2b-40ba-842d-9a94e99e1e8f/Armored cat.prefab",
+        "dependencies": [
+          {
+            "relativePath": "license.txt",
+            "blobName": "8e7aeace-df2b-40ba-842d-9a94e99e1e8f__license.txt",
+            "byteSize": 660
+          },
+          {
+            "relativePath": "scene.bin",
+            "blobName": "8e7aeace-df2b-40ba-842d-9a94e99e1e8f__scene.bin",
+            "byteSize": 1488696
+          },
+          {
+            "relativePath": "textures/material_baseColor.png",
+            "blobName": "8e7aeace-df2b-40ba-842d-9a94e99e1e8f__textures_material_baseColor.png",
+            "byteSize": 3393218
+          },
+          {
+            "relativePath": "textures/material_metallicRoughness.png",
+            "blobName": "8e7aeace-df2b-40ba-842d-9a94e99e1e8f__textures_material_metallicRoughness.png",
+            "byteSize": 534328
+          },
+          {
+            "relativePath": "textures/material_normal.png",
+            "blobName": "8e7aeace-df2b-40ba-842d-9a94e99e1e8f__textures_material_normal.png",
+            "byteSize": 2522282
+          }
+        ],
+        "lastPlacedScene": "Assets/Scenes/HertzStudioTest.unity",
+        "lastPlacedAt": "2026-10-21T00:38:38.512Z"
+      },
+      "state": "unity_imported",
+      "importError": null,
+      "validationState": "ok",
+      "createdAt": "2026-10-21T00:38:15.923Z",
+      "updatedAt": "2026-10-21T00:38:38.512Z",
+      "placeError": null
+    },
+    "176a9528-d289-4937-974e-00705c3937dc": {
+      "id": "176a9528-d289-4937-974e-00705c3937dc",
+      "displayName": "Water Bottles",
+      "entrypointFileName": "scene.gltf",
+      "description": "Plastic water/juice bottles.",
+      "assetType": "model_3d",
+      "provider": "sketchfab",
+      "sourceUrl": "https://sketchfab.com/3d-models/water-bottles-300baac43615474c8fa3e4da94c78ce1",
+      "author": "HGowl",
+      "license": "CC Attribution",
+      "packName": null,
+      "packVersion": null,
+      "fileFormat": "gltf",
+      "byteSize": 11925,
+      "contentHash": "629f2af59f47dab45949ec27bcd878721c626e9e242486969353f8305e30497a",
+      "blobPath": "private/assets/176a9528-d289-4937-974e-00705c3937dc.gltf",
+      "preview": {
+        "kind": "image",
+        "url": "/api/assets/previews/176a9528-d289-4937-974e-00705c3937dc.jpg",
+        "relativePath": "176a9528-d289-4937-974e-00705c3937dc.jpg"
+      },
+      "unity": {
+        "readiness": "ready",
+        "importedPath": "Assets/HertzStudio/Imported/176a9528-d289-4937-974e-00705c3937dc/scene.gltf",
+        "prefabPath": "Assets/HertzStudio/Imported/176a9528-d289-4937-974e-00705c3937dc/Water Bottles.prefab",
+        "dependencies": [
+          {
+            "relativePath": "license.txt",
+            "blobName": "176a9528-d289-4937-974e-00705c3937dc__license.txt",
+            "byteSize": 664
+          },
+          {
+            "relativePath": "scene.bin",
+            "blobName": "176a9528-d289-4937-974e-00705c3937dc__scene.bin",
+            "byteSize": 659676
+          },
+          {
+            "relativePath": "textures/Labels_baseColor.jpeg",
+            "blobName": "176a9528-d289-4937-974e-00705c3937dc__textures_Labels_baseColor.jpeg",
+            "byteSize": 249887
+          }
+        ],
+        "lastPlacedScene": "Assets/Scenes/HertzStudioTest.unity",
+        "lastPlacedAt": "2026-10-21T01:03:12.625Z"
+      },
+      "state": "unity_imported",
+      "importError": null,
+      "validationState": "ok",
+      "createdAt": "2026-10-21T01:01:56.183Z",
+      "updatedAt": "2026-10-21T01:03:12.625Z",
+      "placeError": null
+    },
+    "27ed3b0f-d18d-495c-ac20-fac7bf6f04a3": {
+      "id": "27ed3b0f-d18d-495c-ac20-fac7bf6f04a3",
+      "displayName": "Cartoon Night sky",
+      "entrypointFileName": "scene.gltf",
+      "description": "some assets for a stilyzed sky\n*Please, no credits required",
+      "assetType": "model_3d",
+      "provider": "sketchfab",
+      "sourceUrl": "https://sketchfab.com/3d-models/cartoon-night-sky-6f8eacef67944defa5239cb6aacd8ab3",
+      "author": "Khal-lion",
+      "license": "Free Standard",
+      "packName": null,
+      "packVersion": null,
+      "fileFormat": "gltf",
+      "byteSize": 17747,
+      "contentHash": "b8d6c04b4d7f4faed7fbef559d0d2b5d99b555d0c24d8e8420d8acd3ca466b6e",
+      "blobPath": "private/assets/27ed3b0f-d18d-495c-ac20-fac7bf6f04a3.gltf",
+      "preview": {
+        "kind": "image",
+        "url": "/api/assets/previews/27ed3b0f-d18d-495c-ac20-fac7bf6f04a3.jpg",
+        "relativePath": "27ed3b0f-d18d-495c-ac20-fac7bf6f04a3.jpg"
+      },
+      "unity": {
+        "readiness": "pending",
+        "importedPath": null,
+        "prefabPath": null,
+        "dependencies": [
+          {
+            "relativePath": "license.txt",
+            "blobName": "27ed3b0f-d18d-495c-ac20-fac7bf6f04a3__license.txt",
+            "byteSize": 415
+          },
+          {
+            "relativePath": "scene.bin",
+            "blobName": "27ed3b0f-d18d-495c-ac20-fac7bf6f04a3__scene.bin",
+            "byteSize": 726960
+          },
+          {
+            "relativePath": "textures/nuven_baseColor.png",
+            "blobName": "27ed3b0f-d18d-495c-ac20-fac7bf6f04a3__textures_nuven_baseColor.png",
+            "byteSize": 263621
+          }
+        ]
+      },
+      "state": "preview_ready",
+      "importError": null,
+      "validationState": "ok",
+      "createdAt": "2026-10-21T01:52:54.699Z",
+      "updatedAt": "2026-10-21T01:52:54.699Z"
+    },
+    "7357201b-521a-464e-9163-5206bd13f90c": {
+      "id": "7357201b-521a-464e-9163-5206bd13f90c",
+      "displayName": "PLANAR HUMAN BASE RIGS",
+      "entrypointFileName": "scene.gltf",
+      "description": ">24/09/2020: For Blender 2.8 users and above:\nIt seems the riggs are not displayed, because this was made with older versions (and layers), so, in order to pose the models you need to >> enable in display<< the collection with the riggs in the collections tab ;)\n\nHere is a modiffication of Alexander Lee's female rig I made with blender, solving some rig issues and making a male model. Usefull as posable reference manequin or other pourposes.\n\nOriginal Author:\n\nwww.alexanderlee1.deviantart.com\n\nw",
+      "assetType": "model_3d",
+      "provider": "sketchfab",
+      "sourceUrl": "https://sketchfab.com/3d-models/planar-human-base-rigs-15a1d670d29b4195a10c23dca0d13da9",
+      "author": "dacancino",
+      "license": "CC Attribution",
+      "packName": null,
+      "packVersion": null,
+      "fileFormat": "gltf",
+      "byteSize": 41346,
+      "contentHash": "393e435bee45fa6bbdec2e1442f78b7c11fb65dddf700ca929f24fd3487d49e9",
+      "blobPath": "private/assets/7357201b-521a-464e-9163-5206bd13f90c.gltf",
+      "preview": {
+        "kind": "image",
+        "url": "/api/assets/previews/7357201b-521a-464e-9163-5206bd13f90c.jpg",
+        "relativePath": "7357201b-521a-464e-9163-5206bd13f90c.jpg"
+      },
+      "unity": {
+        "readiness": "pending",
+        "importedPath": null,
+        "prefabPath": null,
+        "dependencies": [
+          {
+            "relativePath": "license.txt",
+            "blobName": "7357201b-521a-464e-9163-5206bd13f90c__license.txt",
+            "byteSize": 712
+          },
+          {
+            "relativePath": "scene.bin",
+            "blobName": "7357201b-521a-464e-9163-5206bd13f90c__scene.bin",
+            "byteSize": 894464
+          }
+        ]
+      },
+      "state": "preview_ready",
+      "importError": null,
+      "validationState": "ok",
+      "createdAt": "2026-10-24T18:28:47.363Z",
+      "updatedAt": "2026-10-24T18:28:47.363Z"
+    },
+    "0ce807ee-a6da-424b-a775-03863a171680": {
+      "id": "0ce807ee-a6da-424b-a775-03863a171680",
+      "displayName": "Basic Human Male",
+      "entrypointFileName": "scene.gltf",
+      "description": "Simple male base mesh. Fully rigged. Female counterpart: https://sketchfab.com/3d-models/basic-human-female-aa64062267dc4324a04dfdd15f2d2c42",
+      "assetType": "model_3d",
+      "provider": "sketchfab",
+      "sourceUrl": "https://sketchfab.com/3d-models/basic-human-male-598d1d1866df48f999fabadb017429d1",
+      "author": "DNC44",
+      "license": "CC Attribution",
+      "packName": null,
+      "packVersion": null,
+      "fileFormat": "gltf",
+      "byteSize": 29936,
+      "contentHash": "3f20b2ced1a1eb7347cda51ccc9ca912b6c49c53130a599b59b38ba6f9a851bb",
+      "blobPath": "private/assets/0ce807ee-a6da-424b-a775-03863a171680.gltf",
+      "preview": {
+        "kind": "image",
+        "url": "/api/assets/previews/0ce807ee-a6da-424b-a775-03863a171680.jpg",
+        "relativePath": "0ce807ee-a6da-424b-a775-03863a171680.jpg"
+      },
+      "unity": {
+        "readiness": "ready",
+        "importedPath": "Assets/HertzStudio/Imported/0ce807ee-a6da-424b-a775-03863a171680/scene.gltf",
+        "prefabPath": "Assets/HertzStudio/Imported/0ce807ee-a6da-424b-a775-03863a171680/Basic Human Male.prefab",
+        "dependencies": [
+          {
+            "relativePath": "license.txt",
+            "blobName": "0ce807ee-a6da-424b-a775-03863a171680__license.txt",
+            "byteSize": 672
+          },
+          {
+            "relativePath": "scene.bin",
+            "blobName": "0ce807ee-a6da-424b-a775-03863a171680__scene.bin",
+            "byteSize": 546624
+          }
+        ]
+      },
+      "state": "unity_imported",
+      "importError": null,
+      "validationState": "ok",
+      "createdAt": "2026-10-24T18:29:18.561Z",
+      "updatedAt": "2026-10-24T21:44:58.849Z",
+      "placeError": null,
+      "placeCode": null,
+      "placeBlockingScenes": null,
+      "placeStatus": "applied"
+    },
+    "24d51425-099d-4b14-a303-56edcf56177a": {
+      "id": "24d51425-099d-4b14-a303-56edcf56177a",
+      "displayName": "HERTZ_Pistol_Optimized_Rigged",
+      "entrypointFileName": "HERTZ_Pistol_Optimized_Rigged.glb",
+      "description": "",
+      "assetType": "model_3d",
+      "provider": "upload",
+      "sourceUrl": null,
+      "author": null,
+      "license": "uploaded",
+      "packName": null,
+      "packVersion": null,
+      "fileFormat": "glb",
+      "byteSize": 32898120,
+      "contentHash": "4afad1849eb829b4864d76587a8f4105f9ac40f1393c079fcb55f6ec343f0e72",
+      "blobPath": "private/assets/24d51425-099d-4b14-a303-56edcf56177a.glb",
+      "preview": {
+        "kind": "model",
+        "url": "/api/assets/previews/24d51425-099d-4b14-a303-56edcf56177a.glb",
+        "relativePath": "24d51425-099d-4b14-a303-56edcf56177a.glb",
+        "note": "model_preview_on_details_route"
+      },
+      "unity": {
+        "readiness": "ready",
+        "importedPath": "Assets/HertzStudio/Imported/24d51425-099d-4b14-a303-56edcf56177a/HERTZ_Pistol_Optimized_Rigged.glb",
+        "prefabPath": "Assets/HertzStudio/Imported/24d51425-099d-4b14-a303-56edcf56177a/HERTZ_Pistol_Optimized_Rigged.prefab",
+        "dependencies": [],
+        "lastPlacedScene": "Assets/Scenes/HertzWeaponTest.unity",
+        "lastPlacedAt": "2026-10-24T21:45:14.065Z",
+        "lastPlacedGlobalObjectId": null,
+        "lastPlacedUnityRevision": null
+      },
+      "state": "unity_imported",
+      "importError": null,
+      "validationState": "ok",
+      "createdAt": "2026-10-24T21:42:30.380Z",
+      "updatedAt": "2026-10-24T21:45:14.065Z",
+      "placeError": "Target scene revision mismatch. Re-sync and retry.",
+      "placeCode": null,
+      "placeBlockingScenes": null,
+      "placeStatus": "applied"
+    },
+    "ab7afcbf-a39e-4b94-ba9a-912d83ef1288": {
+      "id": "ab7afcbf-a39e-4b94-ba9a-912d83ef1288",
+      "displayName": "T-Pose (1)",
+      "entrypointFileName": "T-Pose (1).fbx",
+      "description": "",
+      "assetType": "model_3d",
+      "provider": "upload",
+      "sourceUrl": null,
+      "author": null,
+      "license": "uploaded",
+      "packName": null,
+      "packVersion": null,
+      "fileFormat": "fbx",
+      "byteSize": 4773712,
+      "contentHash": "ae146e873dd9b29d197f8417197b3e3a23ae01821754d0cca5aa8d9da2ea541a",
+      "blobPath": "private/assets/ab7afcbf-a39e-4b94-ba9a-912d83ef1288.fbx",
+      "preview": {
+        "kind": "none",
+        "url": null,
+        "relativePath": null
+      },
+      "unity": {
+        "readiness": "pending",
+        "importedPath": null,
+        "prefabPath": null,
+        "dependencies": []
+      },
+      "state": "preview_ready",
+      "importError": null,
+      "validationState": "ok",
+      "createdAt": "2026-10-29T13:06:01.336Z",
+      "updatedAt": "2026-10-29T13:06:01.336Z"
+    },
+    "25710419-ccc2-41e1-8484-5d49d3ddec1c": {
+      "id": "25710419-ccc2-41e1-8484-5d49d3ddec1c",
+      "displayName": "lowPolyNoTexture",
+      "entrypointFileName": "lowPolyNoTexture.fbx",
+      "description": "",
+      "assetType": "model_3d",
+      "provider": "upload",
+      "sourceUrl": null,
+      "author": null,
+      "license": "uploaded",
+      "packName": null,
+      "packVersion": null,
+      "fileFormat": "fbx",
+      "byteSize": 700336,
+      "contentHash": "bdd5a7a9ef4907f14dd6891de96e31860f8147d9fe87b931b83eadbdc5afcb1c",
+      "blobPath": "private/assets/25710419-ccc2-41e1-8484-5d49d3ddec1c.fbx",
+      "preview": {
+        "kind": "none",
+        "url": null,
+        "relativePath": null
+      },
+      "unity": {
+        "readiness": "pending",
+        "importedPath": null,
+        "prefabPath": null,
+        "dependencies": []
+      },
+      "state": "preview_ready",
+      "importError": null,
+      "validationState": "ok",
+      "createdAt": "2026-10-29T13:49:58.900Z",
+      "updatedAt": "2026-10-29T13:49:58.900Z"
+    },
+    "e6f0434d-6df2-40cc-9919-9482e77edc03": {
+      "id": "e6f0434d-6df2-40cc-9919-9482e77edc03",
+      "displayName": "Kingsley",
+      "entrypointFileName": "Kingsley.fbx",
+      "description": "",
+      "assetType": "model_3d",
+      "provider": "upload",
+      "sourceUrl": null,
+      "author": null,
+      "license": "uploaded",
+      "packName": null,
+      "packVersion": null,
+      "fileFormat": "fbx",
+      "byteSize": 1071884,
+      "contentHash": "a24dc2a0ef014aeac3d5babac93dbe9034e7cb7a47c148beeb88bba7dc5b1b83",
+      "blobPath": "private/assets/e6f0434d-6df2-40cc-9919-9482e77edc03.fbx",
+      "preview": {
+        "kind": "none",
+        "url": null,
+        "relativePath": null
+      },
+      "unity": {
+        "readiness": "pending",
+        "importedPath": null,
+        "prefabPath": null,
+        "dependencies": []
+      },
+      "state": "preview_ready",
+      "importError": null,
+      "validationState": "ok",
+      "createdAt": "2026-10-29T17:26:27.836Z",
+      "updatedAt": "2026-10-29T17:26:27.836Z"
+    },
+    "87e09390-b30c-4555-9702-10f4fa147c6f": {
+      "id": "87e09390-b30c-4555-9702-10f4fa147c6f",
+      "displayName": "Kingsley_1",
+      "entrypointFileName": "Kingsley_1.fbx",
+      "description": "",
+      "assetType": "model_3d",
+      "provider": "upload",
+      "sourceUrl": null,
+      "author": null,
+      "license": "uploaded",
+      "packName": null,
+      "packVersion": null,
+      "fileFormat": "fbx",
+      "byteSize": 1071884,
+      "contentHash": "c1249c95289f230a8b78296b29dfeeca19f19cb077aa1832cd6af444971e1229",
+      "blobPath": "private/assets/87e09390-b30c-4555-9702-10f4fa147c6f.fbx",
+      "preview": {
+        "kind": "none",
+        "url": null,
+        "relativePath": null
+      },
+      "unity": {
+        "readiness": "pending",
+        "importedPath": null,
+        "prefabPath": null,
+        "dependencies": []
+      },
+      "state": "preview_ready",
+      "importError": null,
+      "validationState": "ok",
+      "createdAt": "2026-10-29T17:29:56.575Z",
+      "updatedAt": "2026-10-29T17:29:56.575Z"
+    },
+    "88428311-2b47-40e5-aa38-c2b3f953c6d6": {
+      "id": "88428311-2b47-40e5-aa38-c2b3f953c6d6",
+      "displayName": "mixkit-short-laser-gun-shot-1670",
+      "entrypointFileName": "mixkit-short-laser-gun-shot-1670.wav",
+      "description": "",
+      "assetType": "audio",
+      "provider": "upload",
+      "sourceUrl": null,
+      "author": null,
+      "license": "uploaded",
+      "packName": null,
+      "packVersion": null,
+      "fileFormat": "wav",
+      "byteSize": 163898,
+      "contentHash": "bd8bd6de1ce6e72242ad601af1f59cc2d43df639d58f71f4d742c803aedee7a3",
+      "blobPath": "private/assets/88428311-2b47-40e5-aa38-c2b3f953c6d6.wav",
+      "preview": {
+        "kind": "audio",
+        "url": "/api/assets/previews/88428311-2b47-40e5-aa38-c2b3f953c6d6.wav",
+        "relativePath": "88428311-2b47-40e5-aa38-c2b3f953c6d6.wav"
+      },
+      "unity": {
+        "readiness": "pending",
+        "importedPath": null,
+        "prefabPath": null,
+        "dependencies": []
+      },
+      "state": "preview_ready",
+      "importError": null,
+      "validationState": "ok",
+      "createdAt": "2026-10-29T18:02:07.425Z",
+      "updatedAt": "2026-10-29T18:02:07.425Z"
+    }
+  },
+  "uploads": {
+    "b3955e18-e328-4dd2-aab9-9d302fab19e7": {
+      "id": "b3955e18-e328-4dd2-aab9-9d302fab19e7",
+      "fileName": "HERTZ_Pistol_Optimized_Rigged.glb",
+      "byteSize": 32898120,
+      "contentHash": null,
+      "assetTypeOverride": null,
+      "received": 32898120,
+      "partDir": "tmp/uploads/chunk-b3955e18-e328-4dd2-aab9-9d302fab19e7",
+      "createdAt": "2026-10-24T21:42:28.536Z",
+      "status": "completed",
+      "updatedAt": "2026-10-24T21:42:30.426Z",
+      "assetId": "24d51425-099d-4b14-a303-56edcf56177a",
+      "completedAt": "2026-10-24T21:42:30.426Z"
+    },
+    "248852e1-d4e7-4e96-9766-86121214a446": {
+      "id": "248852e1-d4e7-4e96-9766-86121214a446",
+      "fileName": "T-Pose (1).fbx",
+      "byteSize": 4773712,
+      "contentHash": null,
+      "assetTypeOverride": null,
+      "received": 4773712,
+      "partDir": "tmp/uploads/chunk-248852e1-d4e7-4e96-9766-86121214a446",
+      "createdAt": "2026-10-29T13:06:01.044Z",
+      "status": "completed",
+      "updatedAt": "2026-10-29T13:06:01.456Z",
+      "assetId": "ab7afcbf-a39e-4b94-ba9a-912d83ef1288",
+      "completedAt": "2026-10-29T13:06:01.456Z"
+    },
+    "3148c592-55bd-40fc-bbbc-8f4c6d26159c": {
+      "id": "3148c592-55bd-40fc-bbbc-8f4c6d26159c",
+      "fileName": "lowPolyNoTexture.fbx",
+      "byteSize": 700336,
+      "contentHash": null,
+      "assetTypeOverride": null,
+      "received": 700336,
+      "partDir": "tmp/uploads/chunk-3148c592-55bd-40fc-bbbc-8f4c6d26159c",
+      "createdAt": "2026-10-29T13:49:58.791Z",
+      "status": "completed",
+      "updatedAt": "2026-10-29T13:49:58.924Z",
+      "assetId": "25710419-ccc2-41e1-8484-5d49d3ddec1c",
+      "completedAt": "2026-10-29T13:49:58.924Z"
+    },
+    "8b29d832-9054-4a72-b605-0ffdd4695f79": {
+      "id": "8b29d832-9054-4a72-b605-0ffdd4695f79",
+      "fileName": "Kingsley.fbx",
+      "byteSize": 1071884,
+      "contentHash": null,
+      "assetTypeOverride": null,
+      "received": 1071884,
+      "partDir": "tmp/uploads/chunk-8b29d832-9054-4a72-b605-0ffdd4695f79",
+      "createdAt": "2026-10-29T17:26:27.666Z",
+      "status": "completed",
+      "updatedAt": "2026-10-29T17:26:27.861Z",
+      "assetId": "e6f0434d-6df2-40cc-9919-9482e77edc03",
+      "completedAt": "2026-10-29T17:26:27.861Z"
+    },
+    "f3346d68-ca53-4ca2-a0b8-b0d608b4a1b8": {
+      "id": "f3346d68-ca53-4ca2-a0b8-b0d608b4a1b8",
+      "fileName": "Kingsley_1.fbx",
+      "byteSize": 1071884,
+      "contentHash": null,
+      "assetTypeOverride": null,
+      "received": 1071884,
+      "partDir": "tmp/uploads/chunk-f3346d68-ca53-4ca2-a0b8-b0d608b4a1b8",
+      "createdAt": "2026-10-29T17:29:56.451Z",
+      "status": "completed",
+      "updatedAt": "2026-10-29T17:29:56.609Z",
+      "assetId": "87e09390-b30c-4555-9702-10f4fa147c6f",
+      "completedAt": "2026-10-29T17:29:56.609Z"
+    },
+    "a0775029-272e-4fcd-ba55-1678401821c7": {
+      "id": "a0775029-272e-4fcd-ba55-1678401821c7",
+      "fileName": "mixkit-short-laser-gun-shot-1670.wav",
+      "byteSize": 163898,
+      "contentHash": null,
+      "assetTypeOverride": null,
+      "received": 163898,
+      "partDir": "tmp/uploads/chunk-a0775029-272e-4fcd-ba55-1678401821c7",
+      "createdAt": "2026-10-29T18:02:07.235Z",
+      "status": "completed",
+      "updatedAt": "2026-10-29T18:02:07.460Z",
+      "assetId": "88428311-2b47-40e5-aa38-c2b3f953c6d6",
+      "completedAt": "2026-10-29T18:02:07.460Z"
+    }
+  },
+  "jobs": [
+    {
+      "id": "1fbdf17e-ce56-4b1a-a9ed-bb7151627c48",
+      "requestId": "e2e-w02-1792514487836",
+      "type": "import_asset",
+      "assetId": "e0813cd1-27b6-49f7-995f-f321f7c41f6b",
+      "status": "applied",
+      "createdAt": "2026-10-20T16:41:27.840Z",
+      "attempts": 1,
+      "startedAt": "2026-10-20T16:41:28.549Z",
+      "appliedAt": "2026-10-20T16:41:29.345Z"
+    },
+    {
+      "id": "6e7e2a8f-3f8f-45e8-896b-bcbc0fbd859e",
+      "requestId": "e2e-d518dc14-0f29-47ca-aa61-e3521dfec8b9",
+      "type": "import_asset",
+      "assetId": "982c66d1-0a77-4a40-b140-b7e3c4b944c3",
+      "status": "failed",
+      "createdAt": "2026-10-20T19:03:58.543Z",
+      "attempts": 1,
+      "startedAt": "2026-10-20T19:03:58.620Z",
+      "error": "Invalid import destination."
+    },
+    {
+      "id": "4c184e92-a127-41fd-934e-42e8ccfc75d8",
+      "requestId": "e2e-09394ce7-8866-4f01-972e-169d43e0c282",
+      "type": "import_asset",
+      "assetId": "982c66d1-0a77-4a40-b140-b7e3c4b944c3",
+      "status": "applied",
+      "createdAt": "2026-10-20T19:06:02.742Z",
+      "attempts": 1,
+      "startedAt": "2026-10-20T19:06:03.319Z",
+      "appliedAt": "2026-10-20T19:06:03.712Z"
+    },
+    {
+      "id": "224e674b-c69a-4d89-a707-5a9895c4ac33",
+      "requestId": "e2e-6b0f121d-0d8a-4c19-ad92-bc276be08cbe",
+      "type": "import_asset",
+      "assetId": "3aa1b520-0381-4bac-a43f-16efee282af4",
+      "status": "applied",
+      "createdAt": "2026-10-20T19:06:07.535Z",
+      "attempts": 1,
+      "startedAt": "2026-10-20T19:06:08.945Z",
+      "appliedAt": "2026-10-20T19:06:09.430Z"
+    },
+    {
+      "id": "6eba48d7-8bd2-4267-82f6-c225558e14a8",
+      "requestId": "2e0ebf79-d33c-4f36-8703-3cf8a4a73641",
+      "type": "import_asset",
+      "assetId": "93188900-0367-44fd-ab51-f55c305ead6a",
+      "status": "applied",
+      "createdAt": "2026-10-20T23:40:41.620Z",
+      "attempts": 1,
+      "startedAt": "2026-10-20T23:40:42.867Z",
+      "appliedAt": "2026-10-20T23:40:48.712Z"
+    },
+    {
+      "id": "8f522029-c66e-473e-b3e4-4d151c07a302",
+      "requestId": "d4374d92-a66a-4e67-b2ad-0d213213f42d",
+      "type": "import_asset",
+      "assetId": "93188900-0367-44fd-ab51-f55c305ead6a",
+      "status": "applied",
+      "createdAt": "2026-10-20T23:43:06.186Z",
+      "attempts": 1,
+      "startedAt": "2026-10-20T23:43:07.645Z",
+      "appliedAt": "2026-10-20T23:43:08.823Z"
+    },
+    {
+      "id": "69fbb1da-7ebf-4490-ad78-e4fe2b6be4bf",
+      "requestId": "0f044090-0037-48dd-a7b9-8030cc9584e2",
+      "type": "import_asset",
+      "assetId": "93188900-0367-44fd-ab51-f55c305ead6a",
+      "status": "applied",
+      "createdAt": "2026-10-20T23:43:34.709Z",
+      "attempts": 1,
+      "startedAt": "2026-10-20T23:43:35.491Z",
+      "appliedAt": "2026-10-20T23:43:36.361Z"
+    },
+    {
+      "id": "fc18e2b7-b8fc-41a3-bbe4-ed10b4dbfac9",
+      "requestId": "594922e7-5751-4e82-a59f-a67da9149a46",
+      "type": "import_asset",
+      "assetId": "ce7d1bb4-2ddd-4c9e-abde-049abd669b73",
+      "status": "applied",
+      "createdAt": "2026-10-21T00:18:14.629Z",
+      "attempts": 1,
+      "startedAt": "2026-10-21T00:18:14.693Z",
+      "appliedAt": "2026-10-21T00:18:17.933Z"
+    },
+    {
+      "id": "da86b420-24a1-4e0b-86c8-5c11f26c4e84",
+      "requestId": "0676a58e-ee0a-4019-9a9d-b8efb11bbcf2",
+      "type": "import_asset",
+      "assetId": "ce7d1bb4-2ddd-4c9e-abde-049abd669b73",
+      "status": "applied",
+      "createdAt": "2026-10-21T00:18:30.941Z",
+      "attempts": 1,
+      "startedAt": "2026-10-21T00:18:32.361Z",
+      "appliedAt": "2026-10-21T00:18:34.113Z"
+    },
+    {
+      "id": "60daee4e-f6ac-4b8c-9b41-e550d8bbf0b2",
+      "requestId": "b02767c7-b1af-4721-a986-fdab4c3817a9",
+      "type": "import_asset",
+      "assetId": "ce7d1bb4-2ddd-4c9e-abde-049abd669b73",
+      "status": "applied",
+      "createdAt": "2026-10-21T00:19:28.439Z",
+      "attempts": 1,
+      "startedAt": "2026-10-21T00:19:29.827Z",
+      "appliedAt": "2026-10-21T00:19:31.617Z"
+    },
+    {
+      "id": "a940ddaf-a3b2-47ca-985c-c432ff141a55",
+      "requestId": "4ff0e053-9c91-43b1-bfcf-139582c34b84",
+      "type": "import_asset",
+      "assetId": "44921c6c-07fc-47ae-9bd0-40fbb54d9a36",
+      "status": "applied",
+      "createdAt": "2026-10-21T00:22:26.143Z",
+      "attempts": 1,
+      "startedAt": "2026-10-21T00:22:26.876Z",
+      "appliedAt": "2026-10-21T00:22:28.532Z"
+    },
+    {
+      "id": "e2a67f7e-9c47-4d3f-a6ea-7acb85dfbe6a",
+      "requestId": "c5cf2e9c-e588-4e7f-9292-e6a62579161a",
+      "type": "import_asset",
+      "assetId": "8e7aeace-df2b-40ba-842d-9a94e99e1e8f",
+      "scenePath": "Assets/Scenes/HertzStudioTest.unity",
+      "status": "applied",
+      "createdAt": "2026-10-21T00:38:35.146Z",
+      "attempts": 1,
+      "startedAt": "2026-10-21T00:38:35.732Z",
+      "appliedAt": "2026-10-21T00:38:38.512Z"
+    },
+    {
+      "id": "c6faf5c2-c317-4c44-bacf-10fe48713fdc",
+      "requestId": "a54bb09c-a804-4280-ae66-0d848861e271",
+      "type": "import_asset",
+      "assetId": "176a9528-d289-4937-974e-00705c3937dc",
+      "scenePath": null,
+      "status": "applied",
+      "createdAt": "2026-10-21T01:02:04.118Z",
+      "attempts": 1,
+      "startedAt": "2026-10-21T01:02:06.641Z",
+      "appliedAt": "2026-10-21T01:02:08.281Z"
+    },
+    {
+      "id": "f211beb6-4d9f-42af-9d75-29f95eda64cc",
+      "requestId": "1692ed12-b6f7-40f5-add7-619d991ca9be",
+      "type": "place_in_scene",
+      "assetId": "176a9528-d289-4937-974e-00705c3937dc",
+      "scenePath": "Assets/Scenes/HertzStudioTest.unity",
+      "status": "applied",
+      "createdAt": "2026-10-21T01:03:10.500Z",
+      "attempts": 1,
+      "startedAt": "2026-10-21T01:03:11.595Z",
+      "appliedAt": "2026-10-21T01:03:12.625Z"
+    },
+    {
+      "id": "60c8ba2a-8701-4d6e-a670-2deb5d82e697",
+      "requestId": "1596336e-2409-402b-b94a-b4fcd4502e02",
+      "type": "import_asset",
+      "assetId": "0ce807ee-a6da-424b-a775-03863a171680",
+      "scenePath": null,
+      "placement": null,
+      "status": "applied",
+      "createdAt": "2026-10-24T20:49:04.375Z",
+      "attempts": 1,
+      "startedAt": "2026-10-24T21:44:56.955Z",
+      "appliedAt": "2026-10-24T21:44:58.849Z"
+    },
+    {
+      "id": "68a3d713-93f9-4a4f-bbab-ed0704ae6e69",
+      "requestId": "8a098ef3-9de4-4dfc-9a0b-6876df197e66",
+      "type": "import_asset",
+      "assetId": "24d51425-099d-4b14-a303-56edcf56177a",
+      "scenePath": "Assets/Scenes/HertzWeaponTest.unity",
+      "placement": {
+        "assetId": "24d51425-099d-4b14-a303-56edcf56177a",
+        "scenePath": "Assets/Scenes/HertzWeaponTest.unity",
+        "confirmSave": true,
+        "expectedUnityRevision": 16,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      },
+      "status": "applied",
+      "createdAt": "2026-10-24T21:43:13.622Z",
+      "attempts": 1,
+      "startedAt": "2026-10-24T21:45:01.248Z",
+      "appliedAt": "2026-10-24T21:45:14.065Z"
+    }
+  ],
+  "updatedAt": "2026-10-29T18:02:07.461Z"
+}

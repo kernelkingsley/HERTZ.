@@ -1,0 +1,70 @@
+{
+  "fbx": "C:\\Users\\Kingsley\\Downloads\\newModelwithCompSplit.fbx",
+  "byteSizeMB": 65.0,
+  "blender": "5.2.2 LTS",
+  "objectCount": 8,
+  "meshCount": 8,
+  "meshes": [
+    {
+      "name": "part_0",
+      "verts": 30002,
+      "parent": null,
+      "materials": []
+    },
+    {
+      "name": "part_1",
+      "verts": 50555,
+      "parent": null,
+      "materials": []
+    },
+    {
+      "name": "part_2",
+      "verts": 50696,
+      "parent": null,
+      "materials": []
+    },
+    {
+      "name": "part_3",
+      "verts": 689408,
+      "parent": null,
+      "materials": []
+    },
+    {
+      "name": "part_4",
+      "verts": 30002,
+      "parent": null,
+      "materials": []
+    },
+    {
+      "name": "part_5",
+      "verts": 82954,
+      "parent": null,
+      "materials": []
+    },
+    {
+      "name": "part_6",
+      "verts": 88847,
+      "parent": null,
+      "materials": []
+    },
+    {
+      "name": "part_7",
+      "verts": 565873,
+      "parent": null,
+      "materials": []
+    }
+  ],
+  "armatureCount": 0,
+  "armatureNames": [],
+  "boneCount": 0,
+  "bonesSample": [],
+  "fingerBones": [],
+  "fingerBoneCount": 0,
+  "hasFullFingerSet": false,
+  "materialCount": 0,
+  "materials": [],
+  "imageCount": 0,
+  "images": [],
+  "otherTypes": [],
+  "mixamoReadyHint": "join_meshes_then_mixamo_if_unrigged"
+}

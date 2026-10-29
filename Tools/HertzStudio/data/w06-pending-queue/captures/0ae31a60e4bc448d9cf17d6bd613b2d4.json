@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "buildId": "w06-runtime-proof",
+  "exportedAt": "2026-10-26T15:21:49.2541009Z",
+  "source": "unity_runtime",
+  "sessionId": "0ae31a60e4bc448d9cf17d6bd613b2d4",
+  "levelId": "HertzWeaponTest",
+  "completed": false,
+  "events": [
+    {"eventId":"37d746fc997d4ee7b3684822feefed9d","type":"session_start","buildId":"w06-runtime-proof","sessionId":"0ae31a60e4bc448d9cf17d6bd613b2d4","recordedAt":"2026-10-26T15:21:49.2541009Z","levelId":"HertzWeaponTest","tMs":0.008},
+    {"eventId":"ff4966711163499e8b9dde8bb3f17d92","type":"level_start","buildId":"w06-runtime-proof","sessionId":"0ae31a60e4bc448d9cf17d6bd613b2d4","recordedAt":"2026-10-26T15:21:49.2541009Z","levelId":"HertzWeaponTest","tMs":0.01},
+    {"eventId":"deee5861e48e41c2a397891aa15736d7","type":"frame_sample","buildId":"w06-runtime-proof","sessionId":"0ae31a60e4bc448d9cf17d6bd613b2d4","recordedAt":"2026-10-26T15:21:49.2541009Z","levelId":"HertzWeaponTest","tMs":0.017,"frameMs":11.5},
+    {"eventId":"e51c5c76f78b4ef29e4189f851054738","type":"level_end","buildId":"w06-runtime-proof","sessionId":"0ae31a60e4bc448d9cf17d6bd613b2d4","recordedAt":"2026-10-26T15:21:49.2541009Z","levelId":"HertzWeaponTest","tMs":0.019,"completed":false},
+    {"eventId":"93ee46287e3f445abe5111bff823adbc","type":"session_end","buildId":"w06-runtime-proof","sessionId":"0ae31a60e4bc448d9cf17d6bd613b2d4","recordedAt":"2026-10-26T15:21:49.2541009Z","levelId":"HertzWeaponTest","tMs":0.019,"completed":false}
+  ]
+}

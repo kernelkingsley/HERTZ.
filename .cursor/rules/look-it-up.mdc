@@ -1,0 +1,24 @@
+---
+description: If unsure of anything, look it up before guessing
+alwaysApply: true
+---
+
+# Look it up
+
+If you are unsure how something works, which API to use, what a package supports, or whether a design assumption is correct: **look it up before implementing or answering as fact.**
+
+## Sources (prefer in order)
+
+1. This project's files, installed package source under `Library/PackageCache` / `Packages`, and matching docs for the installed Unity/package versions.
+2. Project rules in `.cursor/rules/` and `WORK_PLAN.md`.
+3. Official docs or trustworthy references via search/fetch when project sources are not enough.
+
+## Do not
+
+- Invent Unity APIs, XR behavior, or “common practice” as if verified.
+- Rely on memory alone when the project or docs can be checked.
+- Ship a speculative fix when a short lookup would change the approach.
+
+## When lookup fails
+
+Say what you checked, what is still unknown, and the smallest safe next step. Do not pretend certainty.

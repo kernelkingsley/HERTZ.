@@ -1,0 +1,36 @@
+{
+    "version": 2,
+    "nextSequence": 4,
+    "entries": [
+        {
+            "captureId": "unrelated_85dcbf00a1334913bae604dce0e865de",
+            "file": "captures/unrelated_85dcbf00a1334913bae604dce0e865de.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T17:08:52.6876778Z",
+            "payloadSha256": "86333acb1398e3a7440729d05a82bf1e2fa5b4ea18bd4974ecafac9b853f22ce",
+            "sequence": 1,
+            "bytes": 66,
+            "lastError": ""
+        },
+        {
+            "captureId": "1a1d42d894ed42069289a6eb7db6e1db",
+            "file": "captures/1a1d42d894ed42069289a6eb7db6e1db.json",
+            "status": "delivered",
+            "createdAt": "2026-10-26T17:08:52.7349957Z",
+            "payloadSha256": "a074c83b85074d09e4ac2db11960bdbd88c874105f42a286ee312a700e01ab4d",
+            "sequence": 2,
+            "bytes": 3657,
+            "lastError": ""
+        },
+        {
+            "captureId": "cb59752025a1450c9ad42c201f3d4694",
+            "file": "captures/cb59752025a1450c9ad42c201f3d4694.json",
+            "status": "pending",
+            "createdAt": "2026-10-26T17:08:52.8570495Z",
+            "payloadSha256": "7768a3624e95c2197a0515e127259b6c509273126222abf638a4bfcc8bb9dcd0",
+            "sequence": 3,
+            "bytes": 1556,
+            "lastError": ""
+        }
+    ]
+}

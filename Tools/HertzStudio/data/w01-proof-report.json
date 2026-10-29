@@ -1,0 +1,133 @@
+{
+  "startedAt": "2026-10-20T13:31:19.716Z",
+  "steps": [
+    {
+      "name": "export_scene_authenticated",
+      "unityRevision": 12,
+      "objects": 1,
+      "scenePath": "Assets/Scenes/HertzStudioTest.unity",
+      "at": "2026-10-20T13:31:19.979Z"
+    },
+    {
+      "name": "draft_created",
+      "draftId": "18a5acb8-2026-41b3-9bef-5687b30bf640",
+      "version": 1,
+      "at": "2026-10-20T13:31:20.030Z"
+    },
+    {
+      "name": "draft_saved_offline",
+      "version": 2,
+      "position": {
+        "x": 1.25,
+        "y": 1,
+        "z": 0
+      },
+      "at": "2026-10-20T13:31:20.067Z"
+    },
+    {
+      "name": "draft_saved_newer_version",
+      "version": 3,
+      "position": {
+        "x": 6.25,
+        "y": 1,
+        "z": 0
+      },
+      "at": "2026-10-20T13:31:20.101Z"
+    },
+    {
+      "name": "expected_draft_version_mismatch_409",
+      "error": "Draft version mismatch: expected 2, current 3",
+      "at": "2026-10-20T13:31:20.108Z"
+    },
+    {
+      "name": "api_rejects_non_numeric_position",
+      "error": "objects[0].position.x must be a finite number",
+      "at": "2026-10-20T13:31:20.123Z"
+    },
+    {
+      "name": "duplicate_delivery_deduped",
+      "requestId": "proof-apply-1792503080139",
+      "at": "2026-10-20T13:31:20.371Z"
+    },
+    {
+      "name": "unity_apply_via_connector",
+      "status": "applied",
+      "message": null,
+      "at": "2026-10-20T13:31:20.890Z"
+    },
+    {
+      "name": "unity_transform_verified",
+      "objectId": "GlobalObjectId_V1-2-e2944d908fdc60348be2af9e8aed782e-1175936381-0",
+      "position": {
+        "x": 6.25,
+        "y": 1,
+        "z": 0
+      },
+      "expected": {
+        "x": 6.25,
+        "y": 1,
+        "z": 0
+      },
+      "at": "2026-10-20T13:31:20.991Z"
+    },
+    {
+      "name": "unity_undo",
+      "unityRevision": 14,
+      "position": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "at": "2026-10-20T13:31:21.132Z"
+    },
+    {
+      "name": "unity_save",
+      "unityRevision": 15,
+      "at": "2026-10-20T13:31:21.699Z"
+    },
+    {
+      "name": "unity_reopen",
+      "unityRevision": 15,
+      "position": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "at": "2026-10-20T13:31:22.246Z"
+    },
+    {
+      "name": "bridge_rejects_unauthenticated_mutate",
+      "at": "2026-10-20T13:31:22.249Z"
+    },
+    {
+      "name": "stale_revision_conflict",
+      "message": "Stale base revision -1; Unity is at 15.",
+      "at": "2026-10-20T13:31:22.352Z"
+    },
+    {
+      "name": "lost_ack_retry_idempotent",
+      "unityRevision": 16,
+      "baseUsed": 15,
+      "at": "2026-10-20T13:31:22.756Z"
+    },
+    {
+      "name": "unity_test_scene_restored",
+      "objectId": "GlobalObjectId_V1-2-e2944d908fdc60348be2af9e8aed782e-1175936381-0",
+      "position": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "expected": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "at": "2026-10-20T13:31:23.837Z"
+    }
+  ],
+  "apiOk": true,
+  "unityIntegration": "passed",
+  "ok": true,
+  "finishedAt": "2026-10-20T13:31:23.837Z"
+}

@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "milestone": "W14",
+  "generatedAt": "2026-10-26T07:04:28.680Z",
+  "branch": "main",
+  "head": "7374e57c3f8cfef316a18d6606d5e1385b39170e",
+  "implementationStatus": "vertical_paths_implemented_unity_live_pending",
+  "scope": [
+    "Owner-only deploy preview",
+    "plan hash tamper checks",
+    "no public mutate"
+  ],
+  "acceptanceCriteria": [
+    {
+      "criterion": "Overview uses studio.hertz.software and no secrets",
+      "status": "passed",
+      "evidence": [
+        "api/src/deployPlan.test.mjs"
+      ],
+      "notes": ""
+    },
+    {
+      "criterion": "Plan create + tamper reject",
+      "status": "passed",
+      "evidence": [
+        "api/src/deployPlan.test.mjs"
+      ],
+      "notes": ""
+    },
+    {
+      "criterion": "Public deploy/DNS/paid",
+      "status": "not_applicable",
+      "evidence": [],
+      "notes": "Explicitly not performed"
+    }
+  ],
+  "changedFiles": [
+    {
+      "path": "Tools/HertzStudio/api/src/deployPlan.mjs",
+      "purpose": "Deploy plan",
+      "risk": "high"
+    },
+    {
+      "path": "Tools/HertzStudio/web/src/pages/Deploy.jsx",
+      "purpose": "Deploy UI",
+      "risk": "medium"
+    }
+  ],
+  "apiContracts": [
+    "GET /api/deploy",
+    "POST /api/deploy/credentials",
+    "POST /api/deploy/plan",
+    "POST /api/deploy/plan/validate"
+  ],
+  "persistedSchemas": [
+    "store.deploy"
+  ],
+  "migrations": [],
+  "unityAssetsCreatedOrChanged": [],
+  "scenesTouched": [],
+  "sampleSceneHashBefore": "9FB1EFEAC51BD4AEE87A5DD23CD3613DB054EA41BC82977F0ADAF27CA5E5F4D9",
+  "sampleSceneHashAfter": "9FB1EFEAC51BD4AEE87A5DD23CD3613DB054EA41BC82977F0ADAF27CA5E5F4D9",
+  "tests": [
+    {
+      "command": "node --test api/src/deployPlan.test.mjs",
+      "workingDirectory": "Tools/HertzStudio",
+      "startedAt": "2026-10-26T03:16:59.977Z",
+      "completedAt": "2026-10-26T03:16:59.977Z",
+      "exitCode": 0,
+      "counts": "pass 3",
+      "result": "passed",
+      "limitations": ""
+    }
+  ],
+  "proofArtifacts": [
+    {
+      "path": "Tools/HertzStudio/data/w14-deploy-plan-proof.json",
+      "schemaVersion": 1,
+      "generatedAt": "2026-10-26T03:16:59.977Z",
+      "sourceIdentity": "local-api-tests",
+      "sceneRevision": "n/a",
+      "fresh": true
+    }
+  ],
+  "manualChecksCompleted": [],
+  "manualChecksPending": [],
+  "externalChecksPending": [
+    "provider account",
+    "DNS apply",
+    "HTTPS",
+    "second device"
+  ],
+  "knownLimitations": [
+    "Live Unity apply pending Editor domain reload for new bridge routes"
+  ],
+  "securityNotes": [
+    "Credentials never in API responses",
+    "No DNS mutation",
+    "No public deploy"
+  ],
+  "backwardCompatibility": [
+    "Preserves W01-W07 Studio APIs and XR protections"
+  ],
+  "rollbackOrRecovery": [
+    "Revert milestone module + routes; restore milestone-gates.json gates for this id"
+  ],
+  "reviewHotspots": [
+    {
+      "file": "deployPlan.mjs",
+      "reason": "credential handling",
+      "invariants": "masked only; preview_only; no execute"
+    }
+  ],
+  "claimsNotProven": [
+    "hosted authentication callbacks",
+    "Live Unity vertical apply after domain reload"
+  ],
+  "status": "In progress"
+}

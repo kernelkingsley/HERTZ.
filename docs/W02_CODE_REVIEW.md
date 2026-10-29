@@ -1,0 +1,41 @@
+# W02 code review
+
+20 October 2026. **Verdict: changes required before W02 can be accepted or W03 can start.** Cursor added a substantial asset-library foundation, the focused scripts pass, the production web build succeeds, glTFast is installed, and Unity has no recent C# compiler errors. The end-to-end import path and several required W02 behaviors are still incomplete or unsafe.
+
+## Blocking findings
+
+1. **[P1] Connector-driven Unity imports use the wrong project root and fail before reaching the proved bridge path.** `Tools/HertzStudio/connector/src/connector.mjs:6` resolves `ROOT` to `HERTZ/Tools/HertzStudio`, but lines 80-90 set `projectRoot` to its parent, `HERTZ/Tools`. The connector writes incoming blobs below `HERTZ/Tools/Assets/...` and sends Unity the relative path `Assets/...`; the bridge resolves that path below the real project root, `HERTZ/Assets/...`, where the file does not exist. The saved proof used manually prepared files under the real `Assets` directory and did not exercise API -> connector -> bridge. Fix project-root discovery and add an isolated end-to-end connector proof that imports a catalog asset through the queue.
+
+2. **[P1] The documented Sketchfab download response is handled as a raw GLB, so real imports will fail and the credential is sent to the archive host.** `api/src/assets/sketchfab.mjs:154-174` downloads `gltf.url`, reads it into memory, writes it with a `.glb` suffix, and never extracts it. Sketchfab documents that `gltf.url` is a ZIP containing `scene.gltf`, `scene.bin`, and textures; it also says the signed archive URL needs no authentication. The current code forwards the account token to that external URL. Extract the bounded archive safely, retain its dependency tree, import the real entrypoint, omit credentials from the signed download, enforce size before/during streaming, and test the response shape with a faithful fixture plus live access when available. Official reference: https://sketchfab.com/developers/download-api/downloading-models
+
+3. **[P1] The browser does not implement the claimed resumable/progress/cancel or draggable workflows.** `web/src/pages/AssetLibrary.jsx:148-195` always submits one `FormData` request. Nothing in `web/src` calls the chunk init/chunk/complete/delete routes, creates an `AbortController`, shows byte progress, or sets library cards as draggable. The server endpoints alone do not satisfy W02's browser workflow or the done criterion for typed draggable entries. Wire the browser to chunked upload with persisted upload ID/offset, progress, retry/resume, and cancel; add the typed drag payload required by W03.
+
+4. **[P1] Several required asset types, previews, and dependency records are placeholders rather than working features.** `api/src/assets/types.mjs` declares animation extensions but excludes `.anim`, fonts, and AIFF from `ALLOWED_UPLOAD_EXTS`; FBX is always classified as a model. `catalog.mjs:166-184` gives models and audio no playable/rendered preview URL, while `unity.dependencies` is always initialized to an empty array at line 271 and has no update path. Ordinary `.gltf` files also lose their `.bin`/texture relationships because ZIP ingestion registers flattened independent files and the connector transfers only one blob. Add an explicit type/override strategy, real lazy model/audio previews, dependency indexing/usage, and dependency-preserving glTF import tests.
+
+5. **[P1] Upload validation trusts the filename extension and marks invalid content ready.** `catalog.mjs:203-248` checks extension and byte count but never verifies image, audio, archive, or model signatures/structure. An isolated review probe uploaded 17 bytes of plain text as `fake.png`; it was accepted with `validationState: "ok"`, copied to previews, and marked `Preview ready`. Validate content server-side before cataloging or previewing it, reject malformed members from ZIPs, and add negative fixtures. The existing `rejects_invalid_file_type` check only rejects `.exe` by extension.
+
+6. **[P1] The requested password correction was not preserved.** `web/src/pages/Login.jsx:11` pre-fills `hertz-local-owner`; `api/src/store.mjs:244-255`, `scripts/local-pair.mjs`, and `README.md` retain and document the same fallback. Anyone who reaches a hosted instance can sign in unless an environment variable was set correctly. Start local development with an explicit one-time setup or environment secret, leave the password input empty, and fail startup in a hosted/production mode when no owner secret exists. Add a regression that scans the frontend and source defaults.
+
+7. **[P1] Catalog corruption silently returns an empty catalog and can overwrite all asset metadata.** `api/src/assets/catalog.mjs:35-55` catches every parse failure and returns `emptyCatalog()` without a recovery generation or visible recovery state. The next mutation saves that empty catalog over the primary. W02 requires assets and queued imports to survive restart, especially after an abrupt shutdown. Use a transactional durable catalog or verified last-known-good generation, surface recovery, and test a truncated newest write containing assets, chunk sessions, and a pending import job.
+
+## Additional findings
+
+8. **[P2] The Unity import boundary does not confine source reads or the asset destination.** `Assets/Editor/HertzStudio/HertzStudioHttpBridge.cs:837-870` accepts absolute `sourcePath` values and combines an unsanitized `assetId` into the destination directory. A request with the bridge token can traverse outside `Assets/HertzStudio/Imported` and copy an arbitrary readable file. Require a UUID asset ID, resolve and verify both source and destination beneath fixed roots, and reject links/reparse points and path escapes before any write.
+
+9. **[P2] Failed ZIP uploads can leave extracted directories behind.** `api/src/assets/routes.mjs:77-103` removes `outDir` only after successful extraction and iteration. If extraction or an unexpected ingest step throws, the outer `finally` removes only the uploaded ZIP. Put the extraction directory in its own `finally` and test parser/bomb failures for cleanup.
+
+10. **[P2] The current local runtime has duplicate connectors and recorded durable-store write failures.** Two connector processes are running (`29132`, started 14:37, and handoff PID `16100`, started 15:22). `api-w02.err.log` records repeated `EPERM` failures promoting `store.json.good`, connector polls returned HTTP 500, and 35 abandoned `.tmp` files remain. The API and Unity health endpoints currently respond, but this is not a clean handoff state. Add single-instance protection/start-stop scripts, clean only verified abandoned temp files, and make backup-promotion failure explicit without turning a committed primary mutation into an ambiguous retry.
+
+## Checks performed
+
+- `npm run regress:w02`: **49/49 passed**, with live Sketchfab verification still pending. The suite does not exercise the connector filesystem path, real Sketchfab archive format, content signatures, browser upload controls, or catalog corruption recovery.
+- `npm run regress:w01`: **27/27 passed**.
+- `npm run build`: **passed**. Dashboard first-party gzip measurement remains **149,747 bytes**, below the declared 256,000-byte target.
+- Node syntax checks for the W02 catalog, routes, Sketchfab module, and connector: **passed**.
+- Recent Unity `Editor.log`: no `error CS...` in the inspected last 3,000 lines; bridge health responds on `127.0.0.1:8791` with `HertzStudioTest` revision 1004.
+- `git diff --check`: only existing trailing whitespace in `Assets/XR/Settings/OpenXRPackageSettings.asset`.
+- No implementation files or Unity scenes were changed during this review.
+
+## Next handoff
+
+Cursor should fix findings 1-10, add focused regressions that fail on the demonstrated cases, run a real queued API -> connector -> bridge import on the dedicated `HertzStudioTest` scene, and hand W02 back for independent review. Keep Sketchfab live verification pending until Kingsley supplies a credential through Studio. Do not begin W03.
